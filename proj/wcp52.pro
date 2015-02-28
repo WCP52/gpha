@@ -1,4 +1,4 @@
-update=Sat 28 Feb 2015 12:21:58 PM EST
+update=Sat 28 Feb 2015 12:45:05 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -103,3 +103,4 @@ LibName71=symbol
 LibName72=TexasInstruments
 LibName73=vishay_semi
 LibName74=Xilinx
+LibName75=pasv-xtal

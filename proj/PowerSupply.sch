@@ -73,19 +73,20 @@ LIBS:symbol
 LIBS:TexasInstruments
 LIBS:vishay_semi
 LIBS:Xilinx
+LIBS:pasv-xtal
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
-Date ""
+Date "2015-02-28"
 Rev ""
-Comp ""
-Comment1 ""
+Comp "WCP52"
+Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Eng: Chris Pavlina"
 $EndDescr
 $EndSCHEMATC

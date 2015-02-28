@@ -73,12 +73,13 @@ LIBS:symbol
 LIBS:TexasInstruments
 LIBS:vishay_semi
 LIBS:Xilinx
+LIBS:pasv-xtal
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Block Diagram"
 Date "2015-02-28"
 Rev ""
