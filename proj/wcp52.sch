@@ -79,7 +79,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 8
+Sheet 1 12
 Title "Block Diagram"
 Date "2015-02-28"
 Rev ""
@@ -138,7 +138,18 @@ S 10600 2150 1100 1550
 U 54F1FB16
 F0 "InputFrontend" 60
 F1 "InputFrontend.sch" 60
+F2 "OUT" O L 10600 2300 60 
+F3 "IN1" I R 11700 2300 60 
+F4 "IN2" I R 11700 2400 60 
+F5 "INPUTSEL" I L 10600 3500 60 
+F6 "PHASEREF" I L 10600 3600 60 
 $EndSheet
 Wire Wire Line
 	10200 4200 10600 4200
+Wire Wire Line
+	10600 3600 10400 3600
+Wire Wire Line
+	10400 3600 10400 4100
+Wire Wire Line
+	10400 4100 10200 4100
 $EndSCHEMATC
