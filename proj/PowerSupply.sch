@@ -79,7 +79,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 2 13
+Sheet 2 14
 Title "Power Supply Block Diagram"
 Date "2015-02-28"
 Rev ""
@@ -90,9 +90,36 @@ Comment3 ""
 Comment4 "Eng: Chris Pavlina"
 $EndDescr
 $Sheet
-S 2100 2200 1200 1100
+S 3950 2000 1200 1100
 U 54F49966
 F0 "PowerInput" 60
 F1 "PowerInput.sch" 60
+F2 "OUT" O R 5150 2100 50 
+F3 "IN" I L 3950 2100 50 
 $EndSheet
+$Sheet
+S 5950 2000 1100 1100
+U 54F4F7B6
+F0 "DCDC" 60
+F1 "DCDC.sch" 60
+F2 "OUT-9" O R 7050 2100 50 
+F3 "IN" I L 5950 2100 50 
+$EndSheet
+$Comp
+L -9 #PWR1
+U 1 1 54F50E66
+P 7300 2200
+F 0 "#PWR1" H 7300 2150 30  0001 C CNN
+F 1 "-9" H 7300 2100 50  0000 C CNN
+F 2 "" H 7300 2200 60  0000 C CNN
+F 3 "" H 7300 2200 60  0000 C CNN
+	1    7300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2200 7300 2100
+Wire Wire Line
+	7300 2100 7050 2100
+Wire Wire Line
+	5150 2100 5950 2100
 $EndSCHEMATC

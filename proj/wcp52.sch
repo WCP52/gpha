@@ -79,7 +79,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title "Block Diagram"
 Date "2015-02-28"
 Rev ""
