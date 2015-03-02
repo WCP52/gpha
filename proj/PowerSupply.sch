@@ -77,10 +77,10 @@ LIBS:pasv-xtal
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 12
-Title ""
+Sheet 2 13
+Title "Power Supply Block Diagram"
 Date "2015-02-28"
 Rev ""
 Comp "WCP52"
@@ -89,4 +89,10 @@ Comment2 ""
 Comment3 ""
 Comment4 "Eng: Chris Pavlina"
 $EndDescr
+$Sheet
+S 2100 2200 1200 1100
+U 54F49966
+F0 "PowerInput" 60
+F1 "PowerInput.sch" 60
+$EndSheet
 $EndSCHEMATC
