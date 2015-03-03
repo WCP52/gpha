@@ -77,10 +77,10 @@ LIBS:pasv-xtal
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 14
-Title ""
+Sheet 2 13
+Title "MPU"
 Date "2015-02-28"
 Rev ""
 Comp "WCP52"

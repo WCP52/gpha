@@ -79,7 +79,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 6 14
+Sheet 5 13
 Title "Output Amplifier"
 Date "2015-02-28"
 Rev ""

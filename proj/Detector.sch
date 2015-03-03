@@ -79,7 +79,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 12 14
+Sheet 12 13
 Title "Logarithmic Detector"
 Date "2015-02-28"
 Rev ""

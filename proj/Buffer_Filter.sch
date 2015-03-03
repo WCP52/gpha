@@ -79,7 +79,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 14
+Sheet 10 13
 Title "Input Buffer and Filter"
 Date "2015-02-28"
 Rev ""
@@ -531,4 +531,17 @@ Wire Wire Line
 Text HLabel 8600 3400 2    60   Output ~ 0
 OUT
 Connection ~ 7900 3400
+$Comp
+L +5 #PWR?
+U 1 1 54F9478F
+P 4900 2650
+F 0 "#PWR?" H 4900 2700 30  0001 C CNN
+F 1 "+5" H 4900 2750 50  0000 C CNN
+F 2 "" H 4900 2650 60  0000 C CNN
+F 3 "" H 4900 2650 60  0000 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2650 4900 2700
 $EndSCHEMATC
