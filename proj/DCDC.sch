@@ -1347,4 +1347,8 @@ Wire Wire Line
 	3800 2150 3800 2000
 Wire Wire Line
 	4300 2900 10600 2900
+Text Label 6050 1300 0    50   ~ 0
+ISEN_N9
+Text Label 6050 3700 0    50   ~ 0
+ISEN_3V3
 $EndSCHEMATC
