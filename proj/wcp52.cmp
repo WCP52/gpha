@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-03 BZR 5468)-product   date = Tue 03 Mar 2015 03:47:19 PM EST
+Cmp-Mod V01 Created by Cvpcb (2015-03-03 BZR 5471)-product   date = Tue 03 Mar 2015 11:24:57 PM EST
 
 BeginCmp
 TimeStamp = /54F49966/54F4E7EE;
@@ -792,6 +792,104 @@ IdModule  = IPC7351-Nominal:CAPC2012X70;
 EndCmp
 
 BeginCmp
+TimeStamp = /54F1FAC6/54F71A34;
+Reference = C114;
+ValeurCmp = 10u;
+IdModule  = IPC7351-Nominal:CAPC2012X70;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F72071;
+Reference = C115;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F7188C;
+Reference = C116;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F7182B;
+Reference = C117;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F717CC;
+Reference = C118;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F716CC;
+Reference = C119;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F70E9E;
+Reference = C120;
+ValeurCmp = 10u;
+IdModule  = IPC7351-Nominal:CAPC2012X70;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F7230C;
+Reference = C121;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F722EF;
+Reference = C122;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F722E7;
+Reference = C123;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F722DF;
+Reference = C124;
+ValeurCmp = 100n;
+IdModule  = IPC7351-Nominal:CAPC1608X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F73F00;
+Reference = C125;
+ValeurCmp = 1u;
+IdModule  = IPC7351-Nominal:CAPC2012X70;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F76170;
+Reference = C126;
+ValeurCmp = 15p;
+IdModule  = IPC7351-Nominal:CAPC1005X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F76348;
+Reference = C127;
+ValeurCmp = 15p;
+IdModule  = IPC7351-Nominal:CAPC1005X55;
+EndCmp
+
+BeginCmp
 TimeStamp = /54F49966/54F4BCC5;
 Reference = D1;
 ValeurCmp = MMBD4148;
@@ -925,6 +1023,13 @@ IdModule  = IPC7351-Nominal:INDC2012X130;
 EndCmp
 
 BeginCmp
+TimeStamp = /54F1FAC6/54F72E88;
+Reference = E3;
+ValeurCmp = 1k@100;
+IdModule  = ;
+EndCmp
+
+BeginCmp
 TimeStamp = /54F1FAD5/54F73A43;
 Reference = J1;
 ValeurCmp = MicroUSB-B;
@@ -985,6 +1090,34 @@ TimeStamp = /54F1FB16/54F2F3A6;
 Reference = MP1;
 ValeurCmp = SHIELD;
 IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F6A5D4;
+Reference = MP2;
+ValeurCmp = SCREW;
+IdModule  = mech:SCREW-3-SUPPORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F6A8B8;
+Reference = MP3;
+ValeurCmp = SCREW;
+IdModule  = mech:SCREW-3-SUPPORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F6A9EF;
+Reference = MP4;
+ValeurCmp = SCREW;
+IdModule  = mech:SCREW-3-SUPPORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F6A9FC;
+Reference = MP5;
+ValeurCmp = SCREW;
+IdModule  = mech:SCREW-3-SUPPORTED;
 EndCmp
 
 BeginCmp
@@ -1912,10 +2045,10 @@ IdModule  = IPC7351-Nominal:SOP65P490X109-8;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F1FAC6/54F63583;
+TimeStamp = /54F1FAC6/54F6F55F;
 Reference = U12;
-ValeurCmp = PIC24FJ128GA306-I/PT;
-IdModule  = IPC7351-Nominal:QFP50P1200X1200X120-64;
+ValeurCmp = ATSAM4S16CA-AU;
+IdModule  = IPC7351-Nominal:QFP50P1600X1600X160-100;
 EndCmp
 
 BeginCmp
@@ -1957,6 +2090,13 @@ BeginCmp
 TimeStamp = /54F1FAEE/54F209E2;
 Reference = X1;
 ValeurCmp = 25 MHz;
+IdModule  = IPC7351-Nominal:XTAL1200X480X460;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F74F6C;
+Reference = X2;
+ValeurCmp = 12MHz;
 IdModule  = IPC7351-Nominal:XTAL1200X480X460;
 EndCmp
 

@@ -1,4 +1,4 @@
-update=Tue 03 Mar 2015 11:52:52 AM EST
+update=Tue 03 Mar 2015 11:41:49 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,19 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=50
 [eeschema]
 version=1
 LibDir=../../kicad-schlib/library
@@ -104,16 +117,4 @@ LibName72=TexasInstruments
 LibName73=vishay_semi
 LibName74=Xilinx
 LibName75=pasv-xtal
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=50
+LibName76=conn-te
