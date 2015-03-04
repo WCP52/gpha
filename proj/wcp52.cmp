@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-03 BZR 5471)-product   date = Tue 03 Mar 2015 11:24:57 PM EST
+Cmp-Mod V01 Created by Cvpcb (2015-03-04 BZR 5473)-product   date = Wed 04 Mar 2015 01:13:20 PM EST
 
 BeginCmp
 TimeStamp = /54F49966/54F4E7EE;
@@ -1037,6 +1037,34 @@ IdModule  = conn-fci:CONN-10118194-0001LF-FCI;
 EndCmp
 
 BeginCmp
+TimeStamp = /54F77034;
+Reference = J2;
+ValeurCmp = IN1;
+IdModule  = manuf:CONN-TE-1814400;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F77555;
+Reference = J3;
+ValeurCmp = IN2;
+IdModule  = manuf:CONN-TE-1814400;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F777EC;
+Reference = J4;
+ValeurCmp = OUT;
+IdModule  = manuf:CONN-TE-1814400;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F71BBD;
+Reference = J5;
+ValeurCmp = CONN-PJ-037A;
+IdModule  = conn-cui:CONN-PJ-037A;
+EndCmp
+
+BeginCmp
 TimeStamp = /54F1FAFD/54F227E6/54F2C04F;
 Reference = L1;
 ValeurCmp = 56n;
@@ -1089,7 +1117,7 @@ BeginCmp
 TimeStamp = /54F1FB16/54F2F3A6;
 Reference = MP1;
 ValeurCmp = SHIELD;
-IdModule  = ;
+IdModule  = manuf:LAIRD-BMI-S-203;
 EndCmp
 
 BeginCmp
