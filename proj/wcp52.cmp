@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-04 BZR 5473)-product   date = Wed 04 Mar 2015 01:13:20 PM EST
+Cmp-Mod V01 Created by Cvpcb (2015-03-04 BZR 5473)-product   date = Wed 04 Mar 2015 08:43:36 PM EST
 
 BeginCmp
 TimeStamp = /54F49966/54F4E7EE;
@@ -1023,10 +1023,10 @@ IdModule  = IPC7351-Nominal:INDC2012X130;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F1FAC6/54F72E88;
+TimeStamp = /54F1FAC6/54F84880;
 Reference = E3;
 ValeurCmp = 1k@100;
-IdModule  = ;
+IdModule  = IPC7351-Nominal:INDC1608X95;
 EndCmp
 
 BeginCmp
@@ -1062,6 +1062,13 @@ TimeStamp = /54F71BBD;
 Reference = J5;
 ValeurCmp = CONN-PJ-037A;
 IdModule  = conn-cui:CONN-PJ-037A;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F7D54C;
+Reference = J6;
+ValeurCmp = JLINK;
+IdModule  = conn-100mil:CONN-100MIL-M-2x10-SHROUD;
 EndCmp
 
 BeginCmp
@@ -1968,6 +1975,34 @@ IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
+TimeStamp = /54F1FAC6/54F82924;
+Reference = R99;
+ValeurCmp = 4k7;
+IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F830F2;
+Reference = R100;
+ValeurCmp = 4k7;
+IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F83CBF;
+Reference = R101;
+ValeurCmp = 4k7;
+IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54F86CAB;
+Reference = R102;
+ValeurCmp = 4k7;
+IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
 TimeStamp = /54F1FAEE/54F2054D;
 Reference = TP1;
 ValeurCmp = SYNC_OUT;
@@ -1992,6 +2027,13 @@ BeginCmp
 TimeStamp = /54F1FAD5/54F78C47;
 Reference = TP4;
 ValeurCmp = #TX;
+IdModule  = conn-test:TEST-SMD-SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4F7B6/54F863A1;
+Reference = TP5;
+ValeurCmp = 3V3MCU;
 IdModule  = conn-test:TEST-SMD-SMALL;
 EndCmp
 
@@ -2082,7 +2124,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FAD5/54F6E20F;
 Reference = U13;
-ValeurCmp = FT230XS;
+ValeurCmp = FT230XS_DNP;
 IdModule  = IPC7351-Nominal:SOP63P600X160-16;
 EndCmp
 
