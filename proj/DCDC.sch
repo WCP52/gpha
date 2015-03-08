@@ -80,7 +80,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 13 13
+Sheet 12 13
 Title ""
 Date ""
 Rev ""
@@ -150,28 +150,6 @@ F 5 "RES SMD 1 5% [1210]" H 7000 2150 60  0001 C CNN "BOM"
 	1    6250 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4650 1200 4650 1400
-Wire Wire Line
-	4650 1300 5000 1300
-Connection ~ 4650 1300
-Wire Wire Line
-	5150 1400 5150 2550
-Wire Wire Line
-	5150 1600 5650 1600
-Connection ~ 5150 1600
-Wire Wire Line
-	4650 1700 4650 1600
-Wire Wire Line
-	5850 1600 6150 1600
-Wire Wire Line
-	6350 1600 6500 1600
-Wire Wire Line
-	6500 1400 6500 2550
-Wire Wire Line
-	5150 2900 5150 2750
-Wire Wire Line
-	6500 2900 6500 2750
 $Comp
 L C-0402 C87
 U 1 1 54F4F0FA
@@ -187,15 +165,6 @@ F 5 "CAP MLCC 1nF C0G 10V 5% [0402]" H 5550 2950 60  0001 C CNN "BOM"
 	1    4750 2400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4850 2400 5150 2400
-Connection ~ 5150 2400
-Wire Wire Line
-	4300 2400 4650 2400
-Wire Wire Line
-	4300 1600 4300 2550
-Wire Wire Line
-	4300 1800 4500 1800
 $Comp
 L C-0402 C86
 U 1 1 54F4F6BD
@@ -211,15 +180,6 @@ F 5 "CAP MLCC 10n ≥X5R 25V 10% [0402]" H 5100 3200 60  0001 C CNN "BOM"
 	1    4300 2650
 	1    0    0    1   
 $EndComp
-Connection ~ 4300 2400
-Wire Wire Line
-	4300 2750 4300 2900
-Connection ~ 5150 2900
-Wire Wire Line
-	4650 1900 4650 1950
-Wire Wire Line
-	4650 1950 6500 1950
-Connection ~ 6500 1950
 $Comp
 L R-0402 R82
 U 1 1 54F4F882
@@ -235,16 +195,6 @@ F 5 "RES SMD 1k 5% [0402]" H 5050 2050 60  0001 C CNN "BOM"
 	1    4300 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 1800
-Wire Wire Line
-	4300 900  4300 1400
-Wire Wire Line
-	3300 900  8600 900 
-Wire Wire Line
-	5150 900  5150 1200
-Wire Wire Line
-	4650 900  4650 1000
-Connection ~ 4650 900 
 $Comp
 L MMBT3904 Q15
 U 1 1 54F4F95D
@@ -260,12 +210,6 @@ F 5 "Value" H 6450 1300 60  0001 C CNN "Manuf"
 	1    6450 1300
 	1    0    0    -1  
 $EndComp
-Connection ~ 6500 1600
-Wire Wire Line
-	6350 1300 6050 1300
-Wire Wire Line
-	6050 1300 6050 1600
-Connection ~ 6050 1600
 $Comp
 L BZX84 DZ9
 U 1 1 54F4FA14
@@ -279,41 +223,23 @@ F 3 "" H 7550 2600 60  0000 C CNN
 	1    7550 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 2900 7550 2700
-Connection ~ 6500 2900
-Wire Wire Line
-	7550 1100 7550 2500
-Wire Wire Line
-	7550 1100 6500 1100
-Wire Wire Line
-	6500 1100 6500 1200
-Wire Wire Line
-	4300 2050 7550 2050
-Connection ~ 7550 2050
-Connection ~ 4300 2050
 $Comp
 L GND #PWR8
 U 1 1 54F50066
 P 7200 2400
 AR Path="/54F1FAAC/54F4F7B6/54F50066" Ref="#PWR8"  Part="1" 
-AR Path="/54F4F7B6/54F50066" Ref="#PWR0206"  Part="1" 
-F 0 "#PWR0206" H 7200 2400 30  0001 C CNN
+AR Path="/54F4F7B6/54F50066" Ref="#PWR0209"  Part="1" 
+F 0 "#PWR0209" H 7200 2400 30  0001 C CNN
 F 1 "GND" H 7200 2330 30  0001 C CNN
 F 2 "" H 7200 2400 60  0000 C CNN
 F 3 "" H 7200 2400 60  0000 C CNN
 	1    7200 2400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6500 2400 7200 2400
-Connection ~ 6500 2400
-Connection ~ 7550 2900
-Text HLabel 10600 2900 2    60   Output ~ 0
+Text HLabel 11600 2900 2    60   Output ~ 0
 OUT-9
 Text HLabel 3300 900  0    60   Input ~ 0
 IN
-Connection ~ 4300 900 
 $Comp
 L R-0402 R?
 U 1 1 54F53F7B
@@ -374,30 +300,6 @@ F 5 "RES SMD 1 5% [1210]" H 7000 4550 60  0001 C CNN "BOM"
 	1    6250 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4650 3600 4650 3800
-Wire Wire Line
-	4650 3700 5000 3700
-Connection ~ 4650 3700
-Wire Wire Line
-	5150 3800 5150 4950
-Wire Wire Line
-	5150 4000 5650 4000
-Connection ~ 5150 4000
-Wire Wire Line
-	4650 4100 4650 4000
-Wire Wire Line
-	5850 4000 6150 4000
-Wire Wire Line
-	6350 4000 6500 4000
-Wire Wire Line
-	6500 3800 6500 4900
-Wire Wire Line
-	5150 5300 5150 5150
-Wire Wire Line
-	3800 5300 7050 5300
-Wire Wire Line
-	6500 5300 6500 5100
 $Comp
 L C-0402 C?
 U 1 1 54F53FC4
@@ -413,15 +315,6 @@ F 5 "CAP MLCC 1nF C0G 10V 5% [0402]" H 5550 5350 60  0001 C CNN "BOM"
 	1    4750 4800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4850 4800 5150 4800
-Connection ~ 5150 4800
-Wire Wire Line
-	4300 4800 4650 4800
-Wire Wire Line
-	4300 4000 4300 4950
-Wire Wire Line
-	4300 4200 4500 4200
 $Comp
 L C-0402 C?
 U 1 1 54F53FD4
@@ -437,15 +330,6 @@ F 5 "CAP MLCC 10n ≥X5R 25V 10% [0402]" H 5100 5600 60  0001 C CNN "BOM"
 	1    4300 5050
 	1    0    0    1   
 $EndComp
-Connection ~ 4300 4800
-Wire Wire Line
-	4300 5150 4300 5300
-Connection ~ 5150 5300
-Wire Wire Line
-	4650 4300 4650 4350
-Wire Wire Line
-	4650 4350 6500 4350
-Connection ~ 6500 4350
 $Comp
 L R-0402 R?
 U 1 1 54F53FE2
@@ -461,14 +345,6 @@ F 5 "RES SMD 1k 5% [0402]" H 5050 4450 60  0001 C CNN "BOM"
 	1    4300 3900
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 4200
-Wire Wire Line
-	4300 3300 4300 3800
-Wire Wire Line
-	5150 3300 5150 3600
-Wire Wire Line
-	4650 3300 4650 3400
-Connection ~ 4650 3300
 $Comp
 L MMBT3904 Q?
 U 1 1 54F53FF2
@@ -484,12 +360,6 @@ F 5 "Value" H 6450 3700 60  0001 C CNN "Manuf"
 	1    6450 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 6500 4000
-Wire Wire Line
-	6350 3700 6050 3700
-Wire Wire Line
-	6050 3700 6050 4000
-Connection ~ 6050 4000
 $Comp
 L BZX84 DZ?
 U 1 1 54F53FFC
@@ -503,39 +373,21 @@ F 3 "" H 7050 5000 60  0000 C CNN
 	1    7050 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7050 5100 7050 5400
-Connection ~ 6500 5300
-Wire Wire Line
-	7050 3500 7050 4900
-Wire Wire Line
-	7050 3500 6500 3500
-Wire Wire Line
-	6500 3500 6500 3600
-Wire Wire Line
-	4300 4450 7050 4450
-Connection ~ 7050 4450
-Connection ~ 4300 4450
-Connection ~ 4300 3300
-Text HLabel 10500 4600 2    60   Output ~ 0
+Text HLabel 11500 4600 2    60   Output ~ 0
 OUT+3V3
 $Comp
 L GND #PWR?
 U 1 1 54F543B2
 P 7050 5400
 AR Path="/54F1FAAC/54F4F7B6/54F543B2" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F543B2" Ref="#PWR0207"  Part="1" 
-F 0 "#PWR0207" H 7050 5400 30  0001 C CNN
+AR Path="/54F4F7B6/54F543B2" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 7050 5400 30  0001 C CNN
 F 1 "GND" H 7050 5330 30  0001 C CNN
 F 2 "" H 7050 5400 60  0000 C CNN
 F 3 "" H 7050 5400 60  0000 C CNN
 	1    7050 5400
 	1    0    0    -1  
 $EndComp
-Connection ~ 7050 5300
-Connection ~ 3400 900 
-Wire Wire Line
-	3400 3300 5150 3300
 $Comp
 L MBR0540 D?
 U 1 1 54F5FEE5
@@ -566,9 +418,6 @@ F 5 "SEMI GENERIC MBR0540" H 5900 5600 60  0001 C CNN "BOM"
 	1    5150 5050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6500 4600 10500 4600
-Connection ~ 6500 4600
 Text Label 5600 4450 0    50   ~ 0
 FDBK_3V3
 Text Label 5600 2050 0    50   ~ 0
@@ -605,9 +454,6 @@ F 6 "DIST DIGIKEY 493-3919-1-ND" H 3800 1900 60  0001 C CNN "BOM"
 	1    3800 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 1800 3800 900 
-Connection ~ 3800 900 
 $Comp
 L C-ALUM-660 C?
 U 1 1 54F6247C
@@ -624,12 +470,6 @@ F 6 "DIST DIGIKEY 493-3919-1-ND" H 3800 4400 60  0001 C CNN "BOM"
 	1    3800 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 4300 3800 3300
-Connection ~ 3800 3300
-Wire Wire Line
-	3800 4500 3800 5300
-Connection ~ 4300 5300
 $Comp
 L C-1206 C?
 U 1 1 54F63055
@@ -645,13 +485,6 @@ F 5 "CAP MLCC 1uF ≥X5R 16V 10% [1206]" H 7800 3200 60  0001 C CNN "BOM"
 	1    7000 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 2750 7000 2900
-Connection ~ 7000 2900
-Wire Wire Line
-	7000 2550 7000 2400
-Connection ~ 7000 2400
-Connection ~ 5150 900 
 $Comp
 L C-1206 C?
 U 1 1 54F649E8
@@ -667,28 +500,21 @@ F 5 "CAP MLCC 1uF ≥X5R 16V 10% [1206]" H 9700 1750 60  0001 C CNN "BOM"
 	1    8900 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8800 900  10600 900 
-Wire Wire Line
-	8900 900  8900 1100
 $Comp
 L GND #PWR?
 U 1 1 54F64B84
 P 8900 1400
 AR Path="/54F1FAAC/54F4F7B6/54F64B84" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F64B84" Ref="#PWR0208"  Part="1" 
-F 0 "#PWR0208" H 8900 1400 30  0001 C CNN
+AR Path="/54F4F7B6/54F64B84" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 8900 1400 30  0001 C CNN
 F 1 "GND" H 8900 1330 30  0001 C CNN
 F 2 "" H 8900 1400 60  0000 C CNN
 F 3 "" H 8900 1400 60  0000 C CNN
 	1    8900 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 1400 8900 1300
-Text HLabel 10600 900  2    60   Output ~ 0
+Text HLabel 11600 900  2    60   Output ~ 0
 OUT+9
-Connection ~ 8900 900 
 $Comp
 L L78MvvCDT U?
 U 1 1 54F66EE6
@@ -705,26 +531,19 @@ F 6 "DIST DIGIKEY 497-1203-1-ND" H 8900 1250 50  0001 C CNN "BOM"
 	1    8900 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 900  8200 1950
-Wire Wire Line
-	8200 1800 8550 1800
-Connection ~ 8200 900 
 $Comp
 L GND #PWR?
 U 1 1 54F676AE
 P 8900 2200
 AR Path="/54F1FAAC/54F4F7B6/54F676AE" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F676AE" Ref="#PWR0209"  Part="1" 
-F 0 "#PWR0209" H 8900 2200 30  0001 C CNN
+AR Path="/54F4F7B6/54F676AE" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 8900 2200 30  0001 C CNN
 F 1 "GND" H 8900 2130 30  0001 C CNN
 F 2 "" H 8900 2200 60  0000 C CNN
 F 3 "" H 8900 2200 60  0000 C CNN
 	1    8900 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 2200 8900 2100
 $Comp
 L C-1206 C?
 U 1 1 54F67816
@@ -740,22 +559,19 @@ F 5 "CAP MLCC 1uF ≥X5R 16V 10% [1206]" H 9000 2600 60  0001 C CNN "BOM"
 	1    8200 2050
 	1    0    0    -1  
 $EndComp
-Connection ~ 8200 1800
 $Comp
 L GND #PWR?
 U 1 1 54F67A48
 P 8200 2250
 AR Path="/54F1FAAC/54F4F7B6/54F67A48" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F67A48" Ref="#PWR0210"  Part="1" 
-F 0 "#PWR0210" H 8200 2250 30  0001 C CNN
+AR Path="/54F4F7B6/54F67A48" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 8200 2250 30  0001 C CNN
 F 1 "GND" H 8200 2180 30  0001 C CNN
 F 2 "" H 8200 2250 60  0000 C CNN
 F 3 "" H 8200 2250 60  0000 C CNN
 	1    8200 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 2250 8200 2150
 $Comp
 L C-0805 C?
 U 1 1 54F68631
@@ -771,25 +587,19 @@ F 5 "CAP MLCC 100n ≥X5R 16V 10% [0805]" H 10200 2600 60  0001 C CNN "BOM"
 	1    9400 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 1800 10600 1800
-Wire Wire Line
-	9400 1800 9400 1950
 $Comp
 L GND #PWR?
 U 1 1 54F687DB
 P 9400 2250
 AR Path="/54F1FAAC/54F4F7B6/54F687DB" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F687DB" Ref="#PWR0211"  Part="1" 
-F 0 "#PWR0211" H 9400 2250 30  0001 C CNN
+AR Path="/54F4F7B6/54F687DB" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 9400 2250 30  0001 C CNN
 F 1 "GND" H 9400 2180 30  0001 C CNN
 F 2 "" H 9400 2250 60  0000 C CNN
 F 3 "" H 9400 2250 60  0000 C CNN
 	1    9400 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9400 2250 9400 2150
 $Comp
 L C-0805 C?
 U 1 1 54F6901B
@@ -805,9 +615,6 @@ F 5 "CAP MLCC 10u ≥X5R 10V 10% [0805]" H 10700 2600 60  0001 C CNN "BOM"
 	1    9900 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 1800 9900 1950
-Connection ~ 9400 1800
 $Comp
 L R-0402 R?
 U 1 1 54F6951D
@@ -823,23 +630,19 @@ F 5 "RES SMD 2.2 5% [0402]" H 10650 2900 60  0001 C CNN "BOM"
 	1    9900 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 2150 9900 2250
 $Comp
 L GND #PWR?
 U 1 1 54F6971F
 P 9900 2500
 AR Path="/54F1FAAC/54F4F7B6/54F6971F" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F6971F" Ref="#PWR0212"  Part="1" 
-F 0 "#PWR0212" H 9900 2500 30  0001 C CNN
+AR Path="/54F4F7B6/54F6971F" Ref="#PWR0215"  Part="1" 
+F 0 "#PWR0215" H 9900 2500 30  0001 C CNN
 F 1 "GND" H 9900 2430 30  0001 C CNN
 F 2 "" H 9900 2500 60  0000 C CNN
 F 3 "" H 9900 2500 60  0000 C CNN
 	1    9900 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 2500 9900 2450
 $Comp
 L MC79MvvCDT U?
 U 1 1 54F6B5D9
@@ -856,11 +659,6 @@ F 6 "DIST DIGIKEY MC79M05CDTGOS-ND" H 8900 2850 50  0001 C CNN "BOM"
 	1    8900 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 2900 8200 3550
-Wire Wire Line
-	8200 3400 8550 3400
-Connection ~ 8200 2900
 $Comp
 L C-1206 C?
 U 1 1 54F6B713
@@ -876,22 +674,19 @@ F 5 "CAP MLCC 1uF ≥X5R 16V 10% [1206]" H 9000 4200 60  0001 C CNN "BOM"
 	1    8200 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 8200 3400
 $Comp
 L GND #PWR?
 U 1 1 54F6B841
 P 8200 3850
 AR Path="/54F1FAAC/54F4F7B6/54F6B841" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F6B841" Ref="#PWR0213"  Part="1" 
-F 0 "#PWR0213" H 8200 3850 30  0001 C CNN
+AR Path="/54F4F7B6/54F6B841" Ref="#PWR0216"  Part="1" 
+F 0 "#PWR0216" H 8200 3850 30  0001 C CNN
 F 1 "GND" H 8200 3780 30  0001 C CNN
 F 2 "" H 8200 3850 60  0000 C CNN
 F 3 "" H 8200 3850 60  0000 C CNN
 	1    8200 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 3850 8200 3750
 $Comp
 L C-0805 C?
 U 1 1 54F6B9E9
@@ -907,10 +702,6 @@ F 5 "CAP MLCC 100n ≥X5R 16V 10% [0805]" H 10200 4200 60  0001 C CNN "BOM"
 	1    9400 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 3400 10600 3400
-Wire Wire Line
-	9400 3400 9400 3550
 $Comp
 L C-0805 C?
 U 1 1 54F6BB25
@@ -926,9 +717,6 @@ F 5 "CAP MLCC 10u ≥X5R 10V 10% [0805]" H 10700 4200 60  0001 C CNN "BOM"
 	1    9900 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 3400 9900 3550
-Connection ~ 9400 3400
 $Comp
 L R-0402 R?
 U 1 1 54F6BDB1
@@ -944,59 +732,49 @@ F 5 "RES SMD 2.2 5% [0402]" H 10650 4500 60  0001 C CNN "BOM"
 	1    9900 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 3850 9900 3750
 $Comp
 L GND #PWR?
 U 1 1 54F6BEED
 P 9900 4150
 AR Path="/54F1FAAC/54F4F7B6/54F6BEED" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F6BEED" Ref="#PWR0214"  Part="1" 
-F 0 "#PWR0214" H 9900 4150 30  0001 C CNN
+AR Path="/54F4F7B6/54F6BEED" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 9900 4150 30  0001 C CNN
 F 1 "GND" H 9900 4080 30  0001 C CNN
 F 2 "" H 9900 4150 60  0000 C CNN
 F 3 "" H 9900 4150 60  0000 C CNN
 	1    9900 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 4150 9900 4050
 $Comp
 L GND #PWR?
 U 1 1 54F6BFFB
 P 9400 3850
 AR Path="/54F1FAAC/54F4F7B6/54F6BFFB" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F6BFFB" Ref="#PWR0215"  Part="1" 
-F 0 "#PWR0215" H 9400 3850 30  0001 C CNN
+AR Path="/54F4F7B6/54F6BFFB" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 9400 3850 30  0001 C CNN
 F 1 "GND" H 9400 3780 30  0001 C CNN
 F 2 "" H 9400 3850 60  0000 C CNN
 F 3 "" H 9400 3850 60  0000 C CNN
 	1    9400 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9400 3750 9400 3850
 $Comp
 L GND #PWR?
 U 1 1 54F6C162
 P 8900 3850
 AR Path="/54F1FAAC/54F4F7B6/54F6C162" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F6C162" Ref="#PWR0216"  Part="1" 
-F 0 "#PWR0216" H 8900 3850 30  0001 C CNN
+AR Path="/54F4F7B6/54F6C162" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 8900 3850 30  0001 C CNN
 F 1 "GND" H 8900 3780 30  0001 C CNN
 F 2 "" H 8900 3850 60  0000 C CNN
 F 3 "" H 8900 3850 60  0000 C CNN
 	1    8900 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 3850 8900 3700
-Text HLabel 10600 1800 2    60   Output ~ 0
+Text HLabel 11600 1800 2    60   Output ~ 0
 OUT+5
-Connection ~ 9900 1800
-Text HLabel 10600 3400 2    60   Output ~ 0
+Text HLabel 11600 3400 2    60   Output ~ 0
 OUT-5
-Connection ~ 9900 3400
 Text Label 5250 4000 0    50   ~ 0
 SW_3V3
 Text Label 5250 1600 0    50   ~ 0
@@ -1032,42 +810,32 @@ F 5 "CAP MLCC 1uF ≥X5R 16V 10% [1206]" H 9000 5800 60  0001 C CNN "BOM"
 	1    8200 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 4600 8200 5150
-Connection ~ 8200 4600
-Wire Wire Line
-	8200 5000 8600 5000
-Connection ~ 8200 5000
 $Comp
 L GND #PWR?
 U 1 1 54F708B6
 P 8200 5450
 AR Path="/54F1FAAC/54F4F7B6/54F708B6" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F708B6" Ref="#PWR0217"  Part="1" 
-F 0 "#PWR0217" H 8200 5450 30  0001 C CNN
+AR Path="/54F4F7B6/54F708B6" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 8200 5450 30  0001 C CNN
 F 1 "GND" H 8200 5380 30  0001 C CNN
 F 2 "" H 8200 5450 60  0000 C CNN
 F 3 "" H 8200 5450 60  0000 C CNN
 	1    8200 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 5450 8200 5350
 $Comp
 L GND #PWR?
 U 1 1 54F70A31
 P 8950 5450
 AR Path="/54F1FAAC/54F4F7B6/54F70A31" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F70A31" Ref="#PWR0218"  Part="1" 
-F 0 "#PWR0218" H 8950 5450 30  0001 C CNN
+AR Path="/54F4F7B6/54F70A31" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 8950 5450 30  0001 C CNN
 F 1 "GND" H 8950 5380 30  0001 C CNN
 F 2 "" H 8950 5450 60  0000 C CNN
 F 3 "" H 8950 5450 60  0000 C CNN
 	1    8950 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8950 5450 8950 5300
 $Comp
 L C-0805 C?
 U 1 1 54F7105C
@@ -1083,31 +851,21 @@ F 5 "CAP MLCC 22u ≥X5R 6V 10% [0805]" H 10300 5800 60  0001 C CNN "BOM"
 	1    9500 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9500 5000 9500 5150
-Wire Wire Line
-	9300 5000 10500 5000
-Wire Wire Line
-	9300 5100 9500 5100
-Connection ~ 9500 5100
 $Comp
 L GND #PWR?
 U 1 1 54F71350
 P 9500 5450
 AR Path="/54F1FAAC/54F4F7B6/54F71350" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F71350" Ref="#PWR0219"  Part="1" 
-F 0 "#PWR0219" H 9500 5450 30  0001 C CNN
+AR Path="/54F4F7B6/54F71350" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 9500 5450 30  0001 C CNN
 F 1 "GND" H 9500 5380 30  0001 C CNN
 F 2 "" H 9500 5450 60  0000 C CNN
 F 3 "" H 9500 5450 60  0000 C CNN
 	1    9500 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9500 5450 9500 5350
-Text HLabel 10500 5000 2    60   Output ~ 0
+Text HLabel 11500 5000 2    60   Output ~ 0
 OUT+1V8
-Connection ~ 9500 5000
 $Comp
 L BAT54C D?
 U 1 1 54F72E1C
@@ -1123,12 +881,6 @@ F 5 "SEMI GENERIC BAT54C" H 7900 6200 60  0001 C CNN "BOM"
 	1    7900 6200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7900 5750 7900 6000
-Wire Wire Line
-	7900 6400 7900 6500
-Wire Wire Line
-	7900 6500 3500 6500
 Text HLabel 3500 6500 0    50   Input ~ 0
 USB_IN
 $Comp
@@ -1144,70 +896,47 @@ F 3 "" H 8950 6250 60  0000 C CNN
 	1    8950 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 900  3400 3300
-Wire Wire Line
-	7900 5750 10300 5750
-Wire Wire Line
-	10300 5750 10300 1800
-Connection ~ 10300 1800
-Wire Wire Line
-	8000 6200 8600 6200
-Wire Wire Line
-	8200 6400 8200 6200
-Connection ~ 8200 6200
 $Comp
 L GND #PWR?
 U 1 1 54F777AE
 P 8200 6700
 AR Path="/54F1FAAC/54F4F7B6/54F777AE" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F777AE" Ref="#PWR0220"  Part="1" 
-F 0 "#PWR0220" H 8200 6700 30  0001 C CNN
+AR Path="/54F4F7B6/54F777AE" Ref="#PWR0223"  Part="1" 
+F 0 "#PWR0223" H 8200 6700 30  0001 C CNN
 F 1 "GND" H 8200 6630 30  0001 C CNN
 F 2 "" H 8200 6700 60  0000 C CNN
 F 3 "" H 8200 6700 60  0000 C CNN
 	1    8200 6700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 6600 8200 6700
 $Comp
 L GND #PWR?
 U 1 1 54F779B8
 P 8950 6700
 AR Path="/54F1FAAC/54F4F7B6/54F779B8" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F779B8" Ref="#PWR0221"  Part="1" 
-F 0 "#PWR0221" H 8950 6700 30  0001 C CNN
+AR Path="/54F4F7B6/54F779B8" Ref="#PWR0224"  Part="1" 
+F 0 "#PWR0224" H 8950 6700 30  0001 C CNN
 F 1 "GND" H 8950 6630 30  0001 C CNN
 F 2 "" H 8950 6700 60  0000 C CNN
 F 3 "" H 8950 6700 60  0000 C CNN
 	1    8950 6700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8950 6700 8950 6500
-Wire Wire Line
-	9300 6200 10500 6200
-Wire Wire Line
-	9500 6200 9500 6400
 $Comp
 L GND #PWR?
 U 1 1 54F78198
 P 9500 6700
 AR Path="/54F1FAAC/54F4F7B6/54F78198" Ref="#PWR?"  Part="1" 
-AR Path="/54F4F7B6/54F78198" Ref="#PWR0222"  Part="1" 
-F 0 "#PWR0222" H 9500 6700 30  0001 C CNN
+AR Path="/54F4F7B6/54F78198" Ref="#PWR0225"  Part="1" 
+F 0 "#PWR0225" H 9500 6700 30  0001 C CNN
 F 1 "GND" H 9500 6630 30  0001 C CNN
 F 2 "" H 9500 6700 60  0000 C CNN
 F 3 "" H 9500 6700 60  0000 C CNN
 	1    9500 6700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9500 6700 9500 6600
-Text HLabel 10500 6200 2    60   Output ~ 0
+Text HLabel 11500 6200 2    60   Output ~ 0
 OUT+3V3MCU
-Connection ~ 9500 6200
 $Comp
 L C-0805 C?
 U 1 1 54F7968E
@@ -1296,11 +1025,6 @@ F 4 "SEMI GENERIC PZT2907A" H 5100 1300 60  0001 C CNN "BOM"
 	1    5100 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 1400 5200 1450
-Wire Wire Line
-	5200 1450 5150 1450
-Connection ~ 5150 1450
 $Comp
 L PZT2907A Q18
 U 1 1 54F6372C
@@ -1313,11 +1037,6 @@ F 4 "SEMI GENERIC PZT2907A" H 5100 3700 60  0001 C CNN "BOM"
 	1    5100 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 3800 5200 3850
-Wire Wire Line
-	5200 3850 5150 3850
-Connection ~ 5150 3850
 $Comp
 L THERM R96
 U 1 1 54F8BDC0
@@ -1333,20 +1052,16 @@ F 6 "DIST DIGIKEY 507-1794-1-ND" H 8700 900 60  0001 C CNN "BOM"
 	0    -1   1    0   
 $EndComp
 $Comp
-L GND #PWR0223
+L GND #PWR0226
 U 1 1 54F66084
 P 3800 2150
-F 0 "#PWR0223" H 3800 2150 30  0001 C CNN
+F 0 "#PWR0226" H 3800 2150 30  0001 C CNN
 F 1 "GND" H 3800 2080 30  0001 C CNN
 F 2 "" H 3800 2150 60  0000 C CNN
 F 3 "" H 3800 2150 60  0000 C CNN
 	1    3800 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 2150 3800 2000
-Wire Wire Line
-	4300 2900 10600 2900
 Text Label 6050 1300 0    50   ~ 0
 ISEN_N9
 Text Label 6050 3700 0    50   ~ 0
@@ -1362,6 +1077,291 @@ F 3 "" H 10150 6100 50  0000 C CNN
 	1    10150 6100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4650 1200 4650 1400
+Wire Wire Line
+	4650 1300 5000 1300
+Connection ~ 4650 1300
+Wire Wire Line
+	5150 1400 5150 2550
+Wire Wire Line
+	5150 1600 5650 1600
+Connection ~ 5150 1600
+Wire Wire Line
+	4650 1700 4650 1600
+Wire Wire Line
+	5850 1600 6150 1600
+Wire Wire Line
+	6350 1600 6500 1600
+Wire Wire Line
+	6500 1400 6500 2550
+Wire Wire Line
+	5150 2900 5150 2750
+Wire Wire Line
+	6500 2900 6500 2750
+Wire Wire Line
+	4850 2400 5150 2400
+Connection ~ 5150 2400
+Wire Wire Line
+	4300 2400 4650 2400
+Wire Wire Line
+	4300 1600 4300 2550
+Wire Wire Line
+	4300 1800 4500 1800
+Connection ~ 4300 2400
+Wire Wire Line
+	4300 2750 4300 2900
+Connection ~ 5150 2900
+Wire Wire Line
+	4650 1900 4650 1950
+Wire Wire Line
+	4650 1950 6500 1950
+Connection ~ 6500 1950
+Connection ~ 4300 1800
+Wire Wire Line
+	4300 900  4300 1400
+Wire Wire Line
+	3300 900  8600 900 
+Wire Wire Line
+	5150 900  5150 1200
+Wire Wire Line
+	4650 900  4650 1000
+Connection ~ 4650 900 
+Connection ~ 6500 1600
+Wire Wire Line
+	6350 1300 6050 1300
+Wire Wire Line
+	6050 1300 6050 1600
+Connection ~ 6050 1600
+Wire Wire Line
+	7550 2900 7550 2700
+Connection ~ 6500 2900
+Wire Wire Line
+	7550 1100 7550 2500
+Wire Wire Line
+	7550 1100 6500 1100
+Wire Wire Line
+	6500 1100 6500 1200
+Wire Wire Line
+	4300 2050 7550 2050
+Connection ~ 7550 2050
+Connection ~ 4300 2050
+Wire Wire Line
+	6500 2400 7200 2400
+Connection ~ 6500 2400
+Connection ~ 7550 2900
+Connection ~ 4300 900 
+Wire Wire Line
+	4650 3600 4650 3800
+Wire Wire Line
+	4650 3700 5000 3700
+Connection ~ 4650 3700
+Wire Wire Line
+	5150 3800 5150 4950
+Wire Wire Line
+	5150 4000 5650 4000
+Connection ~ 5150 4000
+Wire Wire Line
+	4650 4100 4650 4000
+Wire Wire Line
+	5850 4000 6150 4000
+Wire Wire Line
+	6350 4000 6500 4000
+Wire Wire Line
+	6500 3800 6500 4900
+Wire Wire Line
+	5150 5300 5150 5150
+Wire Wire Line
+	3800 5300 7050 5300
+Wire Wire Line
+	6500 5300 6500 5100
+Wire Wire Line
+	4850 4800 5150 4800
+Connection ~ 5150 4800
+Wire Wire Line
+	4300 4800 4650 4800
+Wire Wire Line
+	4300 4000 4300 4950
+Wire Wire Line
+	4300 4200 4500 4200
+Connection ~ 4300 4800
+Wire Wire Line
+	4300 5150 4300 5300
+Connection ~ 5150 5300
+Wire Wire Line
+	4650 4300 4650 4350
+Wire Wire Line
+	4650 4350 6500 4350
+Connection ~ 6500 4350
+Connection ~ 4300 4200
+Wire Wire Line
+	4300 3300 4300 3800
+Wire Wire Line
+	5150 3300 5150 3600
+Wire Wire Line
+	4650 3300 4650 3400
+Connection ~ 4650 3300
+Connection ~ 6500 4000
+Wire Wire Line
+	6350 3700 6050 3700
+Wire Wire Line
+	6050 3700 6050 4000
+Connection ~ 6050 4000
+Wire Wire Line
+	7050 5100 7050 5400
+Connection ~ 6500 5300
+Wire Wire Line
+	7050 3500 7050 4900
+Wire Wire Line
+	7050 3500 6500 3500
+Wire Wire Line
+	6500 3500 6500 3600
+Wire Wire Line
+	4300 4450 7050 4450
+Connection ~ 7050 4450
+Connection ~ 4300 4450
+Connection ~ 4300 3300
+Connection ~ 7050 5300
+Connection ~ 3400 900 
+Wire Wire Line
+	3400 3300 5150 3300
+Wire Wire Line
+	6500 4600 11500 4600
+Connection ~ 6500 4600
+Wire Wire Line
+	3800 1800 3800 900 
+Connection ~ 3800 900 
+Wire Wire Line
+	3800 4300 3800 3300
+Connection ~ 3800 3300
+Wire Wire Line
+	3800 4500 3800 5300
+Connection ~ 4300 5300
+Wire Wire Line
+	7000 2900 7000 2750
+Connection ~ 7000 2900
+Wire Wire Line
+	7000 2550 7000 2400
+Connection ~ 7000 2400
+Connection ~ 5150 900 
+Wire Wire Line
+	8800 900  11600 900 
+Wire Wire Line
+	8900 900  8900 1100
+Wire Wire Line
+	8900 1400 8900 1300
+Connection ~ 8900 900 
+Wire Wire Line
+	8200 900  8200 1950
+Wire Wire Line
+	8200 1800 8550 1800
+Connection ~ 8200 900 
+Wire Wire Line
+	8900 2200 8900 2100
+Connection ~ 8200 1800
+Wire Wire Line
+	8200 2250 8200 2150
+Wire Wire Line
+	9250 1800 11600 1800
+Wire Wire Line
+	9400 1800 9400 1950
+Wire Wire Line
+	9400 2250 9400 2150
+Wire Wire Line
+	9900 1800 9900 1950
+Connection ~ 9400 1800
+Wire Wire Line
+	9900 2150 9900 2250
+Wire Wire Line
+	9900 2500 9900 2450
+Wire Wire Line
+	8200 2900 8200 3550
+Wire Wire Line
+	8200 3400 8550 3400
+Connection ~ 8200 2900
+Connection ~ 8200 3400
+Wire Wire Line
+	8200 3850 8200 3750
+Wire Wire Line
+	9250 3400 11600 3400
+Wire Wire Line
+	9400 3400 9400 3550
+Wire Wire Line
+	9900 3400 9900 3550
+Connection ~ 9400 3400
+Wire Wire Line
+	9900 3850 9900 3750
+Wire Wire Line
+	9900 4150 9900 4050
+Wire Wire Line
+	9400 3750 9400 3850
+Wire Wire Line
+	8900 3850 8900 3700
+Connection ~ 9900 1800
+Connection ~ 9900 3400
+Wire Wire Line
+	8200 4600 8200 5150
+Connection ~ 8200 4600
+Wire Wire Line
+	8200 5000 8600 5000
+Connection ~ 8200 5000
+Wire Wire Line
+	8200 5450 8200 5350
+Wire Wire Line
+	8950 5450 8950 5300
+Wire Wire Line
+	9500 5000 9500 5150
+Wire Wire Line
+	9300 5000 11500 5000
+Wire Wire Line
+	9300 5100 9500 5100
+Connection ~ 9500 5100
+Wire Wire Line
+	9500 5450 9500 5350
+Connection ~ 9500 5000
+Wire Wire Line
+	7900 5750 7900 6000
+Wire Wire Line
+	7900 6400 7900 6500
+Wire Wire Line
+	7900 6500 3500 6500
+Wire Wire Line
+	3400 900  3400 3300
+Wire Wire Line
+	7900 5750 10300 5750
+Wire Wire Line
+	10300 5750 10300 1800
+Connection ~ 10300 1800
+Wire Wire Line
+	8000 6200 8600 6200
+Wire Wire Line
+	8200 6400 8200 6200
+Connection ~ 8200 6200
+Wire Wire Line
+	8200 6600 8200 6700
+Wire Wire Line
+	8950 6700 8950 6500
+Wire Wire Line
+	9300 6200 11500 6200
+Wire Wire Line
+	9500 6200 9500 6400
+Wire Wire Line
+	9500 6700 9500 6600
+Connection ~ 9500 6200
+Wire Wire Line
+	5200 1400 5200 1450
+Wire Wire Line
+	5200 1450 5150 1450
+Connection ~ 5150 1450
+Wire Wire Line
+	5200 3800 5200 3850
+Wire Wire Line
+	5200 3850 5150 3850
+Connection ~ 5150 3850
+Wire Wire Line
+	3800 2150 3800 2000
+Wire Wire Line
+	4300 2900 11600 2900
 Wire Wire Line
 	10150 6100 10150 6200
 Connection ~ 10150 6200
