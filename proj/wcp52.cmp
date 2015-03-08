@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Sun 08 Mar 2015 03:04:40 PM EDT
+Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Sun 08 Mar 2015 04:17:00 PM EDT
 
 BeginCmp
 TimeStamp = /54F49966/54F4E7EE;
@@ -368,6 +368,13 @@ BeginCmp
 TimeStamp = /54F1FB16/54F288B1;
 Reference = C53;
 ValeurCmp = 1n;
+IdModule  = IPC7351-Nominal:CAPC1005X55;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAFD/54FD5C15;
+Reference = C54;
+ValeurCmp = DNP;
 IdModule  = IPC7351-Nominal:CAPC1005X55;
 EndCmp
 
@@ -1235,43 +1242,22 @@ EndCmp
 BeginCmp
 TimeStamp = /54F49966/54F4CB69;
 Reference = R2;
-ValeurCmp = 2k2;
+ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F49966/54F4BE43;
+TimeStamp = /54F49966/54FCCD93;
 Reference = R3;
 ValeurCmp = 10k;
-IdModule  = IPC7351-Nominal:RESC1005X40;
+IdModule  = IPC7351-Nominal:RESCAXE80P160X320X70-8;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F49966/54F4BF41;
+TimeStamp = /54F49966/54FE4EC0;
 Reference = R4;
-ValeurCmp = 20k;
-IdModule  = IPC7351-Nominal:RESC1005X40;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F49966/54F4C0EF;
-Reference = R5;
 ValeurCmp = 10k;
-IdModule  = IPC7351-Nominal:RESC1005X40;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F49966/54F4C318;
-Reference = R6;
-ValeurCmp = 31k6;
-IdModule  = IPC7351-Nominal:RESC1005X40;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F49966/54F4C299;
-Reference = R7;
-ValeurCmp = 10k;
-IdModule  = IPC7351-Nominal:RESC1005X40;
+IdModule  = IPC7351-Nominal:RESCAXE80P160X320X70-8;
 EndCmp
 
 BeginCmp
@@ -1327,6 +1313,13 @@ BeginCmp
 TimeStamp = /54F1FAEE/54F225AD;
 Reference = R15;
 ValeurCmp = 49R9;
+IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAD5/54FD1BAB;
+Reference = R16;
+ValeurCmp = 3R3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1431,14 +1424,14 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FAEE/54F2478F;
 Reference = R31;
-ValeurCmp = 2k2;
+ValeurCmp = 1k91;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAEE/54F25E6A;
 Reference = R32;
-ValeurCmp = 2k2;
+ValeurCmp = 1k91;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1459,7 +1452,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FAFD/54F2AFDF;
 Reference = R35;
-ValeurCmp = 1k;
+ValeurCmp = 1k6;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1473,35 +1466,35 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FAFD/54F28C65;
 Reference = R37;
-ValeurCmp = 1k;
+ValeurCmp = 10k;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAFD/54F28A07;
 Reference = R38;
-ValeurCmp = 220;
+ValeurCmp = 200;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAFD/54F28C19;
 Reference = R39;
-ValeurCmp = 220;
+ValeurCmp = 200;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAFD/54F28D7D;
 Reference = R40;
-ValeurCmp = 1k;
+ValeurCmp = 10k;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAFD/54F23A28;
 Reference = R41;
-ValeurCmp = 36;
+ValeurCmp = 30;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1515,7 +1508,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FAFD/54F238EB;
 Reference = R43;
-ValeurCmp = 180;
+ValeurCmp = 150;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1606,7 +1599,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9A4/54F327E4;
 Reference = R56;
-ValeurCmp = 1k;
+ValeurCmp = 750;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1620,7 +1613,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9A4/54F3293C;
 Reference = R58;
-ValeurCmp = 1k;
+ValeurCmp = 750;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1641,7 +1634,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9A4/54F32C56;
 Reference = R61;
-ValeurCmp = 1k;
+ValeurCmp = 750;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1655,14 +1648,14 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9A4/54F32C68;
 Reference = R63;
-ValeurCmp = 1k;
+ValeurCmp = 750;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9AC/54F35E96;
 Reference = R64;
-ValeurCmp = 1k;
+ValeurCmp = 1k6;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1676,14 +1669,14 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9AC/54F34BE3;
 Reference = R66;
-ValeurCmp = 220;
+ValeurCmp = 200;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9AC/54F34D1E;
 Reference = R67;
-ValeurCmp = 220;
+ValeurCmp = 200;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1767,7 +1760,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FB16/54F2F9C0/54F3B632;
 Reference = R79;
-ValeurCmp = 2k2;
+ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1823,28 +1816,21 @@ EndCmp
 BeginCmp
 TimeStamp = /54F1FAD5/54F6FE6E;
 Reference = R87;
-ValeurCmp = 27;
+ValeurCmp = 22;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAD5/54F6FDA7;
 Reference = R88;
-ValeurCmp = 27;
+ValeurCmp = 22;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F49966/54F7D8F0;
-Reference = R90;
-ValeurCmp = 10k;
-IdModule  = IPC7351-Nominal:RESC1005X40;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F49966/54F7D463;
-Reference = R91;
-ValeurCmp = 10k;
+TimeStamp = /54F1FAFD/54FD59C1;
+Reference = R89;
+ValeurCmp = DNP;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1886,42 +1872,42 @@ EndCmp
 BeginCmp
 TimeStamp = /54F4F7B6/54F6951D;
 Reference = R97;
-ValeurCmp = 2R2;
+ValeurCmp = 3R3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F4F7B6/54F6BDB1;
 Reference = R98;
-ValeurCmp = 2R2;
+ValeurCmp = 3R3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAC6/54F82924;
 Reference = R99;
-ValeurCmp = 4k7;
+ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAC6/54F830F2;
 Reference = R100;
-ValeurCmp = 4k7;
+ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAC6/54F83CBF;
 Reference = R101;
-ValeurCmp = 4k7;
+ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F1FAC6/54F86CAB;
 Reference = R102;
-ValeurCmp = 4k7;
+ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
 EndCmp
 
@@ -1965,6 +1951,13 @@ TimeStamp = /54FCBDC0;
 Reference = R108;
 ValeurCmp = 3k3;
 IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F49966/54FE1F63;
+Reference = R112;
+ValeurCmp = 10k;
+IdModule  = IPC7351-Nominal:RESCAXE80P160X320X70-8;
 EndCmp
 
 BeginCmp
