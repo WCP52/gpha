@@ -1125,4 +1125,8 @@ $EndComp
 Wire Wire Line
 	5500 5800 5500 5700
 Connection ~ 5500 5700
+Text HLabel 7700 2900 2    50   Output ~ 0
+ATTEN
+Wire Wire Line
+	7700 2900 7400 2900
 $EndSCHEMATC
