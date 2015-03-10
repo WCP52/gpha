@@ -82,7 +82,7 @@ $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 11 13
 Title ""
-Date ""
+Date "2015-03-10"
 Rev ""
 Comp ""
 Comment1 ""
@@ -159,11 +159,11 @@ F 3 "" V 5900 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 3950 6300 4500
+	6300 3800 6300 4500
 Wire Wire Line
 	6300 4100 6200 4100
 Wire Wire Line
-	6300 3200 6300 3450
+	6300 3200 6300 3600
 $Comp
 L MMBT3906 Q1
 U 1 1 54F4B9D8
@@ -245,10 +245,10 @@ F 3 "" H 4100 5800 60  0000 C CNN
 $EndComp
 Connection ~ 4100 5100
 $Comp
-L GND #PWR0191
+L GND #PWR0194
 U 1 1 54F4C586
 P 4100 6050
-F 0 "#PWR0191" H 4100 6050 30  0001 C CNN
+F 0 "#PWR0194" H 4100 6050 30  0001 C CNN
 F 1 "GND" H 4100 5980 30  0001 C CNN
 F 2 "" H 4100 6050 60  0000 C CNN
 F 3 "" H 4100 6050 60  0000 C CNN
@@ -256,10 +256,10 @@ F 3 "" H 4100 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0192
+L GND #PWR0195
 U 1 1 54F4C600
 P 5200 6000
-F 0 "#PWR0192" H 5200 6000 30  0001 C CNN
+F 0 "#PWR0195" H 5200 6000 30  0001 C CNN
 F 1 "GND" H 5200 5930 30  0001 C CNN
 F 2 "" H 5200 6000 60  0000 C CNN
 F 3 "" H 5200 6000 60  0000 C CNN
@@ -269,10 +269,10 @@ $EndComp
 Wire Wire Line
 	5200 6000 5200 5900
 $Comp
-L GND #PWR0193
+L GND #PWR0196
 U 1 1 54F4C674
 P 5500 6000
-F 0 "#PWR0193" H 5500 6000 30  0001 C CNN
+F 0 "#PWR0196" H 5500 6000 30  0001 C CNN
 F 1 "GND" H 5500 5930 30  0001 C CNN
 F 2 "" H 5500 6000 60  0000 C CNN
 F 3 "" H 5500 6000 60  0000 C CNN
@@ -344,10 +344,10 @@ Wire Wire Line
 	7550 2900 7550 4100
 Connection ~ 7300 2900
 $Comp
-L GND #PWR0194
+L GND #PWR0197
 U 1 1 54F4D4FF
 P 7550 4400
-F 0 "#PWR0194" H 7550 4400 30  0001 C CNN
+F 0 "#PWR0197" H 7550 4400 30  0001 C CNN
 F 1 "GND" H 7550 4330 30  0001 C CNN
 F 2 "" H 7550 4400 60  0000 C CNN
 F 3 "" H 7550 4400 60  0000 C CNN
@@ -357,10 +357,10 @@ $EndComp
 Wire Wire Line
 	7550 4400 7550 4300
 $Comp
-L GND #PWR0195
+L GND #PWR0198
 U 1 1 54F4D5D3
 P 7300 4700
-F 0 "#PWR0195" H 7300 4700 30  0001 C CNN
+F 0 "#PWR0198" H 7300 4700 30  0001 C CNN
 F 1 "GND" H 7300 4630 30  0001 C CNN
 F 2 "" H 7300 4700 60  0000 C CNN
 F 3 "" H 7300 4700 60  0000 C CNN
@@ -375,10 +375,10 @@ Wire Wire Line
 	5850 5600 5500 5600
 Connection ~ 5500 5600
 $Comp
-L GND #PWR0196
+L GND #PWR0199
 U 1 1 54F4E909
 P 5850 6000
-F 0 "#PWR0196" H 5850 6000 30  0001 C CNN
+F 0 "#PWR0199" H 5850 6000 30  0001 C CNN
 F 1 "GND" H 5850 5930 30  0001 C CNN
 F 2 "" H 5850 6000 60  0000 C CNN
 F 3 "" H 5850 6000 60  0000 C CNN
@@ -389,16 +389,6 @@ Wire Wire Line
 	5850 6000 5850 5900
 Text Notes 8800 5100 0    60   ~ 0
 This is a power input, conditioning and protection circuit for\nthe entire instrument.\n\n- While the circuit is powered down, @R11 discharges the gates of\n@Q2 and @Q3, switching them off.\n- At startup, @C3 holds the gates to the sources, keeping them\nswitched off.\n- @Q2's substrate diode allows current to flow through despite the FET being switched off, but @Q3's diode faces the other direction and does not.\n- @U1 provides a fixed 2.5V reference voltage for comparison.\n- @U2B compares the input voltage to the reference; when it exceeds a threshold, the output falls to 0V and begins to pull the gates of @Q2 and @Q3 toward ground.\n- When @Q3 enters the linear region, it along with @C4 forms a circuit known as a Miller integrator, integrating the step from @U2B to produce a voltage ramp. This smooth ramp limits the inrush current charging any input capacitors downstream.\n- Once @Q3 falls into the saturation region, @Q2 is also in this region, bypassing its substrate diode and providing a low-impedance path for current.\n- If the input voltage exceeds a higher threshold, @U2A switches on. This saturates @Q1, yanking the gates of @Q2 and @Q3 back up towards their sources and switching them off.\n- When this happens, @D1 pulls @U2A's reference voltage down, latching the circuit in this position. It will not turn back on until power has been removed from the entire instrument.
-Wire Wire Line
-	6300 3650 6300 3750
-Wire Notes Line
-	5950 3400 6500 3400
-Wire Notes Line
-	6500 3400 6500 3700
-Wire Notes Line
-	6500 3700 5950 3700
-Wire Notes Line
-	5950 3700 5950 3400
 $Comp
 L IRLML6402 Q2
 U 1 1 54F5AD81
@@ -427,19 +417,6 @@ F 6 "SEMI AOS AOD417" H 10550 2700 60  0001 C CNN "BOM"
 	1    9800 2150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L LED-0603 DS1
-U 1 1 54F5C5AB
-P 6300 3550
-F 0 "DS1" H 6100 3600 50  0000 C CNN
-F 1 "OVLO" H 6100 3500 50  0000 C CNN
-F 2 "smd-semi:LED-0603" H 6300 3550 50  0001 C CNN
-F 3 "" H 6300 3550 60  0000 C CNN
-F 4 "Value" H 6300 3550 60  0001 C CNN "Manuf"
-F 5 "SEMI GENERIC LED RED [0603]" H 7150 4100 60  0001 C CNN "BOM"
-	1    6300 3550
-	1    0    0    -1  
-$EndComp
 Text HLabel 11100 2100 2    50   Output ~ 0
 OUT
 Text HLabel 3050 2100 0    50   Input ~ 0
@@ -462,10 +439,10 @@ $EndComp
 Wire Wire Line
 	5000 5300 5000 6200
 $Comp
-L GND #PWR0197
+L GND #PWR0200
 U 1 1 54F7D2C2
 P 5000 6450
-F 0 "#PWR0197" H 5000 6450 30  0001 C CNN
+F 0 "#PWR0200" H 5000 6450 30  0001 C CNN
 F 1 "GND" H 5000 6380 30  0001 C CNN
 F 2 "" H 5000 6450 60  0000 C CNN
 F 3 "" H 5000 6450 60  0000 C CNN
@@ -479,10 +456,10 @@ Wire Wire Line
 Wire Wire Line
 	4750 6300 4850 6300
 $Comp
-L GND #PWR0198
+L GND #PWR0201
 U 1 1 54F7D63A
 P 4750 7000
-F 0 "#PWR0198" H 4750 7000 30  0001 C CNN
+F 0 "#PWR0201" H 4750 7000 30  0001 C CNN
 F 1 "GND" H 4750 6930 30  0001 C CNN
 F 2 "" H 4750 7000 60  0000 C CNN
 F 3 "" H 4750 7000 60  0000 C CNN
@@ -501,12 +478,12 @@ Wire Wire Line
 Wire Wire Line
 	6300 2900 7550 2900
 Wire Wire Line
-	5000 5300 5200 5300
+	5200 5300 5000 5300
 Connection ~ 5200 5300
 Wire Wire Line
 	4100 5950 4100 6050
 Wire Wire Line
-	4100 5650 4100 3000
+	4100 3000 4100 5650
 Wire Wire Line
 	5200 3100 5200 3000
 Wire Wire Line
@@ -726,14 +703,14 @@ $EndComp
 $Comp
 L R-0603 R9
 U 1 1 54FFBA26
-P 6300 3850
-F 0 "R9" H 6450 3900 50  0000 C CNN
-F 1 "3k3" H 6450 3800 50  0000 C CNN
-F 2 "IPC7351-Nominal:RESC1608X50" H 6300 3850 50  0001 C CNN
-F 3 "" H 6300 3900 60  0000 C CNN
-F 4 "Value" H 6300 3850 60  0001 C CNN "Manuf"
-F 5 "RES SMD 3.3k 5% [0603]" H 7050 4400 60  0001 C CNN "BOM"
-	1    6300 3850
+P 6300 3700
+F 0 "R9" H 6450 3750 50  0000 C CNN
+F 1 "3k3" H 6450 3650 50  0000 C CNN
+F 2 "IPC7351-Nominal:RESC1608X50" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3750 60  0000 C CNN
+F 4 "Value" H 6300 3700 60  0001 C CNN "Manuf"
+F 5 "RES SMD 3.3k 5% [0603]" H 7050 4250 60  0001 C CNN "BOM"
+	1    6300 3700
 	1    0    0    -1  
 $EndComp
 $Comp
