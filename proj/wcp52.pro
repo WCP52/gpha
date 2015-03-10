@@ -1,4 +1,4 @@
-update=Tue 03 Mar 2015 11:41:49 PM EST
+update=Tue 10 Mar 2015 03:07:50 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,19 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=50
 [eeschema]
 version=1
 LibDir=../../kicad-schlib/library
@@ -118,3 +105,16 @@ LibName73=vishay_semi
 LibName74=Xilinx
 LibName75=pasv-xtal
 LibName76=conn-te
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=renders
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=50
