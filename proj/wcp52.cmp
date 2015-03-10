@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Mon 09 Mar 2015 10:22:07 PM EDT
+Cmp-Mod V01 Created by Cvpcb (2015-03-09 BZR 5487)-product   date = Tue 10 Mar 2015 12:11:31 PM EDT
 
 BeginCmp
 TimeStamp = /54F49966/54FFDFEA;
@@ -813,9 +813,9 @@ IdModule  = smd-semi:SOT-23;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F49966/54F5C5AB;
+TimeStamp = /54F1FAC6/54FF34D0;
 Reference = DS1;
-ValeurCmp = OVLO;
+ValeurCmp = GP0;
 IdModule  = smd-semi:LED-0603;
 EndCmp
 
@@ -823,6 +823,27 @@ BeginCmp
 TimeStamp = /54FCBFE5;
 Reference = DS2;
 ValeurCmp = PWR;
+IdModule  = smd-semi:LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54FF39A2;
+Reference = DS3;
+ValeurCmp = GP1;
+IdModule  = smd-semi:LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54FF3A5D;
+Reference = DS4;
+ValeurCmp = GP2;
+IdModule  = smd-semi:LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54FF3A6E;
+Reference = DS5;
+ValeurCmp = GP3;
 IdModule  = smd-semi:LED-0603;
 EndCmp
 
@@ -964,27 +985,6 @@ TimeStamp = /54F9C82B;
 Reference = J7;
 ValeurCmp = AUX;
 IdModule  = conn-100mil:CONN-100MIL-F-1x6;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F4F7B6/54FE79EE;
-Reference = J8;
-ValeurCmp = CONN-100MIL-F-1x12;
-IdModule  = conn-100mil:CONN-100MIL-F-1x12;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F4F7B6/54FE7F1F;
-Reference = J9;
-ValeurCmp = CONN-100MIL-M-2x4;
-IdModule  = conn-100mil:CONN-100MIL-M-2x4;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F4F7B6/54FE7FD8;
-Reference = J10;
-ValeurCmp = CONN-100MIL-M-2x4;
-IdModule  = conn-100mil:CONN-100MIL-M-2x4;
 EndCmp
 
 BeginCmp
@@ -1856,6 +1856,20 @@ IdModule  = IPC7351-Nominal:RESC1608X50;
 EndCmp
 
 BeginCmp
+TimeStamp = /54F1FAC6/54FF3777;
+Reference = R93;
+ValeurCmp = 3k3;
+IdModule  = IPC7351-Nominal:RESC1608X50;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54FF39AA;
+Reference = R94;
+ValeurCmp = 3k3;
+IdModule  = IPC7351-Nominal:RESC1608X50;
+EndCmp
+
+BeginCmp
 TimeStamp = /54F4F7B6/54F53FA5;
 Reference = R95;
 ValeurCmp = 1R;
@@ -1867,6 +1881,20 @@ TimeStamp = /54F4F7B6/54F8BDC0;
 Reference = R96;
 ValeurCmp = 100mA;
 IdModule  = IPC7351-Nominal:RESC3216X60;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54FF3A65;
+Reference = R97;
+ValeurCmp = 3k3;
+IdModule  = IPC7351-Nominal:RESC1608X50;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FAC6/54FF3A76;
+Reference = R98;
+ValeurCmp = 3k3;
+IdModule  = IPC7351-Nominal:RESC1608X50;
 EndCmp
 
 BeginCmp
@@ -1895,6 +1923,13 @@ TimeStamp = /54F49966/54FE1F63;
 Reference = R112;
 ValeurCmp = 10k;
 IdModule  = IPC7351-Nominal:RESCAXE80P160X320X70-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FEAEB3;
+Reference = TP1;
+ValeurCmp = GND;
+IdModule  = conn-test:TEST-SMD-SMALL;
 EndCmp
 
 BeginCmp
@@ -2010,7 +2045,7 @@ IdModule  = conn-test:TEST-SMD-SMALL;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F1FAC6/54FD1458;
+TimeStamp = /54FEA20F;
 Reference = TP18;
 ValeurCmp = GND;
 IdModule  = conn-test:TEST-SMD-SMALL;
@@ -2020,6 +2055,13 @@ BeginCmp
 TimeStamp = /54F1FAC6/54FD5BDD;
 Reference = TP19;
 ValeurCmp = LEVEL;
+IdModule  = conn-test:TEST-SMD-SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FEB06A;
+Reference = TP20;
+ValeurCmp = GND;
 IdModule  = conn-test:TEST-SMD-SMALL;
 EndCmp
 
