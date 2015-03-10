@@ -11,7 +11,7 @@ function render {
     GVP=$(mktemp --suffix=.gvp)
     GERBDIR=$(readlink -m gerbers)
     PROJECTPATH=$GERBDIR/$PROJECT
-    sed -e "s%{PROJECT}%$PROJECTPATH%g" -e "s%{GERBDIR}%$GERBDIR%g" "${GVPROOT}/gvp2L/$2.gvp" > $GVP
+    sed -e "s%{PROJECT}%$PROJECTPATH%g" -e "s%{GERBDIR}%$GERBDIR%g" "${GVPROOT}/gvp4L/$2.gvp" > $GVP
     
     gerbv -x png -p "$GVP" -D600 -a >/dev/null
 

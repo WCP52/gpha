@@ -9,7 +9,7 @@ PROJNAME=$1
 # Valid: ITEAD, SEEED, OSHPARK
 # Or set the values manually after the conditional
 
-MANUF=OSHPARK
+MANUF=ELECROW
 
 # Manufacturers' file extensions
 exts_oshpark=(
@@ -44,10 +44,7 @@ case "$MANUF" in
     OSHPARK)
         exts=($exts_oshpark)
         ;;
-    ITEAD)
-        exts=($exts_itead_seeed)
-        ;;
-    SEEED)
+    ITEAD | SEEED | ELECROW)
         exts=($exts_itead_seeed)
         ;;
 esac
@@ -58,4 +55,3 @@ for pat ext in $exts; do
     if [ -z $file ]; then continue; fi
     mv -vf $file "${TARGET}/${PROJNAME}$ext"
 done
-

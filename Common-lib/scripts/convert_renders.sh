@@ -20,6 +20,14 @@ pushd renders
                 PAPERSIZE="11x17"
                 echo "11x17 $i"
                 ;;
+            596x842)
+                PAPERSIZE="a4"
+                echo "A4 $i"
+                ;;
+            611x1008 | 612x1008)
+                PAPERSIZE="legal"
+                echo "legal $i"
+                ;;
             612x792)
                 PAPERSIZE="letter"
                 echo "letter $i"
@@ -31,7 +39,7 @@ pushd renders
         esac
 
         ps2pdf -sPAPERSIZE=$PAPERSIZE "$i" "${i%.ps}.pdf"
-        convert -alpha Off +antialias -density 400 -resize 25% "${i%.ps}.pdf" "page_${i%.ps}.png"
+        #convert -alpha Off +antialias -density 400 -resize 25% "${i%.ps}.pdf" "page_${i%.ps}.png"
     done
 
     pdfunite $PROJECT.pdf *.pdf~$PROJECT.pdf~schematic.pdf(N) schematic.pdf
