@@ -1,4 +1,4 @@
-update=Tue 10 Mar 2015 03:07:50 PM EDT
+update=Wed 11 Mar 2015 04:30:18 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -108,7 +108,7 @@ LibName76=conn-te
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=renders
+PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

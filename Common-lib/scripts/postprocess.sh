@@ -10,4 +10,4 @@ setopt extended_glob
 
 ./scripts/convert_schematic.sh $PROJECT
 
-convert renders/3d-full.png -resize 480x480 renders/3d-small.png
+convert RENDERS/3d-full.png -resize 480x480 RENDERS/3d-small.png

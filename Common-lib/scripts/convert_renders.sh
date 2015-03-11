@@ -4,15 +4,15 @@ setopt extended_glob
 PROJECT=$1
 
 # Only render if either the schematic or the script itself has changed
-if [[ renders/schematic.pdf -nt renders/${PROJECT}.ps ]] &&
-    [[ renders/schematic.pdf -nt $0:A ]] &&
-    [[ renders/3d-small.png -nt renders/3d-full.png ]]; then
+if [[ RENDERS/schematic.pdf -nt ${PROJECT}/${PROJECT}.ps ]] &&
+    [[ RENDERS/schematic.pdf -nt $0:A ]] &&
+    [[ RENDERS/3d-small.png -nt RENDERS/3d-full.png ]]; then
     echo "Skipping render conversion"
     exit 0
 fi
 
-pushd renders
-    for i in *.ps; do
+pushd RENDERS
+    for i in ../${PROJECT}/*.ps; do
         PSSIZE="$(identify -format "%[fx:w]x%[fx:h]" "$i")"
 
         case "$PSSIZE" in
@@ -38,8 +38,7 @@ pushd renders
                 ;;
         esac
 
-        ps2pdf -sPAPERSIZE=$PAPERSIZE "$i" "${i%.ps}.pdf"
-        #convert -alpha Off +antialias -density 400 -resize 25% "${i%.ps}.pdf" "page_${i%.ps}.png"
+        ps2pdf -sPAPERSIZE=$PAPERSIZE "$i" "$(basename ${i%.ps}).pdf"
     done
 
     pdfunite $PROJECT.pdf *.pdf~$PROJECT.pdf~schematic.pdf(N) schematic.pdf

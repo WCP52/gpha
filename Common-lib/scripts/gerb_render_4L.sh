@@ -9,7 +9,7 @@ function render {
     # git inside scripts. Substitute paths into a tempfile
     
     GVP=$(mktemp --suffix=.gvp)
-    GERBDIR=$(readlink -m gerbers)
+    GERBDIR=$(readlink -m GERBERS)
     PROJECTPATH=$GERBDIR/$PROJECT
     sed -e "s%{PROJECT}%$PROJECTPATH%g" -e "s%{GERBDIR}%$GERBDIR%g" "${GVPROOT}/gvp4L/$2.gvp" > $GVP
     
@@ -18,13 +18,13 @@ function render {
     rm $GVP
 
     optipng output.png -quiet
-    mv output.png "renders/$2.png"
-    convert "renders/$2.png" -scale '12%' "renders/$2_small.png"
+    mv output.png "RENDERS/$2.png"
+    convert "RENDERS/$2.png" -scale '12%' "RENDERS/$2_small.png"
 }
 
 # Only render if either the Gerbers or the script itself has changed
-if [[ renders/render_2l.png -nt gerbers/${PROJECT}-F_Cu.gtl ]] &&
-    [[ renders/render_2l.png -nt $0:A ]]; then
+if [[ RENDERS/render_2l.png -nt GERBERS/${PROJECT}-F_Cu.gtl ]] &&
+    [[ RENDERS/render_2l.png -nt $0:A ]]; then
     echo "Skipping Gerbers"
     exit 0
 fi

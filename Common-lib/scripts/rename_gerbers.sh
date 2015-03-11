@@ -1,9 +1,10 @@
 #!/usr/bin/zsh
 
 setopt extended_glob
+set -e
 
 # Target must be a target directory or .
-TARGET=gerbers
+TARGET=GERBERS
 PROJNAME=$1
 
 # Valid: ITEAD, SEEED, OSHPARK
@@ -51,7 +52,12 @@ esac
 
 mkdir -p "${TARGET}"
 for pat ext in $exts; do
-    file=( $~pat(N) )
-    if [ -z $file ]; then continue; fi
-    mv -vf $file "${TARGET}/${PROJNAME}$ext"
+    pat_in_dir="$PROJNAME/$pat"
+    file=( $~pat_in_dir(N) )
+    if [ -z "$file" ]; then continue; fi
+    mv -vf "$file" "${TARGET}/${PROJNAME}$ext"
 done
+
+if [ -f $PROJNAME/*.gtp ]; then
+    mv -vf $PROJNAME/*.gtp STENCIL.GTP
+fi
