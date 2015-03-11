@@ -673,4 +673,11 @@ Connection ~ 5050 3450
 Wire Wire Line
 	5050 3200 5050 3100
 Connection ~ 5050 3100
+Wire Wire Line
+	4600 3100 4600 2000
+Wire Wire Line
+	4600 2000 4900 2000
+Connection ~ 4600 3100
+Text HLabel 4900 2000 2    50   Output ~ 0
+VBUS
 $EndSCHEMATC
