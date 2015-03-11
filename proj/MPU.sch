@@ -882,10 +882,10 @@ Text HLabel 2700 4200 0    50   Output ~ 0
 SYNTH_SYNCIO
 Wire Wire Line
 	2700 4200 3800 4200
-Text HLabel 6000 3900 0    50   Output ~ 0
+Text HLabel 5050 3900 0    50   Output ~ 0
 CHANSEL
 Wire Wire Line
-	6200 3900 6000 3900
+	5050 3900 6200 3900
 Text HLabel 2700 5100 0    50   Output ~ 0
 SYNTH_SCK
 Wire Wire Line
@@ -1008,10 +1008,10 @@ $EndComp
 Wire Wire Line
 	5500 5800 5500 5700
 Connection ~ 5500 5700
-Text HLabel 7700 2900 2    50   Output ~ 0
+Text HLabel 7800 2900 2    50   Output ~ 0
 ATTEN
 Wire Wire Line
-	7700 2900 7400 2900
+	7800 2900 7400 2900
 Text HLabel 7700 3200 2    50   Output ~ 0
 PWRDN
 Wire Wire Line
@@ -1423,4 +1423,32 @@ F 5 "RES SMD 200 1% [0603]" H 8550 5650 60  0001 C CNN "BOM"
 $EndComp
 Wire Wire Line
 	7700 5100 7400 5100
+$Comp
+L TESTPOINT TP21
+U 1 1 54FFB918
+P 5400 3850
+F 0 "TP21" H 5400 4200 50  0000 C CNN
+F 1 "CHANSEL" H 5400 4100 50  0000 C CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 5400 3850 50  0001 C CNN
+F 3 "" H 5400 3850 50  0000 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3850 5400 3900
+Connection ~ 5400 3900
+$Comp
+L TESTPOINT TP22
+U 1 1 54FFC7A3
+P 7700 2800
+F 0 "TP22" H 7700 3150 50  0000 C CNN
+F 1 "ATTEN" H 7700 3050 50  0000 C CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 7700 2800 50  0001 C CNN
+F 3 "" H 7700 2800 50  0000 C CNN
+	1    7700 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2800 7700 2900
+Connection ~ 7700 2900
 $EndSCHEMATC
