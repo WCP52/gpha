@@ -1,5 +1,5 @@
 M48
-;DRILL file {kicad (2015-03-11 BZR 5506)-product} date Wed 11 Mar 2015 07:17:49 PM EDT
+;DRILL file {kicad (2015-03-11 BZR 5506)-product} date Wed 11 Mar 2015 07:23:40 PM EDT
 ;FORMAT={-:-/ absolute / inch / decimal}
 FMAT,2
 INCH,TZ
