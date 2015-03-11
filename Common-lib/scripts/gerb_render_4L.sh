@@ -3,14 +3,21 @@
 PROJECT=$1
 
 function render {
+
+    GVP=$(mktemp --suffix=.gvp)
+    GERBDIR=$(readlink -m GERBERS)
+    PROJECTPATH=$GERBDIR/$PROJECT
+
+    if [[ "RENDERS/$2.png" -nt "GERBERS/$PROJECT.GML" ]]; then
+        echo "Skipping $1"
+        return
+    fi
+
     echo "Rendering $1..."
 
     # Gerbv likes absolute paths, which are a pain in the ass to keep around in
     # git inside scripts. Substitute paths into a tempfile
     
-    GVP=$(mktemp --suffix=.gvp)
-    GERBDIR=$(readlink -m GERBERS)
-    PROJECTPATH=$GERBDIR/$PROJECT
     sed -e "s%{PROJECT}%$PROJECTPATH%g" -e "s%{GERBDIR}%$GERBDIR%g" "${GVPROOT}/gvp4L/$2.gvp" > $GVP
     
     gerbv -x png -p "$GVP" -D600 -a >/dev/null

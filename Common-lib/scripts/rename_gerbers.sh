@@ -58,6 +58,6 @@ for pat ext in $exts; do
     mv -vf "$file" "${TARGET}/${PROJNAME}$ext"
 done
 
-if [ -f $PROJNAME/*.gtp ]; then
+if (){ setopt localoptions nonomatch nocshnullglob; [ -f $PROJNAME/*.gtp ] }; then
     mv -vf $PROJNAME/*.gtp STENCIL.GTP
 fi

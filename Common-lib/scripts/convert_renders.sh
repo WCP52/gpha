@@ -7,7 +7,12 @@ PROJECT=$1
 if [[ RENDERS/schematic.pdf -nt ${PROJECT}/${PROJECT}.ps ]] &&
     [[ RENDERS/schematic.pdf -nt $0:A ]] &&
     [[ RENDERS/3d-small.png -nt RENDERS/3d-full.png ]]; then
-    echo "Skipping render conversion"
+    echo "Skipping render conversion - already converted these"
+    exit 0
+fi
+
+if (){ setopt localoptions nonomatch nocshnullglob; ! [ -f $PROJECT/*.ps([1]) ] }; then
+    echo "Skipping render conversion - nothing to render"
     exit 0
 fi
 
