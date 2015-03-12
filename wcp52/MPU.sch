@@ -1355,12 +1355,8 @@ Text Label 4950 4800 0    50   ~ 0
 MOSI
 Text Label 4950 4900 0    50   ~ 0
 SCK
-Text Label 4950 5000 0    50   ~ 0
-LED2
 Text Label 4950 5500 0    50   ~ 0
 ADIN
-Text Label 4950 5900 0    50   ~ 0
-LED0
 Text Label 4950 6100 0    50   ~ 0
 SYNTH_SDIO1
 Text Label 4950 6600 0    50   ~ 0
@@ -1413,10 +1409,6 @@ Text Label 7400 2900 2    50   ~ 0
 #CTS
 Text Label 7400 2700 2    50   ~ 0
 ATTEN
-Text Label 7400 2000 2    50   ~ 0
-LED3
-Text Label 7400 1900 2    50   ~ 0
-LED1
 Text Label 8400 1200 0    50   ~ 0
 MOSI
 $Comp
@@ -1814,7 +1806,7 @@ Wire Wire Line
 	1550 900  1550 950 
 Connection ~ 1550 950 
 Wire Wire Line
-	1850 1500 1850 1900
+	1850 1900 1850 1500
 Wire Wire Line
 	1100 1900 2400 1900
 Wire Wire Line
@@ -1963,11 +1955,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 4900 5600 4900
 Wire Wire Line
-	4950 5000 5600 5000
-Wire Wire Line
 	4950 5500 5600 5500
-Wire Wire Line
-	4950 5900 5600 5900
 Wire Wire Line
 	4950 6100 5600 6100
 Wire Wire Line
@@ -2016,10 +2004,6 @@ Wire Wire Line
 	7400 2900 6800 2900
 Wire Wire Line
 	7400 2700 6800 2700
-Wire Wire Line
-	7400 2000 6800 2000
-Wire Wire Line
-	7400 1900 6800 1900
 Wire Wire Line
 	8400 1200 8900 1200
 Wire Wire Line
