@@ -1506,6 +1506,72 @@ Text Label 9600 2900 2    50   ~ 0
 SER_TO_MPU
 Text Label 10250 3600 0    50   ~ 0
 SER_FROM_MCU
+Text Label 9600 3100 2    50   ~ 0
+#SLEEP
+Text Label 9600 3200 2    50   ~ 0
+#RTS
+Text Label 10250 3300 0    50   ~ 0
+I2C_SDA
+Text Label 10250 3400 0    50   ~ 0
+I2C_SCL
+Text Label 10250 2900 0    50   ~ 0
+CHANSEL
+$Comp
+L +3.3SB #PWR0260
+U 1 1 5507A705
+P 10950 2450
+F 0 "#PWR0260" H 10950 2500 30  0001 C CNN
+F 1 "+3.3SB" H 10950 2550 50  0000 C CNN
+F 2 "" H 10950 2450 60  0000 C CNN
+F 3 "" H 10950 2450 60  0000 C CNN
+	1    10950 2450
+	1    0    0    -1  
+$EndComp
+Text Label 10250 4400 0    50   ~ 0
+SYNTH_PWRDN
+Text Label 9600 3300 2    50   ~ 0
+ADIN
+Text Label 10250 3100 0    50   ~ 0
+PWRDN
+Text Label 10250 2800 0    50   ~ 0
+ATTEN
+Text Label 10250 3700 0    50   ~ 0
+#CTS
+Text Label 1100 5600 0    50   ~ 0
+VCORE
+$Comp
+L JUMPER-SOLDER JP2
+U 1 1 550B520B
+P 1500 2250
+F 0 "JP2" V 1450 2450 50  0000 C CNN
+F 1 "#RST" V 1550 2450 50  0000 C CNN
+F 2 "" H 1500 2250 60  0000 C CNN
+F 3 "" H 1500 2250 60  0000 C CNN
+	1    1500 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR0261
+U 1 1 550B5671
+P 1500 2400
+F 0 "#PWR0261" H 1500 2400 30  0001 C CNN
+F 1 "GND" H 1500 2330 30  0001 C CNN
+F 2 "" H 1500 2400 60  0000 C CNN
+F 3 "" H 1500 2400 60  0000 C CNN
+	1    1500 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2400 1500
+Text Label 4300 2300 2    50   ~ 0
+#SLEEP
+Text Label 4950 4600 0    50   ~ 0
+LED0
+Text Label 4300 1900 2    50   ~ 0
+LED0
+Text Label 7400 1500 2    50   ~ 0
+LED1
+Text Label 4300 2200 2    50   ~ 0
+LED1
 Wire Wire Line
 	1100 5600 2750 5600
 Wire Wire Line
@@ -2020,90 +2086,58 @@ Wire Wire Line
 	12100 3900 12100 2700
 Wire Wire Line
 	11900 4000 11900 2700
-Text Label 9600 3100 2    50   ~ 0
-#SLEEP
 Wire Wire Line
 	8350 3200 9600 3200
-Text Label 9600 3200 2    50   ~ 0
-#RTS
-Text Label 10250 3300 0    50   ~ 0
-I2C_SDA
-Text Label 10250 3400 0    50   ~ 0
-I2C_SCL
 Wire Wire Line
 	10250 2900 12450 2900
 Wire Wire Line
 	11400 2700 11400 2900
-Text Label 10250 2900 0    50   ~ 0
-CHANSEL
 Wire Wire Line
 	10250 4100 11600 4100
 Connection ~ 10950 4100
-$Comp
-L +3.3SB #PWR0260
-U 1 1 5507A705
-P 10950 2450
-F 0 "#PWR0260" H 10950 2500 30  0001 C CNN
-F 1 "+3.3SB" H 10950 2550 50  0000 C CNN
-F 2 "" H 10950 2450 60  0000 C CNN
-F 3 "" H 10950 2450 60  0000 C CNN
-	1    10950 2450
-	1    0    0    -1  
-$EndComp
-Text Label 10250 4400 0    50   ~ 0
-SYNTH_PWRDN
 Wire Wire Line
 	12450 4400 10250 4400
-Text Label 9600 3300 2    50   ~ 0
-ADIN
-Text Label 10250 3100 0    50   ~ 0
-PWRDN
 Wire Wire Line
 	10250 3100 12450 3100
 Wire Wire Line
 	10250 2800 12450 2800
-Text Label 10250 2800 0    50   ~ 0
-ATTEN
 Wire Wire Line
 	10250 3700 12450 3700
-Text Label 10250 3700 0    50   ~ 0
-#CTS
 Wire Wire Line
 	11700 2700 11700 2800
 Connection ~ 11700 2800
-Text Label 1100 5600 0    50   ~ 0
-VCORE
 Connection ~ 11400 2900
-$Comp
-L JUMPER-SOLDER JP2
-U 1 1 550B520B
-P 1500 2250
-F 0 "JP2" V 1450 2450 50  0000 C CNN
-F 1 "#RST" V 1550 2450 50  0000 C CNN
-F 2 "" H 1500 2250 60  0000 C CNN
-F 3 "" H 1500 2250 60  0000 C CNN
-	1    1500 2250
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	1500 2150 1500 1900
 Connection ~ 1500 1900
-$Comp
-L GND #PWR0261
-U 1 1 550B5671
-P 1500 2400
-F 0 "#PWR0261" H 1500 2400 30  0001 C CNN
-F 1 "GND" H 1500 2330 30  0001 C CNN
-F 2 "" H 1500 2400 60  0000 C CNN
-F 3 "" H 1500 2400 60  0000 C CNN
-	1    1500 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1500 2400 1500 2350
-NoConn ~ 2400 1500
-Text Label 4300 2300 2    50   ~ 0
-#SLEEP
 Wire Wire Line
 	4300 2300 3600 2300
+Wire Wire Line
+	7400 1500 6800 1500
+Wire Wire Line
+	4300 2200 3600 2200
+Wire Wire Line
+	4950 4600 5600 4600
+Wire Wire Line
+	4300 1900 3600 1900
+Text Label 4300 3000 2    50   ~ 0
+LED3
+Wire Wire Line
+	4300 3000 3600 3000
+Text Label 7400 2600 2    50   ~ 0
+LED3
+Wire Wire Line
+	7400 2600 6800 2600
+Text Label 4300 3100 2    50   ~ 0
+LED2
+Wire Wire Line
+	4300 3100 3600 3100
+Text Label 7400 2500 2    50   ~ 0
+LED2
+Wire Wire Line
+	7400 2500 6800 2500
+Text Notes 850  7300 0    50   ~ 0
+@U18 is an alternative microcontroller. Not used in first revision.\nNote duplicate connections. These are used to facilitate routing. Make\nsure to set all duplicate connections as inputs.
 $EndSCHEMATC
