@@ -2101,4 +2101,9 @@ F 3 "" H 1500 2400 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	1500 2400 1500 2350
+NoConn ~ 2400 1500
+Text Label 4300 2300 2    50   ~ 0
+#SLEEP
+Wire Wire Line
+	4300 2300 3600 2300
 $EndSCHEMATC
