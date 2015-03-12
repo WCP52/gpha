@@ -197,7 +197,7 @@ Text HLabel 1350 4700 0    60   Input ~ 0
 SCLK
 Text HLabel 1350 4800 0    60   Input ~ 0
 SDI
-Text HLabel 1350 4900 0    60   Input ~ 0
+Text HLabel 1350 4900 0    60   BiDi ~ 0
 SDIO_1
 Text HLabel 1350 5000 0    60   Output ~ 0
 SDO
