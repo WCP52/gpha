@@ -21,3 +21,4 @@ clean:
 	rm -f ${PROJECT}/*.bak
 	rm -f ${PROJECT}/*.bck
 	rm -f ${PROJECT}/*.kicad_pcb-bak
+	rm -f ${PROJECT}/*.old
