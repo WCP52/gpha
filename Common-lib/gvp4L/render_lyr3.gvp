@@ -5,7 +5,7 @@
 (define-layer! 7 (cons 'filename "{PROJECT}.GL3")(cons 'visible #t)(cons 'color #(50115 0 31042)))
 (define-layer! 6 (cons 'filename "{PROJECT}.GTL")(cons 'visible #f)(cons 'color #(53713 6939 8099)))
 (define-layer! 5 (cons 'filename "{PROJECT}.GTS")(cons 'visible #f)(cons 'color #(41995 41995 41995)))
-;(define-layer! 4 (cons 'filename "{PROJECT}-NPTH.TXT")(cons 'visible #t)(cons 'color #(65535 65535 65535))(cons 'attribs (list (list 'autodetect 'Boolean 1) (list 'zero_supression 'Enum 1) (list 'units 'Enum 1) (list 'digits 'Integer 3))))
+(define-layer! 4 (cons 'filename "{PROJECT}-NPTH.TXT")(cons 'visible #t)(cons 'color #(65535 65535 65535))(cons 'attribs (list (list 'autodetect 'Boolean 1) (list 'zero_supression 'Enum 1) (list 'units 'Enum 1) (list 'digits 'Integer 3))))
 (define-layer! 3 (cons 'filename "{PROJECT}.TXT")(cons 'visible #t)(cons 'color #(0 0 0))(cons 'attribs (list (list 'autodetect 'Boolean 1) (list 'zero_supression 'Enum 1) (list 'units 'Enum 1) (list 'digits 'Integer 3))))
 (define-layer! 2 (cons 'filename "{PROJECT}.GBO")(cons 'visible #f)(cons 'color #(65535 65535 65535)))
 (define-layer! 1 (cons 'filename "{PROJECT}.GTO")(cons 'visible #f)(cons 'color #(65535 65535 65535)))

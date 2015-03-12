@@ -18,7 +18,16 @@ function render {
     # Gerbv likes absolute paths, which are a pain in the ass to keep around in
     # git inside scripts. Substitute paths into a tempfile
     
-    sed -e "s%{PROJECT}%$PROJECTPATH%g" -e "s%{GERBDIR}%$GERBDIR%g" "${GVPROOT}/gvp4L/$2.gvp" > $GVP
+    if [ -f "GERBERS/$PROJECT-NPTH.TXT" ] || [ -f "GERBERS/$PROJECT-NPTH.XLN" ] || [ -f "GERBERS/$PROJECT-NPTH.DRL" ]; then
+        # Render with NPTH
+        sed -e "s%{PROJECT}%$PROJECTPATH%g" \
+            -e "s%{GERBDIR}%$GERBDIR%g" "${GVPROOT}/gvp4L/$2.gvp" > $GVP
+    else
+        # gerbv doesn't like missing files. Comment out the NPTH line
+        sed -e "s%{PROJECT}%$PROJECTPATH%g" \
+            -e "s%{GERBDIR}%$GERBDIR%g" \
+            -e "/NPTH/ s/^/;/" "${GVPROOT}/gvp4L/$2.gvp" > $GVP
+    fi
     
     gerbv -x png -p "$GVP" -D600 -a >/dev/null
 
