@@ -91,16 +91,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L THERM R1
+L THERM R81
 U 1 1 54F49F27
 P 3500 2100
-F 0 "R1" V 3300 2100 50  0000 C CNN
+F 0 "R81" V 3300 2100 50  0000 C CNN
 F 1 "350mA" V 3400 2100 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC3216X60" H 3500 2150 60  0001 C CNN
 F 3 "" H 3500 2150 60  0000 C CNN
 F 4 "0ZCJ0035AF2E" H 3500 2100 60  0001 C CNN "PN"
 F 5 "BelFuse" H 3500 2100 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 507-1801-1-ND" H 3500 2100 60  0001 C CNN "BOM"
+F 7 "R1" H 3500 2100 50  0001 C CNN "OldReference"
 	1    3500 2100
 	0    -1   1    0   
 $EndComp
@@ -123,15 +124,16 @@ Wire Wire Line
 	8700 2200 8700 2100
 Connection ~ 8700 2100
 $Comp
-L C-0805 C3
+L C-0805 C74
 U 1 1 54F4A8A4
 P 9100 2300
-F 0 "C3" H 9350 2350 50  0000 C CNN
+F 0 "C74" H 9350 2350 50  0000 C CNN
 F 1 "100n" H 9350 2250 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC2012X70" H 9100 2300 50  0001 C CNN
 F 3 "" H 9090 2275 60  0000 C CNN
 F 4 "Value" H 9100 2300 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 100n ≥X5R 16V 10% [0805]" H 9900 2850 60  0001 C CNN "BOM"
+F 6 "C3" H 9100 2300 50  0001 C CNN "OldReference"
 	1    9100 2300
 	1    0    0    -1  
 $EndComp
@@ -148,13 +150,14 @@ Wire Wire Line
 	10400 2500 10400 2100
 Connection ~ 10400 2100
 $Comp
-L LM393M U2
+L LM393M U12
 U 2 1 54F4B46C
 P 5900 4100
-F 0 "U2" H 5900 4450 50  0000 C CNN
+F 0 "U12" H 5900 4450 50  0000 C CNN
 F 1 "LM393M" H 5900 4350 50  0000 C CNN
 F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 5900 4100 50  0001 C CNN
 F 3 "" V 5900 4250 60  0000 C CNN
+F 4 "U2" H 5900 4100 50  0001 C CNN "OldReference"
 	2    5900 4100
 	1    0    0    -1  
 $EndComp
@@ -165,15 +168,16 @@ Wire Wire Line
 Wire Wire Line
 	6300 3200 6300 3600
 $Comp
-L MMBT3906 Q1
+L MMBT3906 Q12
 U 1 1 54F4B9D8
 P 6600 3300
-F 0 "Q1" H 6900 3350 50  0000 C CNN
+F 0 "Q12" H 6900 3350 50  0000 C CNN
 F 1 "MMBT3906" H 6900 3250 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 6600 3300 50  0001 C CNN
 F 3 "" H 6600 3300 60  0000 C CNN
 F 4 "Value" H 6600 3300 60  0001 C CNN "Manuf"
 F 5 "SEMI GENERIC MMBT3906" H 7400 3850 60  0001 C CNN "BOM"
+F 6 "Q1" H 6600 3300 50  0001 C CNN "OldReference"
 	1    6600 3300
 	1    0    0    -1  
 $EndComp
@@ -181,13 +185,14 @@ Wire Wire Line
 	6300 3300 6500 3300
 Connection ~ 6300 3300
 $Comp
-L LM393M U2
+L LM393M U12
 U 1 1 54F4BA7F
 P 5900 5000
-F 0 "U2" H 5900 5350 50  0000 C CNN
+F 0 "U12" H 5900 5350 50  0000 C CNN
 F 1 "LM393M" H 5900 5250 50  0000 C CNN
 F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 5900 5000 50  0001 C CNN
 F 3 "" V 5900 5150 60  0000 C CNN
+F 4 "U2" H 5900 5000 50  0001 C CNN "OldReference"
 	1    5900 5000
 	1    0    0    -1  
 $EndComp
@@ -202,13 +207,14 @@ Wire Wire Line
 Wire Wire Line
 	6300 2600 6300 3000
 $Comp
-L MMBD4148 D1
+L MMBD4148 D5
 U 1 1 54F4BCC5
 P 5950 4500
-F 0 "D1" V 6150 4500 50  0000 C CNN
+F 0 "D5" V 6150 4500 50  0000 C CNN
 F 1 "MMBD4148" V 6050 4500 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 5950 4500 50  0001 C CNN
 F 3 "" H 5950 4500 60  0000 C CNN
+F 4 "D1" H 5950 4500 50  0001 C CNN "OldReference"
 	1    5950 4500
 	0    -1   -1   0   
 $EndComp
@@ -233,13 +239,14 @@ Wire Wire Line
 Wire Wire Line
 	4100 4200 4850 4200
 $Comp
-L TL431AIDBZ U1
+L TL431AIDBZ U11
 U 1 1 54F4C468
 P 4100 5800
-F 0 "U1" H 4500 5850 50  0000 C CNN
+F 0 "U11" H 4500 5850 50  0000 C CNN
 F 1 "TL431AIDBZ" H 4500 5750 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 4100 5800 50  0001 C CNN
 F 3 "" H 4100 5800 60  0000 C CNN
+F 4 "U1" H 4100 5800 50  0001 C CNN "OldReference"
 	1    4100 5800
 	1    0    0    -1  
 $EndComp
@@ -252,6 +259,7 @@ F 0 "#PWR0206" H 4100 6050 30  0001 C CNN
 F 1 "GND" H 4100 5980 30  0001 C CNN
 F 2 "" H 4100 6050 60  0000 C CNN
 F 3 "" H 4100 6050 60  0000 C CNN
+F 4 "#PWR0206" H 4100 6050 50  0001 C CNN "OldReference"
 	1    4100 6050
 	1    0    0    -1  
 $EndComp
@@ -263,6 +271,7 @@ F 0 "#PWR0207" H 5200 6000 30  0001 C CNN
 F 1 "GND" H 5200 5930 30  0001 C CNN
 F 2 "" H 5200 6000 60  0000 C CNN
 F 3 "" H 5200 6000 60  0000 C CNN
+F 4 "#PWR0207" H 5200 6000 50  0001 C CNN "OldReference"
 	1    5200 6000
 	1    0    0    -1  
 $EndComp
@@ -276,6 +285,7 @@ F 0 "#PWR0208" H 5500 6000 30  0001 C CNN
 F 1 "GND" H 5500 5930 30  0001 C CNN
 F 2 "" H 5500 6000 60  0000 C CNN
 F 3 "" H 5500 6000 60  0000 C CNN
+F 4 "#PWR0208" H 5500 6000 50  0001 C CNN "OldReference"
 	1    5500 6000
 	1    0    0    -1  
 $EndComp
@@ -299,13 +309,14 @@ Connection ~ 5500 2100
 Connection ~ 6650 5000
 Connection ~ 8400 2500
 $Comp
-L MMBD4148 D2
+L MMBD4148 D6
 U 1 1 54F4CFA1
 P 6300 2500
-F 0 "D2" H 6600 2550 50  0000 C CNN
+F 0 "D6" H 6600 2550 50  0000 C CNN
 F 1 "MMBD4148" H 6600 2450 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 6300 2500 50  0001 C CNN
 F 3 "" H 6300 2500 60  0000 C CNN
+F 4 "D2" H 6300 2500 50  0001 C CNN "OldReference"
 	1    6300 2500
 	1    0    0    -1  
 $EndComp
@@ -314,13 +325,14 @@ Wire Wire Line
 Connection ~ 6300 2100
 Connection ~ 6300 2900
 $Comp
-L LM393M U2
+L LM393M U12
 U 3 1 54F4D19B
 P 7300 4200
-F 0 "U2" H 7100 4500 50  0000 C CNN
+F 0 "U12" H 7100 4500 50  0000 C CNN
 F 1 "LM393M" H 7300 4450 50  0001 C CNN
 F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 7300 4200 50  0001 C CNN
 F 3 "" V 7300 4350 60  0000 C CNN
+F 4 "U2" H 7300 4200 50  0001 C CNN "OldReference"
 	3    7300 4200
 	1    0    0    -1  
 $EndComp
@@ -328,15 +340,16 @@ Wire Wire Line
 	7300 2900 7300 3800
 Connection ~ 6650 2900
 $Comp
-L C-0805 C2
+L C-0805 C73
 U 1 1 54F4D453
 P 7550 4200
-F 0 "C2" H 7800 4250 50  0000 C CNN
+F 0 "C73" H 7800 4250 50  0000 C CNN
 F 1 "100n" H 7800 4150 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC2012X70" H 7550 4200 50  0001 C CNN
 F 3 "" H 7540 4175 60  0000 C CNN
 F 4 "Value" H 7550 4200 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 100n ≥X5R 16V 10% [0805]" H 8350 4750 60  0001 C CNN "BOM"
+F 6 "C2" H 7550 4200 50  0001 C CNN "OldReference"
 	1    7550 4200
 	1    0    0    -1  
 $EndComp
@@ -351,6 +364,7 @@ F 0 "#PWR0209" H 7550 4400 30  0001 C CNN
 F 1 "GND" H 7550 4330 30  0001 C CNN
 F 2 "" H 7550 4400 60  0000 C CNN
 F 3 "" H 7550 4400 60  0000 C CNN
+F 4 "#PWR0209" H 7550 4400 50  0001 C CNN "OldReference"
 	1    7550 4400
 	1    0    0    -1  
 $EndComp
@@ -364,6 +378,7 @@ F 0 "#PWR0210" H 7300 4700 30  0001 C CNN
 F 1 "GND" H 7300 4630 30  0001 C CNN
 F 2 "" H 7300 4700 60  0000 C CNN
 F 3 "" H 7300 4700 60  0000 C CNN
+F 4 "#PWR0210" H 7300 4700 50  0001 C CNN "OldReference"
 	1    7300 4700
 	1    0    0    -1  
 $EndComp
@@ -382,38 +397,41 @@ F 0 "#PWR0211" H 5850 6000 30  0001 C CNN
 F 1 "GND" H 5850 5930 30  0001 C CNN
 F 2 "" H 5850 6000 60  0000 C CNN
 F 3 "" H 5850 6000 60  0000 C CNN
+F 4 "#PWR0211" H 5850 6000 50  0001 C CNN "OldReference"
 	1    5850 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5850 6000 5850 5900
 Text Notes 8800 5100 0    60   ~ 0
-This is a power input, conditioning and protection circuit for\nthe entire instrument.\n\n- While the circuit is powered down, @R11 discharges the gates of @Q2 and\n    @Q3, switching them off.\n- At startup, @C3 holds the gates to the sources, keeping them switched off.\n- @Q2's substrate diode allows current to flow through despite the FET being\n    switched off, but @Q3's diode faces the other direction and does not.\n- @U1 provides a fixed 2.5V reference voltage for comparison.\n- @U2B compares the input voltage to the reference; when it exceeds a\n    threshold, the output falls to 0V and begins to pull the gates of @Q2\n    and @Q3 toward ground.\n- When @Q3 enters the linear region, it along with @C4 forms a circuit\n    known as a Miller integrator, integrating the step from @U2B to produce\n    a voltage ramp. This smooth ramp limits the inrush current charging any\n    input capacitors downstream.\n- Once @Q3 falls into the saturation region, @Q2 is also in this region,\n    bypassing its substrate diode and providing a low-impedance path for current.\n- If the input voltage exceeds a higher threshold, @U2A switches on. This\n    saturates @Q1, yanking the gates of @Q2 and @Q3 back up towards\n    their sources and switching them off.\n- When this happens, @D1 pulls @U2A's reference voltage down,\n    latching the circuit in this position. It will not turn back on until power\n    has been removed from the entire instrument.
+This is a power input, conditioning and protection circuit for\nthe entire instrument.\n\n- While the circuit is powered down, @R88 discharges the gates of @Q13 and\n    @Q14, switching them off.\n- At startup, @C74 holds the gates to the sources, keeping them switched off.\n- @Q13's substrate diode allows current to flow through despite the FET being\n    switched off, but @Q14's diode faces the other direction and does not.\n- @U11 provides a fixed 2.5V reference voltage for comparison.\n- @U2B compares the input voltage to the reference; when it exceeds a\n    threshold, the output falls to 0V and begins to pull the gates of @Q13\n    and @Q14 toward ground.\n- When @Q14 enters the linear region, it along with @C75 forms a circuit\n    known as a Miller integrator, integrating the step from @U2B to produce\n    a voltage ramp. This smooth ramp limits the inrush current charging any\n    input capacitors downstream.\n- Once @Q14 falls into the saturation region, @Q13 is also in this region,\n    bypassing its substrate diode and providing a low-impedance path for current.\n- If the input voltage exceeds a higher threshold, @U2A switches on. This\n    saturates @Q12, yanking the gates of @Q13 and @Q14 back up towards\n    their sources and switching them off.\n- When this happens, @D5 pulls @U2A's reference voltage down,\n    latching the circuit in this position. It will not turn back on until power\n    has been removed from the entire instrument.
 $Comp
-L IRLML6402 Q2
+L IRLML6402 Q13
 U 1 1 54F5AD81
 P 8400 2150
-F 0 "Q2" V 8650 2150 50  0000 C CNN
+F 0 "Q13" V 8650 2150 50  0000 C CNN
 F 1 "IRLML6402" V 8550 2150 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 8600 2100 60  0001 C CNN
 F 3 "" H 8700 2200 60  0000 C CNN
 F 4 "IRLML6402TRPBF" H 8800 2300 60  0001 C CNN "PN"
 F 5 "IRF" H 8400 2150 100 0001 C CNN "Manuf"
 F 6 "SEMI IRF IRLML6402" H 9200 2700 60  0001 C CNN "BOM"
+F 7 "Q2" H 8400 2150 50  0001 C CNN "OldReference"
 	1    8400 2150
 	0    1    -1   0   
 $EndComp
 $Comp
-L AOD417 Q3
+L AOD417 Q14
 U 1 1 54F5B784
 P 9800 2150
-F 0 "Q3" V 10050 2150 50  0000 C CNN
+F 0 "Q14" V 10050 2150 50  0000 C CNN
 F 1 "AOD417" V 9950 2150 50  0000 C CNN
 F 2 "smd-semi:TO-252" H 9950 2100 50  0001 C CNN
 F 3 "" H 10050 2200 60  0000 C CNN
 F 4 "AOD417" H 10150 2300 60  0001 C CNN "PN"
 F 5 "AOS" H 9800 2150 50  0001 C CNN "Manuf"
 F 6 "SEMI AOS AOD417" H 10550 2700 60  0001 C CNN "BOM"
+F 7 "Q3" H 9800 2150 50  0001 C CNN "OldReference"
 	1    9800 2150
 	0    -1   -1   0   
 $EndComp
@@ -424,15 +442,16 @@ IN
 Wire Wire Line
 	3050 2100 3400 2100
 $Comp
-L MMBT3904 Q14
+L MMBT3904 Q11
 U 1 1 54F7D19E
 P 4950 6300
-F 0 "Q14" H 5100 6300 50  0000 C CNN
+F 0 "Q11" H 5100 6300 50  0000 C CNN
 F 1 "MMBT3904" H 5250 6250 50  0001 C CNN
 F 2 "smd-semi:SOT-23" H 4950 6300 50  0001 C CNN
 F 3 "" H 4950 6300 60  0000 C CNN
 F 4 "SEMI GENERIC MMBT3904" H 5750 6850 60  0001 C CNN "BOM"
 F 5 "Value" H 4950 6300 60  0001 C CNN "Manuf"
+F 6 "Q14" H 4950 6300 50  0001 C CNN "OldReference"
 	1    4950 6300
 	1    0    0    -1  
 $EndComp
@@ -446,6 +465,7 @@ F 0 "#PWR0212" H 5000 6450 30  0001 C CNN
 F 1 "GND" H 5000 6380 30  0001 C CNN
 F 2 "" H 5000 6450 60  0000 C CNN
 F 3 "" H 5000 6450 60  0000 C CNN
+F 4 "#PWR0212" H 5000 6450 50  0001 C CNN "OldReference"
 	1    5000 6450
 	1    0    0    -1  
 $EndComp
@@ -463,6 +483,7 @@ F 0 "#PWR0213" H 4750 7000 30  0001 C CNN
 F 1 "GND" H 4750 6930 30  0001 C CNN
 F 2 "" H 4750 7000 60  0000 C CNN
 F 3 "" H 4750 7000 60  0000 C CNN
+F 4 "#PWR0213" H 4750 7000 50  0001 C CNN "OldReference"
 	1    4750 7000
 	1    0    0    -1  
 $EndComp
@@ -495,234 +516,251 @@ Wire Wire Line
 Wire Wire Line
 	5500 3600 5500 5700
 $Comp
-L RESPACK-4X0603-CONV R112
+L RESPACK-4X0603-CONV R84
 U 1 1 54FE1F63
 P 5200 2900
-F 0 "R112" H 5350 2950 50  0000 C CNN
+F 0 "R84" H 5350 2950 50  0000 C CNN
 F 1 "10k" H 5350 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5200 2900 50  0001 C CNN
 F 3 "" H 5200 2950 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5200 2900 60  0001 C CNN "PN"
 F 5 "Yageo" H 5200 2900 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5200 2900 60  0001 C CNN "BOM"
+F 7 "R112" H 5200 2900 50  0001 C CNN "OldReference"
 	1    5200 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R112
+L RESPACK-4X0603-CONV R84
 U 2 1 54FE36AB
 P 5200 3200
-F 0 "R112" H 5350 3250 50  0000 C CNN
+F 0 "R84" H 5350 3250 50  0000 C CNN
 F 1 "10k" H 5350 3150 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5200 3200 50  0001 C CNN
 F 3 "" H 5200 3250 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5200 3200 60  0001 C CNN "PN"
 F 5 "Yageo" H 5200 3200 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5200 3200 60  0001 C CNN "BOM"
+F 7 "R112" H 5200 3200 50  0001 C CNN "OldReference"
 	2    5200 3200
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R112
+L RESPACK-4X0603-CONV R84
 U 3 1 54FE38DE
 P 5500 2900
-F 0 "R112" H 5650 2950 50  0000 C CNN
+F 0 "R84" H 5650 2950 50  0000 C CNN
 F 1 "10k" H 5650 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5500 2900 50  0001 C CNN
 F 3 "" H 5500 2950 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5500 2900 60  0001 C CNN "PN"
 F 5 "Yageo" H 5500 2900 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5500 2900 60  0001 C CNN "BOM"
+F 7 "R112" H 5500 2900 50  0001 C CNN "OldReference"
 	3    5500 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R112
+L RESPACK-4X0603-CONV R84
 U 4 1 54FE3942
 P 5500 3200
-F 0 "R112" H 5650 3250 50  0000 C CNN
+F 0 "R84" H 5650 3250 50  0000 C CNN
 F 1 "10k" H 5650 3150 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5500 3200 50  0001 C CNN
 F 3 "" H 5500 3250 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5500 3200 60  0001 C CNN "PN"
 F 5 "Yageo" H 5500 3200 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5500 3200 60  0001 C CNN "BOM"
+F 7 "R112" H 5500 3200 50  0001 C CNN "OldReference"
 	4    5500 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R4
+L RESPACK-4X0603-CONV R85
 U 4 1 54FE4EC0
 P 5500 3500
-F 0 "R4" H 5650 3550 50  0000 C CNN
+F 0 "R85" H 5650 3550 50  0000 C CNN
 F 1 "10k" H 5650 3450 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5500 3500 50  0001 C CNN
 F 3 "" H 5500 3550 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5500 3500 60  0001 C CNN "PN"
 F 5 "Yageo" H 5500 3500 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5500 3500 60  0001 C CNN "BOM"
+F 7 "R4" H 5500 3500 50  0001 C CNN "OldReference"
 	4    5500 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R4
+L RESPACK-4X0603-CONV R85
 U 3 1 54FE4F2A
 P 5500 5800
-F 0 "R4" H 5650 5750 50  0000 C CNN
+F 0 "R85" H 5650 5750 50  0000 C CNN
 F 1 "10k" H 5650 5850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5500 5800 50  0001 C CNN
 F 3 "" H 5500 5850 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5500 5800 60  0001 C CNN "PN"
 F 5 "Yageo" H 5500 5800 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5500 5800 60  0001 C CNN "BOM"
+F 7 "R4" H 5500 5800 50  0001 C CNN "OldReference"
 	3    5500 5800
 	1    0    0    1   
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R4
+L RESPACK-4X0603-CONV R85
 U 1 1 54FE5173
 P 5200 5800
-F 0 "R4" H 5350 5850 50  0000 C CNN
+F 0 "R85" H 5350 5850 50  0000 C CNN
 F 1 "10k" H 5350 5750 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 5200 5800 50  0001 C CNN
 F 3 "" H 5200 5850 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 5200 5800 60  0001 C CNN "PN"
 F 5 "Yageo" H 5200 5800 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 5200 5800 60  0001 C CNN "BOM"
+F 7 "R4" H 5200 5800 50  0001 C CNN "OldReference"
 	1    5200 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R3
+L RESPACK-4X0603-CONV R83
 U 2 1 54FCCD93
 P 4750 6800
-F 0 "R3" H 4900 6850 50  0000 C CNN
+F 0 "R83" H 4900 6850 50  0000 C CNN
 F 1 "10k" H 4900 6750 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 4750 6800 50  0001 C CNN
 F 3 "" H 4750 6850 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 4750 6800 60  0001 C CNN "PN"
 F 5 "Yageo" H 4750 6800 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 4750 6800 60  0001 C CNN "BOM"
+F 7 "R3" H 4750 6800 50  0001 C CNN "OldReference"
 	2    4750 6800
 	1    0    0    -1  
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R3
+L RESPACK-4X0603-CONV R83
 U 3 1 54FCCDFD
 P 4450 6600
-F 0 "R3" V 4250 6600 50  0000 C CNN
+F 0 "R83" V 4250 6600 50  0000 C CNN
 F 1 "10k" V 4350 6600 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 4450 6600 50  0001 C CNN
 F 3 "" H 4450 6650 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 4450 6600 60  0001 C CNN "PN"
 F 5 "Yageo" H 4450 6600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 4450 6600 60  0001 C CNN "BOM"
+F 7 "R3" H 4450 6600 50  0001 C CNN "OldReference"
 	3    4450 6600
 	0    1    1    0   
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R3
+L RESPACK-4X0603-CONV R83
 U 1 1 54FCCE5D
 P 4950 4200
-F 0 "R3" V 4750 4200 50  0000 C CNN
+F 0 "R83" V 4750 4200 50  0000 C CNN
 F 1 "10k" V 4850 4200 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 4950 4200 50  0001 C CNN
 F 3 "" H 4950 4250 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 4950 4200 60  0001 C CNN "PN"
 F 5 "Yageo" H 4950 4200 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 4950 4200 60  0001 C CNN "BOM"
+F 7 "R3" H 4950 4200 50  0001 C CNN "OldReference"
 	1    4950 4200
 	0    -1   1    0   
 $EndComp
 $Comp
-L RESPACK-4X0603-CONV R3
+L RESPACK-4X0603-CONV R83
 U 4 1 54FD1479
 P 6300 3100
-F 0 "R3" H 6450 3050 50  0000 C CNN
+F 0 "R83" H 6450 3050 50  0000 C CNN
 F 1 "10k" H 6450 3150 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESCAXE80P160X320X70-8" H 6300 3100 50  0001 C CNN
 F 3 "" H 6300 3150 60  0000 C CNN
 F 4 "YC164-JR-0710KL" H 6300 3100 60  0001 C CNN "PN"
 F 5 "Yageo" H 6300 3100 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY YC164J-10KCT-ND" H 6300 3100 60  0001 C CNN "BOM"
+F 7 "R3" H 6300 3100 50  0001 C CNN "OldReference"
 	4    6300 3100
 	1    0    0    1   
 $EndComp
 $Comp
-L C-0603 C4
+L C-0603 C75
 U 1 1 54FFC16C
 P 10100 2500
-F 0 "C4" V 9850 2500 50  0000 C CNN
+F 0 "C75" V 9850 2500 50  0000 C CNN
 F 1 "10n" V 9950 2500 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 10100 2500 50  0001 C CNN
 F 3 "" H 10090 2475 60  0000 C CNN
 F 4 "Value" H 10100 2500 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 10n ≥X5R 50V 10% [0603]" H 10900 3050 60  0001 C CNN "BOM"
+F 6 "C4" H 10100 2500 50  0001 C CNN "OldReference"
 	1    10100 2500
 	0    1    1    0   
 $EndComp
 $Comp
-L C-0603 C1
+L C-0603 C72
 U 1 1 54FFDFEA
 P 5850 5800
-F 0 "C1" H 6050 5850 50  0000 C CNN
+F 0 "C72" H 6050 5850 50  0000 C CNN
 F 1 "10n" H 6050 5750 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 5850 5800 50  0001 C CNN
 F 3 "" H 5840 5775 60  0000 C CNN
 F 4 "Value" H 5850 5800 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 10n ≥X5R 50V 10% [0603]" H 6650 6350 60  0001 C CNN "BOM"
+F 6 "C1" H 5850 5800 50  0001 C CNN "OldReference"
 	1    5850 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-0603 R2
+L R-0603 R82
 U 1 1 54FF9E0A
 P 4100 2900
-F 0 "R2" H 4250 2950 50  0000 C CNN
+F 0 "R82" H 4250 2950 50  0000 C CNN
 F 1 "3k3" H 4250 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 4100 2900 50  0001 C CNN
 F 3 "" H 4100 2950 60  0000 C CNN
 F 4 "Value" H 4100 2900 60  0001 C CNN "Manuf"
 F 5 "RES SMD 3.3k 5% [0603]" H 4850 3450 60  0001 C CNN "BOM"
+F 6 "R2" H 4100 2900 50  0001 C CNN "OldReference"
 	1    4100 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-0603 R10
+L R-0603 R87
 U 1 1 54FFB7A7
 P 6450 5000
-F 0 "R10" V 6250 5000 50  0000 C CNN
+F 0 "R87" V 6250 5000 50  0000 C CNN
 F 1 "1M" V 6350 5000 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 6450 5000 50  0001 C CNN
 F 3 "" H 6450 5050 60  0000 C CNN
 F 4 "Value" H 6450 5000 60  0001 C CNN "Manuf"
 F 5 "RES SMD 1M 5% [0603]" H 7200 5550 60  0001 C CNN "BOM"
+F 6 "R10" H 6450 5000 50  0001 C CNN "OldReference"
 	1    6450 5000
 	0    1    1    0   
 $EndComp
 $Comp
-L R-0603 R9
+L R-0603 R86
 U 1 1 54FFBA26
 P 6300 3700
-F 0 "R9" H 6450 3750 50  0000 C CNN
+F 0 "R86" H 6450 3750 50  0000 C CNN
 F 1 "3k3" H 6450 3650 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 6300 3700 50  0001 C CNN
 F 3 "" H 6300 3750 60  0000 C CNN
 F 4 "Value" H 6300 3700 60  0001 C CNN "Manuf"
 F 5 "RES SMD 3.3k 5% [0603]" H 7050 4250 60  0001 C CNN "BOM"
+F 6 "R9" H 6300 3700 50  0001 C CNN "OldReference"
 	1    6300 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-0603 R11
+L R-0603 R88
 U 1 1 54FFD783
 P 8700 2300
-F 0 "R11" H 8550 2250 50  0000 C CNN
+F 0 "R88" H 8550 2250 50  0000 C CNN
 F 1 "1M" H 8550 2350 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 8700 2300 50  0001 C CNN
 F 3 "" H 8700 2350 60  0000 C CNN
 F 4 "Value" H 8700 2300 60  0001 C CNN "Manuf"
 F 5 "RES SMD 1M 5% [0603]" H 9450 2850 60  0001 C CNN "BOM"
+F 6 "R11" H 8700 2300 50  0001 C CNN "OldReference"
 	1    8700 2300
 	-1   0    0    1   
 $EndComp
