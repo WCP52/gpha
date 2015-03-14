@@ -1,4 +1,4 @@
-update=Wed 11 Mar 2015 04:30:18 PM EDT
+update=Fri 13 Mar 2015 09:56:12 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,9 +25,22 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=50
 [eeschema]
 version=1
-LibDir=../../kicad-schlib/library
+LibDir=../../sch/library
 [eeschema/libraries]
 LibName1=Altera
 LibName2=AnalogDevices
@@ -105,16 +118,3 @@ LibName73=vishay_semi
 LibName74=Xilinx
 LibName75=pasv-xtal
 LibName76=conn-te
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=50

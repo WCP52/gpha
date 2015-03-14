@@ -81,8 +81,8 @@ EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 2 13
-Title ""
-Date "2015-03-10"
+Title "USB Communications"
+Date "2015-03-13"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
@@ -354,8 +354,8 @@ $Comp
 L C-0603 C7
 U 1 1 54FEF717
 P 9400 3300
-F 0 "C7" H 9200 3250 50  0000 C CNN
-F 1 "100n_DNP" H 9200 3350 50  0000 C CNN
+F 0 "C7" H 9100 3250 50  0000 C CNN
+F 1 "100n_DNP" H 9100 3350 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 9400 3300 50  0001 C CNN
 F 3 "" H 9390 3275 60  0000 C CNN
 F 4 "Value" H 9400 3300 60  0001 C CNN "Manuf"
@@ -553,16 +553,24 @@ F 6 "R37" H 5050 3300 50  0001 C CNN "OldReference"
 	1    5050 3300
 	1    0    0    -1  
 $EndComp
-Text HLabel 4900 2000 2    50   Output ~ 0
+Text HLabel 11000 2000 2    50   Output ~ 0
 VBUS
 Wire Wire Line
 	2950 4000 4150 4000
 Wire Wire Line
 	2950 3900 4150 3900
 Wire Wire Line
-	4350 3900 7900 3900
+	4350 3900 4500 3900
 Wire Wire Line
-	4350 4000 7900 4000
+	4500 3900 7000 3900
+Wire Wire Line
+	7000 3900 7900 3900
+Wire Wire Line
+	4350 4000 4800 4000
+Wire Wire Line
+	4800 4000 6900 4000
+Wire Wire Line
+	6900 4000 7900 4000
 Wire Wire Line
 	4650 4800 4650 4750
 Wire Wire Line
@@ -570,7 +578,9 @@ Wire Wire Line
 Wire Wire Line
 	3300 4200 2950 4200
 Wire Wire Line
-	3000 4300 3000 4850
+	3000 4300 3000 4800
+Wire Wire Line
+	3000 4800 3000 4850
 Wire Wire Line
 	2800 4850 2800 4800
 Wire Wire Line
@@ -583,16 +593,34 @@ Wire Wire Line
 Wire Wire Line
 	3500 4850 3500 3800
 Wire Wire Line
-	2950 3800 3800 3800
+	2950 3800 3500 3800
+Wire Wire Line
+	3500 3800 3800 3800
 Wire Wire Line
 	3500 5100 3500 5050
 Wire Wire Line
 	3800 3800 3800 3100
 Connection ~ 3500 3800
 Wire Wire Line
-	4400 3100 5250 3100
+	4400 3100 4550 3100
 Wire Wire Line
-	5450 3100 11000 3100
+	4550 3100 4650 3100
+Wire Wire Line
+	4650 3100 5050 3100
+Wire Wire Line
+	5050 3100 5250 3100
+Wire Wire Line
+	5450 3100 5900 3100
+Wire Wire Line
+	5900 3100 6200 3100
+Wire Wire Line
+	6200 3100 6950 3100
+Wire Wire Line
+	6950 3100 9200 3100
+Wire Wire Line
+	9200 3100 9400 3100
+Wire Wire Line
+	9400 3100 11000 3100
 Wire Wire Line
 	9200 3100 9200 3500
 Wire Wire Line
@@ -601,7 +629,11 @@ Wire Wire Line
 	6950 3200 6950 3100
 Connection ~ 6950 3100
 Wire Wire Line
-	7600 3700 7900 3700
+	7600 3700 7700 3700
+Wire Wire Line
+	7700 3700 7800 3700
+Wire Wire Line
+	7800 3700 7900 3700
 Wire Wire Line
 	7800 3700 7800 3500
 Wire Wire Line
@@ -623,14 +655,18 @@ Wire Wire Line
 Wire Wire Line
 	9200 4700 9100 4700
 Wire Wire Line
-	11000 3800 9100 3800
+	11000 3800 10200 3800
+Wire Wire Line
+	10200 3800 9100 3800
 Wire Wire Line
 	11000 4000 9100 4000
 Wire Wire Line
 	11000 4500 9100 4500
 Connection ~ 9200 3100
 Wire Wire Line
-	11000 3700 9100 3700
+	11000 3700 9900 3700
+Wire Wire Line
+	9900 3700 9100 3700
 Wire Wire Line
 	9100 3900 11000 3900
 Wire Wire Line
@@ -647,7 +683,9 @@ Wire Wire Line
 	4500 4300 4500 3900
 Connection ~ 4500 3900
 Wire Wire Line
-	4650 3100 4650 4300
+	4650 3100 4650 3450
+Wire Wire Line
+	4650 3450 4650 4300
 Connection ~ 4650 3100
 Wire Wire Line
 	7100 4100 7000 4100
@@ -665,7 +703,15 @@ Wire Wire Line
 	4650 3450 4750 3450
 Connection ~ 4650 3450
 Wire Wire Line
-	4950 3450 5900 3450
+	4950 3450 5050 3450
+Wire Wire Line
+	5050 3450 5350 3450
+Wire Wire Line
+	5350 3450 5450 3450
+Wire Wire Line
+	5450 3450 5700 3450
+Wire Wire Line
+	5700 3450 5900 3450
 Wire Wire Line
 	5350 3450 5350 3200
 Connection ~ 5350 3450
@@ -688,7 +734,9 @@ Connection ~ 5900 3100
 Wire Wire Line
 	5700 2600 5700 2400
 Wire Wire Line
-	5700 2400 5900 2400
+	5700 2400 5800 2400
+Wire Wire Line
+	5800 2400 5900 2400
 Wire Wire Line
 	5900 2400 5900 2600
 Wire Wire Line
@@ -701,14 +749,16 @@ Wire Wire Line
 	5050 3200 5050 3100
 Connection ~ 5050 3100
 Wire Wire Line
-	4600 3100 4600 2000
+	4550 3100 4550 2000
 Wire Wire Line
-	4600 2000 4900 2000
-Connection ~ 4600 3100
+	4550 2000 11000 2000
+Connection ~ 4550 3100
 Wire Wire Line
 	9900 3650 9900 3700
 Connection ~ 9900 3700
 Wire Wire Line
 	10200 3650 10200 3800
 Connection ~ 10200 3800
+Text Notes 6500 2800 0    50   ~ 0
+@Q1 forms the same slew rate/inrush limiting circuit as @Q14 on\nthe "PowerInput" page.\nIf the main board power is available, @D3 allows it to force @Q1's\ngate above its source, shutting it off. @D4 then allows the main\nboard +5V rail to power the otherwise USB-powered devices,\nallowing them to draw more current.
 $EndSCHEMATC

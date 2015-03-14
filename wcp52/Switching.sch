@@ -82,7 +82,7 @@ $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 8 13
 Title "Input Switching"
-Date "2015-03-10"
+Date "2015-03-13"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
@@ -122,7 +122,7 @@ F 7 "U10" H 6600 3300 50  0001 C CNN "OldReference"
 $EndComp
 Text HLabel 8400 2700 2    60   Output ~ 0
 OUT
-Text Notes 7950 2850 0    60   ~ 0
+Text Notes 7950 2850 0    50   ~ 0
 Layout: These stubs must be /very/ short!
 $Comp
 L GND #PWR0178
@@ -505,4 +505,8 @@ F 6 "C72" H 5600 4700 50  0001 C CNN "OldReference"
 	1    5600 4700
 	1    0    0    -1  
 $EndComp
+Text Notes 3150 5100 0    50   ~ 0
+Inside shield
+Text Notes 3150 5200 0    50   ~ 0
+Outside shield
 $EndSCHEMATC
