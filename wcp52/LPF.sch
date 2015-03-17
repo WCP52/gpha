@@ -1,80 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Altera
-LIBS:AnalogDevices
-LIBS:Atmel
-LIBS:conn-2mm
-LIBS:conn-100mil
-LIBS:conn-cui
-LIBS:conn-fci
-LIBS:conn-linx
-LIBS:conn-molex
-LIBS:conn-tagconnect
-LIBS:conn-test
-LIBS:DiodesInc
-LIBS:display
-LIBS:_electromech
-LIBS:Fairchild
-LIBS:FTDI
-LIBS:Intersil
-LIBS:Lattice
-LIBS:_linear
-LIBS:LinearTech
-LIBS:Littelfuse
-LIBS:logic-4000
-LIBS:logic-7400
-LIBS:MACOM
-LIBS:maxim
-LIBS:mechanical
-LIBS:Microchip
-LIBS:Micron
-LIBS:NXP
-LIBS:onsemi
-LIBS:passive
-LIBS:pasv-BiTech
-LIBS:pasv-Bourns
-LIBS:pasv-cap
-LIBS:pasv-ind
-LIBS:pasv-res
-LIBS:pcb
-LIBS:power
-LIBS:_semi
-LIBS:semi-diode-1N
-LIBS:semi-diode-BA
-LIBS:semi-diode-MCC
-LIBS:semi-diode-MMB
-LIBS:semi-diode-NXP
-LIBS:semi-diode-OnSemi
-LIBS:semi-diode-Vishay
-LIBS:semi-opto-misc
-LIBS:semi-thyristor-2N
-LIBS:semi-trans-2N
-LIBS:semi-trans-AO
-LIBS:semi-trans-BC
-LIBS:semi-trans-DiodesInc
-LIBS:semi-trans-Fairchild
-LIBS:semi-trans-Infineon
-LIBS:semi-trans-IntRect
-LIBS:semi-trans-IXYS
-LIBS:semi-trans-misc
-LIBS:semi-trans-MMB
-LIBS:semi-trans-MPS
-LIBS:semi-trans-NXP
-LIBS:semi-trans-PZT
-LIBS:semi-trans-TI
-LIBS:semi-trans-TIP
-LIBS:semi-trans-Toshiba
-LIBS:silabs
-LIBS:skyworks
-LIBS:ST
-LIBS:st_ic
-LIBS:st_semi
-LIBS:supertex
-LIBS:symbol
-LIBS:TexasInstruments
-LIBS:vishay_semi
-LIBS:Xilinx
-LIBS:pasv-xtal
-LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -763,7 +687,7 @@ FC 82 9E C3 5F 8B BD A3 99 8A 04 1A E1 70 03 9C 32 9E FF 9F F1 D9 0C 72 53 5F 3D
 1C 6E 40 A1 9E 07 91 DC D4 37 8A 21 E3 F1 3B 08 48 C5 E1 06 94 70 DE 2B 1B A9 F3 41 34 EC BA 7E 
 C6 5F 05 4E E2 BB B2 02 2C AC E2 1F E1 4E C2 E1 06 D8 47 59 46 F6 AB CF 56 EE 9C BE 21 0E 51 00 
 00 36 21 77 86 1F 00 00 D4 45 EA 03 00 B0 0B 52 1F 00 80 5D 90 FA 00 00 EC E2 7F 01 3B 40 24 1D 
-60 0E DB 19 00 00 00 00 49 45 4E 44 AE 42 60 82 58 
+60 0E DB 19 00 00 00 00 49 45 4E 44 AE 42 60 82 FF 
 EndData
 $EndBitmap
 Text Notes 1000 5350 0    50   ~ 0

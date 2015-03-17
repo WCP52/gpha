@@ -1,80 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Altera
-LIBS:AnalogDevices
-LIBS:Atmel
-LIBS:conn-2mm
-LIBS:conn-100mil
-LIBS:conn-cui
-LIBS:conn-fci
-LIBS:conn-linx
-LIBS:conn-molex
-LIBS:conn-tagconnect
-LIBS:conn-test
-LIBS:DiodesInc
-LIBS:display
-LIBS:_electromech
-LIBS:Fairchild
-LIBS:FTDI
-LIBS:Intersil
-LIBS:Lattice
-LIBS:_linear
-LIBS:LinearTech
-LIBS:Littelfuse
-LIBS:logic-4000
-LIBS:logic-7400
-LIBS:MACOM
-LIBS:maxim
-LIBS:mechanical
-LIBS:Microchip
-LIBS:Micron
-LIBS:NXP
-LIBS:onsemi
-LIBS:passive
-LIBS:pasv-BiTech
-LIBS:pasv-Bourns
-LIBS:pasv-cap
-LIBS:pasv-ind
-LIBS:pasv-res
-LIBS:pcb
-LIBS:power
-LIBS:_semi
-LIBS:semi-diode-1N
-LIBS:semi-diode-BA
-LIBS:semi-diode-MCC
-LIBS:semi-diode-MMB
-LIBS:semi-diode-NXP
-LIBS:semi-diode-OnSemi
-LIBS:semi-diode-Vishay
-LIBS:semi-opto-misc
-LIBS:semi-thyristor-2N
-LIBS:semi-trans-2N
-LIBS:semi-trans-AO
-LIBS:semi-trans-BC
-LIBS:semi-trans-DiodesInc
-LIBS:semi-trans-Fairchild
-LIBS:semi-trans-Infineon
-LIBS:semi-trans-IntRect
-LIBS:semi-trans-IXYS
-LIBS:semi-trans-misc
-LIBS:semi-trans-MMB
-LIBS:semi-trans-MPS
-LIBS:semi-trans-NXP
-LIBS:semi-trans-PZT
-LIBS:semi-trans-TI
-LIBS:semi-trans-TIP
-LIBS:semi-trans-Toshiba
-LIBS:silabs
-LIBS:skyworks
-LIBS:ST
-LIBS:st_ic
-LIBS:st_semi
-LIBS:supertex
-LIBS:symbol
-LIBS:TexasInstruments
-LIBS:vishay_semi
-LIBS:Xilinx
-LIBS:pasv-xtal
-LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -155,8 +79,8 @@ F 1 "BFR540" H 5300 2550 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 5050 2600 50  0001 C CNN
 F 3 "" H 5050 2600 60  0000 C CNN
 F 4 "BFR540,215" H 5400 2750 60  0001 C CNN "PN"
-F 5 "DIST DIGIKEY 568-1649-1-ND" H 5800 3150 60  0001 C CNN "BOM"
-F 6 "NXP" H 5050 2600 60  0001 C CNN "Manuf"
+F 5 "NXP" H 5050 2600 60  0001 C CNN "Manuf"
+F 6 "SEMI NXP BFR540" H 5800 3150 60  0001 C CNN "BOM"
 F 7 "Q11" H 5050 2600 50  0001 C CNN "OldReference"
 	1    5050 2600
 	1    0    0    -1  
@@ -191,8 +115,8 @@ F 1 "BFR540" H 5300 3650 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 5050 3700 50  0001 C CNN
 F 3 "" H 5050 3700 60  0000 C CNN
 F 4 "BFR540,215" H 5400 3850 60  0001 C CNN "PN"
-F 5 "DIST DIGIKEY 568-1649-1-ND" H 5800 4250 60  0001 C CNN "BOM"
-F 6 "NXP" H 5050 3700 60  0001 C CNN "Manuf"
+F 5 "NXP" H 5050 3700 60  0001 C CNN "Manuf"
+F 6 "SEMI NXP BFR540" H 5800 4250 60  0001 C CNN "BOM"
 F 7 "Q12" H 5050 3700 50  0001 C CNN "OldReference"
 	1    5050 3700
 	1    0    0    -1  
@@ -209,8 +133,8 @@ F 0 "Q8" H 4400 5350 50  0000 C CNN
 F 1 "MMBT3904" H 4400 5250 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 4900 5300 50  0001 C CNN
 F 3 "" H 4900 5300 60  0000 C CNN
-F 4 "SEMI MMBT3904" H 5700 5850 60  0001 C CNN "BOM"
-F 5 "Value" H 4900 5300 60  0001 C CNN "Manuf"
+F 4 "Value" H 4900 5300 60  0001 C CNN "Manuf"
+F 5 "SEMI GENERIC MMBT3904" H 5700 5850 60  0001 C CNN "BOM"
 F 6 "Q10" H 4900 5300 50  0001 C CNN "OldReference"
 	1    4900 5300
 	-1   0    0    -1  

@@ -1,80 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Altera
-LIBS:AnalogDevices
-LIBS:Atmel
-LIBS:conn-2mm
-LIBS:conn-100mil
-LIBS:conn-cui
-LIBS:conn-fci
-LIBS:conn-linx
-LIBS:conn-molex
-LIBS:conn-tagconnect
-LIBS:conn-test
-LIBS:DiodesInc
-LIBS:display
-LIBS:_electromech
-LIBS:Fairchild
-LIBS:FTDI
-LIBS:Intersil
-LIBS:Lattice
-LIBS:_linear
-LIBS:LinearTech
-LIBS:Littelfuse
-LIBS:logic-4000
-LIBS:logic-7400
-LIBS:MACOM
-LIBS:maxim
-LIBS:mechanical
-LIBS:Microchip
-LIBS:Micron
-LIBS:NXP
-LIBS:onsemi
-LIBS:passive
-LIBS:pasv-BiTech
-LIBS:pasv-Bourns
-LIBS:pasv-cap
-LIBS:pasv-ind
-LIBS:pasv-res
-LIBS:pcb
-LIBS:power
-LIBS:_semi
-LIBS:semi-diode-1N
-LIBS:semi-diode-BA
-LIBS:semi-diode-MCC
-LIBS:semi-diode-MMB
-LIBS:semi-diode-NXP
-LIBS:semi-diode-OnSemi
-LIBS:semi-diode-Vishay
-LIBS:semi-opto-misc
-LIBS:semi-thyristor-2N
-LIBS:semi-trans-2N
-LIBS:semi-trans-AO
-LIBS:semi-trans-BC
-LIBS:semi-trans-DiodesInc
-LIBS:semi-trans-Fairchild
-LIBS:semi-trans-Infineon
-LIBS:semi-trans-IntRect
-LIBS:semi-trans-IXYS
-LIBS:semi-trans-misc
-LIBS:semi-trans-MMB
-LIBS:semi-trans-MPS
-LIBS:semi-trans-NXP
-LIBS:semi-trans-PZT
-LIBS:semi-trans-TI
-LIBS:semi-trans-TIP
-LIBS:semi-trans-Toshiba
-LIBS:silabs
-LIBS:skyworks
-LIBS:ST
-LIBS:st_ic
-LIBS:st_semi
-LIBS:supertex
-LIBS:symbol
-LIBS:TexasInstruments
-LIBS:vishay_semi
-LIBS:Xilinx
-LIBS:pasv-xtal
-LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -357,7 +281,7 @@ F 2 "smd-semi:TO-252" H 6600 1650 60  0001 C CNN
 F 3 "" H 6600 2200 60  0000 C CNN
 F 4 "L78M05CDT" H 6600 1450 50  0001 C CNN "PN"
 F 5 "ST" H 6600 1550 50  0001 C CNN "Manuf"
-F 6 "DIST DIGIKEY 497-1203-1-ND" H 6600 1350 50  0001 C CNN "BOM"
+F 6 "IC ST L78M05CDT" H 6600 1350 50  0001 C CNN "BOM"
 F 7 "U14" H 6600 1950 50  0001 C CNN "OldReference"
 	1    6600 1950
 	1    0    0    -1  
@@ -436,7 +360,7 @@ F 2 "smd-semi:TO-252" H 6600 3250 60  0001 C CNN
 F 3 "" H 6600 3800 60  0000 C CNN
 F 4 "MC79M05CDTG" H 6600 3050 50  0001 C CNN "PN"
 F 5 "ONSemi" H 6600 3150 50  0001 C CNN "Manuf"
-F 6 "DIST DIGIKEY MC79M05CDTGOS-ND" H 6600 2950 50  0001 C CNN "BOM"
+F 6 "IC ONSEMI MC79M05CDTG" H 6600 2950 50  0001 C CNN "BOM"
 F 7 "U15" H 6600 3550 50  0001 C CNN "OldReference"
 	1    6600 3550
 	1    0    0    -1  
@@ -523,7 +447,7 @@ F 2 "smd-semi:SOT-223" H 6650 5150 50  0001 C CNN
 F 3 "" H 6650 5150 60  0000 C CNN
 F 4 "AZ1117CH-1.8TRG1" H 6650 5150 60  0001 C CNN "PN"
 F 5 "DiodesInc" H 6650 5150 60  0001 C CNN "Manuf"
-F 6 "DIST DIGIKEY AZ1117CH-1.8TRG1DICT-ND" H 6650 5150 60  0001 C CNN "BOM"
+F 6 "IC DIODES AZ1117CH-1.8TRG1" H 6650 5150 60  0001 C CNN "BOM"
 F 7 "U16" H 6650 5150 50  0001 C CNN "OldReference"
 	1    6650 5150
 	1    0    0    -1  
@@ -604,8 +528,10 @@ F 0 "U16" H 6650 6400 50  0000 C CNN
 F 1 "MCP1700T-3302E/TT" H 6650 6300 50  0000 C CNN
 F 2 "smd-semi:SOT-23" H 6650 6150 60  0001 C CNN
 F 3 "" H 6650 6150 60  0000 C CNN
-F 4 "DIST DIGIKEY MCP1700T3302ETTCT-ND" H 6650 6150 60  0001 C CNN "BOM"
-F 5 "U17" H 6650 6150 50  0001 C CNN "OldReference"
+F 4 "MCP1700T-3302E/TT" H 6650 6150 60  0001 C CNN "PN"
+F 5 "Microchip" H 6650 6150 60  0001 C CNN "Manuf"
+F 6 "IC MICROCHIP MCP1700T-3302E/TT" H 6650 6150 60  0001 C CNN "BOM"
+F 7 "U17" H 6650 6150 50  0001 C CNN "OldReference"
 	1    6650 6150
 	1    0    0    -1  
 $EndComp

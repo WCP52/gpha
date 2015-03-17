@@ -1,80 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Altera
-LIBS:AnalogDevices
-LIBS:Atmel
-LIBS:conn-2mm
-LIBS:conn-100mil
-LIBS:conn-cui
-LIBS:conn-fci
-LIBS:conn-linx
-LIBS:conn-molex
-LIBS:conn-tagconnect
-LIBS:conn-test
-LIBS:DiodesInc
-LIBS:display
-LIBS:_electromech
-LIBS:Fairchild
-LIBS:FTDI
-LIBS:Intersil
-LIBS:Lattice
-LIBS:_linear
-LIBS:LinearTech
-LIBS:Littelfuse
-LIBS:logic-4000
-LIBS:logic-7400
-LIBS:MACOM
-LIBS:maxim
-LIBS:mechanical
-LIBS:Microchip
-LIBS:Micron
-LIBS:NXP
-LIBS:onsemi
-LIBS:passive
-LIBS:pasv-BiTech
-LIBS:pasv-Bourns
-LIBS:pasv-cap
-LIBS:pasv-ind
-LIBS:pasv-res
-LIBS:pcb
-LIBS:power
-LIBS:_semi
-LIBS:semi-diode-1N
-LIBS:semi-diode-BA
-LIBS:semi-diode-MCC
-LIBS:semi-diode-MMB
-LIBS:semi-diode-NXP
-LIBS:semi-diode-OnSemi
-LIBS:semi-diode-Vishay
-LIBS:semi-opto-misc
-LIBS:semi-thyristor-2N
-LIBS:semi-trans-2N
-LIBS:semi-trans-AO
-LIBS:semi-trans-BC
-LIBS:semi-trans-DiodesInc
-LIBS:semi-trans-Fairchild
-LIBS:semi-trans-Infineon
-LIBS:semi-trans-IntRect
-LIBS:semi-trans-IXYS
-LIBS:semi-trans-misc
-LIBS:semi-trans-MMB
-LIBS:semi-trans-MPS
-LIBS:semi-trans-NXP
-LIBS:semi-trans-PZT
-LIBS:semi-trans-TI
-LIBS:semi-trans-TIP
-LIBS:semi-trans-Toshiba
-LIBS:silabs
-LIBS:skyworks
-LIBS:ST
-LIBS:st_ic
-LIBS:st_semi
-LIBS:supertex
-LIBS:symbol
-LIBS:TexasInstruments
-LIBS:vishay_semi
-LIBS:Xilinx
-LIBS:pasv-xtal
-LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -413,8 +337,8 @@ F 0 "U2" H 7750 1900 50  0000 C CNN
 F 1 "LMH6714MF" H 7750 1800 50  0000 C CNN
 F 2 "smd-semi:SOT-23-5" H 8500 1850 50  0001 C CNN
 F 3 "" H 8300 1850 60  0000 C CNN
-F 4 "DIST DIGIKEY LMH6714MF/NOPBCT-ND" H 9000 2700 60  0001 C CNN "BOM"
-F 5 "Value" H 8500 1850 60  0001 C CNN "Manuf"
+F 4 "Value" H 8500 1850 60  0001 C CNN "Manuf"
+F 5 "IC TI LMH6714MF" H 9000 2700 60  0001 C CNN "BOM"
 F 6 "U3" H 8500 1850 50  0001 C CNN "OldReference"
 	1    8500 1850
 	1    0    0    -1  
@@ -477,8 +401,8 @@ F 0 "U4" H 7750 3900 50  0000 C CNN
 F 1 "LMH6714MF" H 7750 3800 50  0000 C CNN
 F 2 "smd-semi:SOT-23-5" H 8500 3850 50  0001 C CNN
 F 3 "" H 8300 3850 60  0000 C CNN
-F 4 "DIST DIGIKEY LMH6714MF/NOPBCT-ND" H 9000 4700 60  0001 C CNN "BOM"
-F 5 "Value" H 8500 3850 60  0001 C CNN "Manuf"
+F 4 "Value" H 8500 3850 60  0001 C CNN "Manuf"
+F 5 "IC TI LMH6714MF" H 9000 4700 60  0001 C CNN "BOM"
 F 6 "U5" H 8500 3850 50  0001 C CNN "OldReference"
 	1    8500 3850
 	1    0    0    -1  
