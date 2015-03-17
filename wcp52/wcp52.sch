@@ -605,13 +605,9 @@ Wire Wire Line
 Wire Wire Line
 	10250 1500 10150 1500
 Wire Wire Line
-	5600 1100 7900 1100
+	5600 1100 10250 1100
 Wire Wire Line
-	7900 1100 10250 1100
-Wire Wire Line
-	5700 1400 7600 1400
-Wire Wire Line
-	7600 1400 10250 1400
+	5700 1400 10250 1400
 Wire Wire Line
 	8300 1200 8300 1000
 Wire Wire Line
@@ -652,13 +648,9 @@ F 7 "R107" H 9200 1300 50  0001 C CNN "OldReference"
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8300 1300 8500 1300
+	8300 1300 9100 1300
 Wire Wire Line
-	8500 1300 9100 1300
-Wire Wire Line
-	8300 1200 8500 1200
-Wire Wire Line
-	8500 1200 9100 1200
+	8300 1200 9100 1200
 Wire Wire Line
 	9300 1200 10250 1200
 Wire Wire Line
@@ -679,9 +671,7 @@ F 7 "R105" H 10000 1000 50  0001 C CNN "OldReference"
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9400 1000 9700 1000
-Wire Wire Line
-	9700 1000 9900 1000
+	9400 1000 9900 1000
 Wire Wire Line
 	10100 1000 10250 1000
 $Comp

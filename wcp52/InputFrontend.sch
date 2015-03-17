@@ -85,9 +85,7 @@ Wire Notes Line
 Wire Notes Line
 	9200 1300 2100 1300
 Wire Wire Line
-	8300 3300 8400 3300
-Wire Wire Line
-	8400 3300 9600 3300
+	8300 3300 9600 3300
 Wire Wire Line
 	8400 3300 8400 3400
 Connection ~ 8400 3300

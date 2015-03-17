@@ -86,15 +86,7 @@ F 7 "Q11" H 5050 2600 50  0001 C CNN "OldReference"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 2600 3700 2600
-Wire Wire Line
-	3700 2600 4000 2600
-Wire Wire Line
-	4000 2600 4300 2600
-Wire Wire Line
-	4300 2600 4600 2600
-Wire Wire Line
-	4600 2600 4950 2600
+	3000 2600 4950 2600
 Wire Wire Line
 	4600 2600 4600 2700
 Wire Wire Line
@@ -122,9 +114,7 @@ F 7 "Q12" H 5050 3700 50  0001 C CNN "OldReference"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2700 5100 3200
-Wire Wire Line
-	5100 3200 5100 3600
+	5100 2700 5100 3600
 $Comp
 L MMBT3904 Q8
 U 1 1 54F37ABD
@@ -140,17 +130,13 @@ F 6 "Q10" H 4900 5300 50  0001 C CNN "OldReference"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 3800 5100 5300
-Wire Wire Line
-	5100 5300 5100 5400
+	5100 3800 5100 5400
 Wire Wire Line
 	5100 5300 5000 5300
 Wire Wire Line
 	4550 5050 4850 5050
 Wire Wire Line
-	4850 3700 4850 5050
-Wire Wire Line
-	4850 5050 4850 5200
+	4850 3700 4850 5200
 Connection ~ 5100 5300
 $Comp
 L -5 #PWR0191
@@ -165,9 +151,7 @@ F 4 "#PWR0191" H 5100 5800 50  0001 C CNN "OldReference"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 5600 5100 5700
-Wire Wire Line
-	5100 5700 5100 5800
+	5100 5600 5100 5800
 Wire Wire Line
 	4850 5700 5100 5700
 Wire Wire Line
@@ -196,9 +180,7 @@ Connection ~ 5100 3200
 Text HLabel 2100 1900 0    50   Input ~ 0
 PHASEREF
 Wire Wire Line
-	2100 1900 5300 1900
-Wire Wire Line
-	5300 1900 5500 1900
+	2100 1900 5500 1900
 Text HLabel 3000 2600 0    50   Input ~ 0
 IN
 Connection ~ 3700 2600
@@ -207,11 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 1900 5900 3200
 Wire Wire Line
-	5700 3200 5900 3200
-Wire Wire Line
-	5900 3200 6900 3200
-Wire Wire Line
-	6900 3200 7100 3200
+	5700 3200 7100 3200
 Wire Wire Line
 	5300 2100 5300 1900
 Connection ~ 5300 1900
@@ -310,9 +288,7 @@ $EndComp
 Wire Wire Line
 	7500 3300 7500 3200
 Wire Wire Line
-	7300 3200 7500 3200
-Wire Wire Line
-	7500 3200 7700 3200
+	7300 3200 7700 3200
 Connection ~ 7500 3200
 $Comp
 L GND #PWR0195
@@ -344,9 +320,7 @@ F 7 "C76" H 8100 3400 50  0001 C CNN "OldReference"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 3200 8100 3200
-Wire Wire Line
-	8100 3200 8800 3200
+	7900 3200 8800 3200
 Wire Wire Line
 	8100 3200 8100 3300
 $Comp
@@ -521,17 +495,15 @@ F 6 "R78" H 5600 3200 50  0001 C CNN "OldReference"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4550 3700 4850 3700
-Wire Wire Line
-	4850 3700 4950 3700
+	4550 3700 4950 3700
 Wire Wire Line
 	4550 3850 4550 3700
 Connection ~ 4850 3700
 $Comp
-L -5 #PWR?
+L -5 #PWR0198
 U 1 1 55058533
 P 4550 4100
-F 0 "#PWR?" H 4550 4050 30  0001 C CNN
+F 0 "#PWR0198" H 4550 4050 30  0001 C CNN
 F 1 "-5" H 4550 4000 50  0000 C CNN
 F 2 "" H 4550 4100 60  0000 C CNN
 F 3 "" H 4550 4100 60  0000 C CNN
