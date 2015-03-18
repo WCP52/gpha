@@ -1,4 +1,80 @@
 EESchema Schematic File Version 2
+LIBS:Altera
+LIBS:AnalogDevices
+LIBS:Atmel
+LIBS:conn-2mm
+LIBS:conn-100mil
+LIBS:conn-cui
+LIBS:conn-fci
+LIBS:conn-linx
+LIBS:conn-molex
+LIBS:conn-tagconnect
+LIBS:conn-test
+LIBS:DiodesInc
+LIBS:display
+LIBS:_electromech
+LIBS:Fairchild
+LIBS:FTDI
+LIBS:Intersil
+LIBS:Lattice
+LIBS:_linear
+LIBS:LinearTech
+LIBS:Littelfuse
+LIBS:logic-4000
+LIBS:logic-7400
+LIBS:MACOM
+LIBS:maxim
+LIBS:mechanical
+LIBS:Microchip
+LIBS:Micron
+LIBS:NXP
+LIBS:onsemi
+LIBS:passive
+LIBS:pasv-BiTech
+LIBS:pasv-Bourns
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-res
+LIBS:pcb
+LIBS:power
+LIBS:_semi
+LIBS:semi-diode-1N
+LIBS:semi-diode-BA
+LIBS:semi-diode-MCC
+LIBS:semi-diode-MMB
+LIBS:semi-diode-NXP
+LIBS:semi-diode-OnSemi
+LIBS:semi-diode-Vishay
+LIBS:semi-opto-misc
+LIBS:semi-thyristor-2N
+LIBS:semi-trans-2N
+LIBS:semi-trans-AO
+LIBS:semi-trans-BC
+LIBS:semi-trans-DiodesInc
+LIBS:semi-trans-Fairchild
+LIBS:semi-trans-Infineon
+LIBS:semi-trans-IntRect
+LIBS:semi-trans-IXYS
+LIBS:semi-trans-misc
+LIBS:semi-trans-MMB
+LIBS:semi-trans-MPS
+LIBS:semi-trans-NXP
+LIBS:semi-trans-PZT
+LIBS:semi-trans-TI
+LIBS:semi-trans-TIP
+LIBS:semi-trans-Toshiba
+LIBS:silabs
+LIBS:skyworks
+LIBS:ST
+LIBS:st_ic
+LIBS:st_semi
+LIBS:supertex
+LIBS:symbol
+LIBS:TexasInstruments
+LIBS:vishay_semi
+LIBS:Xilinx
+LIBS:pasv-xtal
+LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -291,7 +367,7 @@ F 0 "R57" H 3000 2950 50  0000 C CNN
 F 1 "1k6" H 3000 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 2850 2900 50  0001 C CNN
 F 3 "" H 2850 2950 60  0000 C CNN
-F 4 "Value" H 2850 2900 60  0001 C CNN "Manuf"
+F 4 "" H 2850 2900 60  0001 C CNN "Manuf"
 F 5 "RES SMD 1.6k 1% [0603]" H 3600 3450 60  0001 C CNN "BOM"
 F 6 "R54" H 2850 2900 50  0001 C CNN "OldReference"
 	1    2850 2900
@@ -305,7 +381,7 @@ F 0 "R58" H 3300 2950 50  0000 C CNN
 F 1 "1k6" H 3300 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 3150 2900 50  0001 C CNN
 F 3 "" H 3150 2950 60  0000 C CNN
-F 4 "Value" H 3150 2900 60  0001 C CNN "Manuf"
+F 4 "" H 3150 2900 60  0001 C CNN "Manuf"
 F 5 "RES SMD 1.6k 1% [0603]" H 3900 3450 60  0001 C CNN "BOM"
 F 6 "R55" H 3150 2900 50  0001 C CNN "OldReference"
 	1    3150 2900
@@ -319,7 +395,7 @@ F 0 "R62" H 7000 2950 50  0000 C CNN
 F 1 "1k6" H 7000 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 6850 2900 50  0001 C CNN
 F 3 "" H 6850 2950 60  0000 C CNN
-F 4 "Value" H 6850 2900 60  0001 C CNN "Manuf"
+F 4 "" H 6850 2900 60  0001 C CNN "Manuf"
 F 5 "RES SMD 1.6k 1% [0603]" H 7600 3450 60  0001 C CNN "BOM"
 F 6 "R59" H 6850 2900 50  0001 C CNN "OldReference"
 	1    6850 2900
@@ -333,7 +409,7 @@ F 0 "R63" H 7300 2950 50  0000 C CNN
 F 1 "1k6" H 7300 2850 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 7150 2900 50  0001 C CNN
 F 3 "" H 7150 2950 60  0000 C CNN
-F 4 "Value" H 7150 2900 60  0001 C CNN "Manuf"
+F 4 "" H 7150 2900 60  0001 C CNN "Manuf"
 F 5 "RES SMD 1.6k 1% [0603]" H 7900 3450 60  0001 C CNN "BOM"
 F 6 "R60" H 7150 2900 50  0001 C CNN "OldReference"
 	1    7150 2900
@@ -347,7 +423,7 @@ F 0 "R59" V 3250 2600 50  0000 C CNN
 F 1 "3R3" V 3350 2600 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 3450 2600 50  0001 C CNN
 F 3 "" H 3450 2650 60  0000 C CNN
-F 4 "Value" H 3450 2600 60  0001 C CNN "Manuf"
+F 4 "" H 3450 2600 60  0001 C CNN "Manuf"
 F 5 "RES SMD 3.3 5% [0603]" H 4200 3150 60  0001 C CNN "BOM"
 F 6 "R57" H 3450 2600 50  0001 C CNN "OldReference"
 	1    3450 2600
@@ -361,7 +437,7 @@ F 0 "R64" V 7250 2600 50  0000 C CNN
 F 1 "3R3" V 7350 2600 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 7450 2600 50  0001 C CNN
 F 3 "" H 7450 2650 60  0000 C CNN
-F 4 "Value" H 7450 2600 60  0001 C CNN "Manuf"
+F 4 "" H 7450 2600 60  0001 C CNN "Manuf"
 F 5 "RES SMD 3.3 5% [0603]" H 8200 3150 60  0001 C CNN "BOM"
 F 6 "R62" H 7450 2600 50  0001 C CNN "OldReference"
 	1    7450 2600
@@ -375,7 +451,7 @@ F 0 "R60" V 4800 5200 50  0000 C CNN
 F 1 "750" V 4900 5200 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 5000 5200 50  0001 C CNN
 F 3 "" H 5000 5250 60  0000 C CNN
-F 4 "Value" H 5000 5200 60  0001 C CNN "Manuf"
+F 4 "" H 5000 5200 60  0001 C CNN "Manuf"
 F 5 "RES SMD 750 1% [0603]" H 5750 5750 60  0001 C CNN "BOM"
 F 6 "R56" H 5000 5200 50  0001 C CNN "OldReference"
 	1    5000 5200
@@ -389,7 +465,7 @@ F 0 "R61" V 6300 5200 50  0000 C CNN
 F 1 "750" V 6400 5200 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 6500 5200 50  0001 C CNN
 F 3 "" H 6500 5250 60  0000 C CNN
-F 4 "Value" H 6500 5200 60  0001 C CNN "Manuf"
+F 4 "" H 6500 5200 60  0001 C CNN "Manuf"
 F 5 "RES SMD 750 1% [0603]" H 7250 5750 60  0001 C CNN "BOM"
 F 6 "R58" H 6500 5200 50  0001 C CNN "OldReference"
 	1    6500 5200

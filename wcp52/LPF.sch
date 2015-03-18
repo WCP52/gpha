@@ -1,4 +1,80 @@
 EESchema Schematic File Version 2
+LIBS:Altera
+LIBS:AnalogDevices
+LIBS:Atmel
+LIBS:conn-2mm
+LIBS:conn-100mil
+LIBS:conn-cui
+LIBS:conn-fci
+LIBS:conn-linx
+LIBS:conn-molex
+LIBS:conn-tagconnect
+LIBS:conn-test
+LIBS:DiodesInc
+LIBS:display
+LIBS:_electromech
+LIBS:Fairchild
+LIBS:FTDI
+LIBS:Intersil
+LIBS:Lattice
+LIBS:_linear
+LIBS:LinearTech
+LIBS:Littelfuse
+LIBS:logic-4000
+LIBS:logic-7400
+LIBS:MACOM
+LIBS:maxim
+LIBS:mechanical
+LIBS:Microchip
+LIBS:Micron
+LIBS:NXP
+LIBS:onsemi
+LIBS:passive
+LIBS:pasv-BiTech
+LIBS:pasv-Bourns
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-res
+LIBS:pcb
+LIBS:power
+LIBS:_semi
+LIBS:semi-diode-1N
+LIBS:semi-diode-BA
+LIBS:semi-diode-MCC
+LIBS:semi-diode-MMB
+LIBS:semi-diode-NXP
+LIBS:semi-diode-OnSemi
+LIBS:semi-diode-Vishay
+LIBS:semi-opto-misc
+LIBS:semi-thyristor-2N
+LIBS:semi-trans-2N
+LIBS:semi-trans-AO
+LIBS:semi-trans-BC
+LIBS:semi-trans-DiodesInc
+LIBS:semi-trans-Fairchild
+LIBS:semi-trans-Infineon
+LIBS:semi-trans-IntRect
+LIBS:semi-trans-IXYS
+LIBS:semi-trans-misc
+LIBS:semi-trans-MMB
+LIBS:semi-trans-MPS
+LIBS:semi-trans-NXP
+LIBS:semi-trans-PZT
+LIBS:semi-trans-TI
+LIBS:semi-trans-TIP
+LIBS:semi-trans-Toshiba
+LIBS:silabs
+LIBS:skyworks
+LIBS:ST
+LIBS:st_ic
+LIBS:st_semi
+LIBS:supertex
+LIBS:symbol
+LIBS:TexasInstruments
+LIBS:vishay_semi
+LIBS:Xilinx
+LIBS:pasv-xtal
+LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -29,7 +105,8 @@ F 3 "" H 3890 3575 60  0000 C CNN
 F 4 "GRM1555C1H220GA01D" H 3900 3600 60  0001 C CNN "PN"
 F 5 "Murata" H 3900 3600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 490-6219-1-ND" H 4700 4150 60  0001 C CNN "BOM"
-F 7 "C42" H 3900 3600 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 22pF C0G [0402]" H 3900 3600 60  0001 C CNN "Description"
+F 8 "C42" H 3900 3600 50  0001 C CNN "OldReference"
 	1    3900 3600
 	1    0    0    -1  
 $EndComp
@@ -44,7 +121,8 @@ F 3 "" H 4600 3350 60  0000 C CNN
 F 4 "CIH05T56NJNC" H 4600 3300 60  0001 C CNN "PN"
 F 5 "Samsung" H 4600 3300 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-6281-1-ND" H 4600 3300 60  0001 C CNN "BOM"
-F 7 "L1" H 4600 3300 50  0001 C CNN "OldReference"
+F 7 "IND CHIP 56nH" H 4600 3300 60  0001 C CNN "Description"
+F 8 "L1" H 4600 3300 50  0001 C CNN "OldReference"
 	1    4600 3300
 	0    1    1    0   
 $EndComp
@@ -59,7 +137,8 @@ F 3 "" H 4290 3575 60  0000 C CNN
 F 4 "GRM1555C1H220GA01D" H 4300 3600 60  0001 C CNN "PN"
 F 5 "Murata" H 4300 3600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 490-6219-1-ND" H 5100 4150 60  0001 C CNN "BOM"
-F 7 "C43" H 4300 3600 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 22pF C0G [0402]" H 4300 3600 60  0001 C CNN "Description"
+F 8 "C43" H 4300 3600 50  0001 C CNN "OldReference"
 	1    4300 3600
 	1    0    0    -1  
 $EndComp
@@ -74,7 +153,8 @@ F 3 "" H 4590 2925 60  0000 C CNN
 F 4 "CL10C1R5BB8NNNC" H 4600 2950 60  0001 C CNN "PN"
 F 5 "Samsung" H 4600 2950 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-1656-1-ND" H 5400 3500 60  0001 C CNN "BOM"
-F 7 "C44" H 4600 2950 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 1.5pF C0G [0402]" H 4600 2950 60  0001 C CNN "Description"
+F 8 "C44" H 4600 2950 50  0001 C CNN "OldReference"
 	1    4600 2950
 	0    1    1    0   
 $EndComp
@@ -89,7 +169,8 @@ F 3 "" H 5200 3350 60  0000 C CNN
 F 4 "CIH05T47NJNC" H 5200 3300 60  0001 C CNN "PN"
 F 5 "Samsung" H 5200 3300 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-6280-1-ND" H 5200 3300 60  0001 C CNN "BOM"
-F 7 "L2" H 5200 3300 50  0001 C CNN "OldReference"
+F 7 "IND CHIP 47nH" H 5200 3300 60  0001 C CNN "Description"
+F 8 "L2" H 5200 3300 50  0001 C CNN "OldReference"
 	1    5200 3300
 	0    1    1    0   
 $EndComp
@@ -104,7 +185,8 @@ F 3 "" H 5190 2925 60  0000 C CNN
 F 4 "CL05C4R7CB5NNNC" H 5200 2950 60  0001 C CNN "PN"
 F 5 "Samsung" H 5200 2950 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-1703-1-ND" H 6000 3500 60  0001 C CNN "BOM"
-F 7 "C47" H 5200 2950 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 4.7pF C0G [0402]" H 5200 2950 60  0001 C CNN "Description"
+F 8 "C47" H 5200 2950 50  0001 C CNN "OldReference"
 	1    5200 2950
 	0    1    1    0   
 $EndComp
@@ -119,7 +201,8 @@ F 3 "" H 5190 2525 60  0000 C CNN
 F 4 "CL05C4R7CB5NNNC" H 5200 2550 60  0001 C CNN "PN"
 F 5 "Samsung" H 5200 2550 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-1703-1-ND" H 6000 3100 60  0001 C CNN "BOM"
-F 7 "C46" H 5200 2550 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 4.7pF C0G [0402]" H 5200 2550 60  0001 C CNN "Description"
+F 8 "C46" H 5200 2550 50  0001 C CNN "OldReference"
 	1    5200 2550
 	0    1    1    0   
 $EndComp
@@ -134,7 +217,8 @@ F 3 "" H 5800 3350 60  0000 C CNN
 F 4 "CIH05T47NJNC" H 5800 3300 60  0001 C CNN "PN"
 F 5 "Samsung" H 5800 3300 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-6280-1-ND" H 5800 3300 60  0001 C CNN "BOM"
-F 7 "L3" H 5800 3300 50  0001 C CNN "OldReference"
+F 7 "IND CHIP 47nH" H 5800 3300 60  0001 C CNN "Description"
+F 8 "L3" H 5800 3300 50  0001 C CNN "OldReference"
 	1    5800 3300
 	0    1    1    0   
 $EndComp
@@ -149,7 +233,8 @@ F 3 "" H 5790 2925 60  0000 C CNN
 F 4 "CL05C4R7CB5NNNC" H 5800 2950 60  0001 C CNN "PN"
 F 5 "Samsung" H 5800 2950 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-1703-1-ND" H 6600 3500 60  0001 C CNN "BOM"
-F 7 "C49" H 5800 2950 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 4.7pF C0G [0402]" H 5800 2950 60  0001 C CNN "Description"
+F 8 "C49" H 5800 2950 50  0001 C CNN "OldReference"
 	1    5800 2950
 	0    1    1    0   
 $EndComp
@@ -164,7 +249,8 @@ F 3 "" H 4890 3575 60  0000 C CNN
 F 4 "CL05C560JB5NNNC" H 4900 3600 60  0001 C CNN "PN"
 F 5 "Samsung" H 4900 3600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-1707-1-ND" H 5700 4150 60  0001 C CNN "BOM"
-F 7 "C45" H 4900 3600 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 56pF C0G [0402]" H 4900 3600 60  0001 C CNN "Description"
+F 8 "C45" H 4900 3600 50  0001 C CNN "OldReference"
 	1    4900 3600
 	1    0    0    -1  
 $EndComp
@@ -179,7 +265,8 @@ F 3 "" H 5490 3575 60  0000 C CNN
 F 4 "CL05C560JB5NNNC" H 5500 3600 60  0001 C CNN "PN"
 F 5 "Samsung" H 5500 3600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 1276-1707-1-ND" H 6300 4150 60  0001 C CNN "BOM"
-F 7 "C48" H 5500 3600 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 56pF C0G [0402]" H 5500 3600 60  0001 C CNN "Description"
+F 8 "C48" H 5500 3600 50  0001 C CNN "OldReference"
 	1    5500 3600
 	1    0    0    -1  
 $EndComp
@@ -194,7 +281,8 @@ F 3 "" H 6090 3575 60  0000 C CNN
 F 4 "GRM1555C1H220GA01D" H 6100 3600 60  0001 C CNN "PN"
 F 5 "Murata" H 6100 3600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 490-6219-1-ND" H 6900 4150 60  0001 C CNN "BOM"
-F 7 "C50" H 6100 3600 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 22pF C0G [0402]" H 6100 3600 60  0001 C CNN "Description"
+F 8 "C50" H 6100 3600 50  0001 C CNN "OldReference"
 	1    6100 3600
 	1    0    0    -1  
 $EndComp
@@ -209,7 +297,8 @@ F 3 "" H 6490 3575 60  0000 C CNN
 F 4 "GRM1555C1H220GA01D" H 6500 3600 60  0001 C CNN "PN"
 F 5 "Murata" H 6500 3600 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 490-6219-1-ND" H 7300 4150 60  0001 C CNN "BOM"
-F 7 "C51" H 6500 3600 50  0001 C CNN "OldReference"
+F 7 "CAP MLCC 22pF C0G [0402]" H 6500 3600 60  0001 C CNN "Description"
+F 8 "C51" H 6500 3600 50  0001 C CNN "OldReference"
 	1    6500 3600
 	1    0    0    -1  
 $EndComp
@@ -687,7 +776,7 @@ FC 82 9E C3 5F 8B BD A3 99 8A 04 1A E1 70 03 9C 32 9E FF 9F F1 D9 0C 72 53 5F 3D
 1C 6E 40 A1 9E 07 91 DC D4 37 8A 21 E3 F1 3B 08 48 C5 E1 06 94 70 DE 2B 1B A9 F3 41 34 EC BA 7E 
 C6 5F 05 4E E2 BB B2 02 2C AC E2 1F E1 4E C2 E1 06 D8 47 59 46 F6 AB CF 56 EE 9C BE 21 0E 51 00 
 00 36 21 77 86 1F 00 00 D4 45 EA 03 00 B0 0B 52 1F 00 80 5D 90 FA 00 00 EC E2 7F 01 3B 40 24 1D 
-60 0E DB 19 00 00 00 00 49 45 4E 44 AE 42 60 82 58 
+60 0E DB 19 00 00 00 00 49 45 4E 44 AE 42 60 82 FF 
 EndData
 $EndBitmap
 Text Notes 1000 5350 0    50   ~ 0

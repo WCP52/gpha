@@ -1,4 +1,80 @@
 EESchema Schematic File Version 2
+LIBS:Altera
+LIBS:AnalogDevices
+LIBS:Atmel
+LIBS:conn-2mm
+LIBS:conn-100mil
+LIBS:conn-cui
+LIBS:conn-fci
+LIBS:conn-linx
+LIBS:conn-molex
+LIBS:conn-tagconnect
+LIBS:conn-test
+LIBS:DiodesInc
+LIBS:display
+LIBS:_electromech
+LIBS:Fairchild
+LIBS:FTDI
+LIBS:Intersil
+LIBS:Lattice
+LIBS:_linear
+LIBS:LinearTech
+LIBS:Littelfuse
+LIBS:logic-4000
+LIBS:logic-7400
+LIBS:MACOM
+LIBS:maxim
+LIBS:mechanical
+LIBS:Microchip
+LIBS:Micron
+LIBS:NXP
+LIBS:onsemi
+LIBS:passive
+LIBS:pasv-BiTech
+LIBS:pasv-Bourns
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-res
+LIBS:pcb
+LIBS:power
+LIBS:_semi
+LIBS:semi-diode-1N
+LIBS:semi-diode-BA
+LIBS:semi-diode-MCC
+LIBS:semi-diode-MMB
+LIBS:semi-diode-NXP
+LIBS:semi-diode-OnSemi
+LIBS:semi-diode-Vishay
+LIBS:semi-opto-misc
+LIBS:semi-thyristor-2N
+LIBS:semi-trans-2N
+LIBS:semi-trans-AO
+LIBS:semi-trans-BC
+LIBS:semi-trans-DiodesInc
+LIBS:semi-trans-Fairchild
+LIBS:semi-trans-Infineon
+LIBS:semi-trans-IntRect
+LIBS:semi-trans-IXYS
+LIBS:semi-trans-misc
+LIBS:semi-trans-MMB
+LIBS:semi-trans-MPS
+LIBS:semi-trans-NXP
+LIBS:semi-trans-PZT
+LIBS:semi-trans-TI
+LIBS:semi-trans-TIP
+LIBS:semi-trans-Toshiba
+LIBS:silabs
+LIBS:skyworks
+LIBS:ST
+LIBS:st_ic
+LIBS:st_semi
+LIBS:supertex
+LIBS:symbol
+LIBS:TexasInstruments
+LIBS:vishay_semi
+LIBS:Xilinx
+LIBS:pasv-xtal
+LIBS:conn-te
 LIBS:wcp52-cache
 EELAYER 25 0
 EELAYER END
@@ -25,7 +101,8 @@ F 3 "" H 2400 4300 50  0000 C CNN
 F 4 "BMI-S-203F; BMI-S-203-C" H 2400 4300 60  0001 C CNN "PN"
 F 5 "Laird" H 2400 4300 60  0001 C CNN "Manuf"
 F 6 "DIST DIGIKEY 903-1052-1-ND; DIST DIGIKEY 903-1015-ND" H 2400 4300 60  0001 C CNN "BOM"
-F 7 "MP1" H 2400 4300 50  0001 C CNN "OldReference"
+F 7 "RF SHIELD TWO-PIECE" H 2400 4300 60  0001 C CNN "Description"
+F 8 "MP1" H 2400 4300 50  0001 C CNN "OldReference"
 	1    2400 4300
 	1    0    0    -1  
 $EndComp
@@ -139,7 +216,7 @@ F 0 "C53" H 2600 1750 50  0000 C CNN
 F 1 "47u" H 2600 1650 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC3216X70" H 2400 1700 50  0001 C CNN
 F 3 "" H 2390 1675 60  0000 C CNN
-F 4 "Value" H 2400 1700 60  0001 C CNN "Manuf"
+F 4 "" H 2400 1700 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 47u ≥X5R 10V 20% [1206]" H 3200 2250 60  0001 C CNN "BOM"
 F 6 "C52" H 2400 1700 50  0001 C CNN "OldReference"
 	1    2400 1700
@@ -209,7 +286,7 @@ F 0 "C55" H 3550 1750 50  0000 C CNN
 F 1 "220n" H 3550 1650 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC2012X70" H 3300 1700 50  0001 C CNN
 F 3 "" H 3290 1675 60  0000 C CNN
-F 4 "Value" H 3300 1700 60  0001 C CNN "Manuf"
+F 4 "" H 3300 1700 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 220n ≥X5R 16V 10% [0805]" H 4100 2250 60  0001 C CNN "BOM"
 F 6 "C65" H 3300 1700 50  0001 C CNN "OldReference"
 	1    3300 1700
@@ -251,7 +328,7 @@ F 0 "C54" H 3050 1750 50  0000 C CNN
 F 1 "1n" H 3050 1650 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 2850 1700 50  0001 C CNN
 F 3 "" H 2840 1675 60  0000 C CNN
-F 4 "Value" H 2850 1700 60  0001 C CNN "Manuf"
+F 4 "" H 2850 1700 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 1n C0G 50V 10% [0603]" H 3650 2250 60  0001 C CNN "BOM"
 F 6 "C53" H 2850 1700 50  0001 C CNN "OldReference"
 	1    2850 1700
@@ -265,7 +342,7 @@ F 0 "C56" H 8600 3550 50  0000 C CNN
 F 1 "10n" H 8600 3450 50  0000 C CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 8400 3500 50  0001 C CNN
 F 3 "" H 8390 3475 60  0000 C CNN
-F 4 "Value" H 8400 3500 60  0001 C CNN "Manuf"
+F 4 "" H 8400 3500 60  0001 C CNN "Manuf"
 F 5 "CAP MLCC 10n ≥X5R 50V 10% [0603]" H 9200 4050 60  0001 C CNN "BOM"
 F 6 "C69" H 8400 3500 50  0001 C CNN "OldReference"
 	1    8400 3500
@@ -279,7 +356,7 @@ F 0 "R56" V 8000 3300 50  0000 C CNN
 F 1 "49R9" V 8100 3300 50  0000 C CNN
 F 2 "IPC7351-Nominal:RESC1608X50" H 8200 3300 50  0001 C CNN
 F 3 "" H 8200 3350 60  0000 C CNN
-F 4 "Value" H 8200 3300 60  0001 C CNN "Manuf"
+F 4 "" H 8200 3300 60  0001 C CNN "Manuf"
 F 5 "RES SMD 49.9 1% [0603]" H 8950 3850 60  0001 C CNN "BOM"
 F 6 "R52" H 8200 3300 50  0001 C CNN "OldReference"
 	1    8200 3300
