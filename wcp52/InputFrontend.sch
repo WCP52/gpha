@@ -118,8 +118,6 @@ F 4 "#PWR0163" H 2400 4400 50  0001 C CNN "OldReference"
 	1    2400 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 4400 2400 4350
 $Sheet
 S 2800 3100 1000 800 
 U 54F2F9A4
@@ -157,15 +155,6 @@ F1 "Detector.sch" 60
 F2 "OUT" O R 7900 3300 60 
 F3 "IN" I L 6900 3300 60 
 $EndSheet
-Wire Notes Line
-	2100 1300 2100 4300
-Wire Notes Line
-	9200 1300 2100 1300
-Wire Wire Line
-	8300 3300 10100 3300
-Wire Wire Line
-	8400 3300 8400 3400
-Connection ~ 8400 3300
 Text HLabel 10100 3300 2    60   Output ~ 0
 OUT
 $Comp
@@ -180,34 +169,14 @@ F 4 "#PWR0164" H 8400 3700 50  0001 C CNN "OldReference"
 	1    8400 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 3600 8400 3700
-Wire Wire Line
-	2800 3300 1400 3300
-Wire Wire Line
-	2800 3700 1400 3700
 Text HLabel 1400 3300 0    60   Input ~ 0
 IN1
 Text HLabel 1400 3700 0    60   Input ~ 0
 IN2
-Wire Wire Line
-	4200 3300 3800 3300
-Wire Wire Line
-	3800 3700 4200 3700
 Text HLabel 1800 5200 0    60   Input ~ 0
 INPUTSEL
-Wire Wire Line
-	1800 5200 4200 5200
 Text HLabel 1800 5600 0    60   Input ~ 0
 PHASEREF
-Wire Wire Line
-	1800 5600 5500 5600
-Wire Wire Line
-	5500 3300 5100 3300
-Wire Wire Line
-	6500 3300 6900 3300
-Wire Wire Line
-	7900 3300 8100 3300
 $Comp
 L C-1206 C53
 U 1 1 54F26D26
@@ -234,8 +203,6 @@ F 4 "#PWR0165" H 2400 1550 50  0001 C CNN "OldReference"
 	1    2400 1550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2400 1550 2400 1600
 $Comp
 L GND #PWR164
 U 1 1 54F26E11
@@ -248,10 +215,6 @@ F 4 "#PWR0166" H 2400 1850 50  0001 C CNN "OldReference"
 	1    2400 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 1850 2400 1800
-Wire Wire Line
-	2850 1550 2850 1600
 $Comp
 L GND #PWR167
 U 1 1 54F288BE
@@ -264,8 +227,6 @@ F 4 "#PWR0167" H 2850 1850 50  0001 C CNN "OldReference"
 	1    2850 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 1850 2850 1800
 $Comp
 L +5 #PWR166
 U 1 1 54F2892E
@@ -291,8 +252,6 @@ F 5 "C65" H 3300 1700 50  0001 C CNN "OldReference"
 	1    3300 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 1550 3300 1600
 $Comp
 L GND #PWR169
 U 1 1 54F29C50
@@ -305,8 +264,6 @@ F 4 "#PWR0169" H 3300 1850 50  0001 C CNN "OldReference"
 	1    3300 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 1850 3300 1800
 $Comp
 L +5 #PWR168
 U 1 1 54F29C57
@@ -361,15 +318,11 @@ F 6 "R52" H 8200 3300 50  0001 C CNN "OldReference"
 	1    8200 3300
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	9200 1300 9200 4300
-Wire Notes Line
-	9200 4300 2100 4300
 $Comp
-L SINE-ACCURATE #SYM68
+L SINE-ACCURATE #SYM72
 U 1 1 550F3E55
 P 1550 3200
-F 0 "#SYM68" H 1550 3200 60  0001 C CNN
+F 0 "#SYM72" H 1550 3200 60  0001 C CNN
 F 1 "SINE-ACCURATE" H 1550 3200 60  0001 C CNN
 F 2 "" H 1550 3200 60  0000 C CNN
 F 3 "" H 1550 3200 60  0000 C CNN
@@ -377,14 +330,109 @@ F 3 "" H 1550 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SINE-ACCURATE #SYM69
+L SINE-ACCURATE #SYM73
 U 1 1 550F3E9A
 P 1550 3600
-F 0 "#SYM69" H 1550 3600 60  0001 C CNN
+F 0 "#SYM73" H 1550 3600 60  0001 C CNN
 F 1 "SINE-ACCURATE" H 1550 3600 60  0001 C CNN
 F 2 "" H 1550 3600 60  0000 C CNN
 F 3 "" H 1550 3600 60  0000 C CNN
 	1    1550 3600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2400 4400 2400 4350
+Wire Notes Line
+	2100 1300 2100 4300
+Wire Notes Line
+	9200 1300 2100 1300
+Wire Wire Line
+	8300 3300 10100 3300
+Wire Wire Line
+	8400 3300 8400 3400
+Connection ~ 8400 3300
+Wire Wire Line
+	8400 3600 8400 3700
+Wire Wire Line
+	2800 3300 1400 3300
+Wire Wire Line
+	2800 3700 1400 3700
+Wire Wire Line
+	4200 3300 3800 3300
+Wire Wire Line
+	3800 3700 4200 3700
+Wire Wire Line
+	1800 5200 4200 5200
+Wire Wire Line
+	1800 5600 5500 5600
+Wire Wire Line
+	5500 3300 5100 3300
+Wire Wire Line
+	6500 3300 6900 3300
+Wire Wire Line
+	7900 3300 8100 3300
+Wire Wire Line
+	2400 1550 2400 1600
+Wire Wire Line
+	2400 1850 2400 1800
+Wire Wire Line
+	2850 1550 2850 1600
+Wire Wire Line
+	2850 1850 2850 1800
+Wire Wire Line
+	3300 1550 3300 1600
+Wire Wire Line
+	3300 1850 3300 1800
+Wire Notes Line
+	9200 1300 9200 4300
+Wire Notes Line
+	9200 4300 2100 4300
+Wire Wire Line
+	1400 3300 1425 3325
+Wire Wire Line
+	1425 3325 2775 3325
+Wire Wire Line
+	2775 3325 2800 3300
+Wire Wire Line
+	1400 3700 1425 3725
+Wire Wire Line
+	1425 3725 2775 3725
+Wire Wire Line
+	2775 3725 2800 3700
+Wire Wire Line
+	3800 3300 3825 3325
+Wire Wire Line
+	3825 3325 4175 3325
+Wire Wire Line
+	4175 3325 4200 3300
+Wire Wire Line
+	3800 3700 3825 3725
+Wire Wire Line
+	3825 3725 4175 3725
+Wire Wire Line
+	4175 3725 4200 3700
+Wire Wire Line
+	5100 3300 5125 3325
+Wire Wire Line
+	5125 3325 5475 3325
+Wire Wire Line
+	5475 3325 5500 3300
+Wire Wire Line
+	6500 3300 6525 3325
+Wire Wire Line
+	6525 3325 6875 3325
+Wire Wire Line
+	6875 3325 6900 3300
+Wire Wire Line
+	7900 3300 7925 3325
+Wire Wire Line
+	7925 3325 8075 3325
+Wire Wire Line
+	8075 3325 8100 3300
+Wire Wire Line
+	8300 3300 8325 3325
+Wire Wire Line
+	8325 3325 10075 3325
+Wire Wire Line
+	10075 3325 10100 3300
 $EndSCHEMATC

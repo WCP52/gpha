@@ -200,97 +200,6 @@ F 5 "Q9" H 5500 6100 50  0001 C CNN "OldReference"
 	1    5500 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 2300 6250 2300
-Wire Wire Line
-	6250 2300 6250 3100
-Wire Wire Line
-	6250 3100 5650 3100
-Wire Wire Line
-	6250 2700 8600 2700
-Connection ~ 6250 2700
-Wire Wire Line
-	5650 2400 5750 2400
-Wire Wire Line
-	5750 2400 5750 3600
-Wire Wire Line
-	5650 3500 5750 3500
-Connection ~ 5750 3500
-Wire Wire Line
-	5650 3400 5750 3400
-Connection ~ 5750 3400
-Wire Wire Line
-	5650 3300 5750 3300
-Connection ~ 5750 3300
-Wire Wire Line
-	5650 3200 5750 3200
-Connection ~ 5750 3200
-Wire Wire Line
-	5650 2700 5750 2700
-Connection ~ 5750 2700
-Wire Wire Line
-	5650 2600 5750 2600
-Connection ~ 5750 2600
-Wire Wire Line
-	5650 2500 5750 2500
-Connection ~ 5750 2500
-Wire Wire Line
-	4450 2600 3850 2600
-Wire Wire Line
-	3850 2600 3850 4600
-Wire Wire Line
-	4450 3500 3850 3500
-Connection ~ 3850 3500
-Wire Wire Line
-	4450 2700 4050 2700
-Wire Wire Line
-	4050 2700 4050 4600
-Wire Wire Line
-	4450 3400 4050 3400
-Connection ~ 4050 3400
-Wire Wire Line
-	4450 4500 3850 4500
-Connection ~ 3850 4500
-Wire Wire Line
-	4700 4400 4050 4400
-Connection ~ 4050 4400
-Wire Wire Line
-	5150 4300 5150 6000
-Wire Wire Line
-	5150 4500 4650 4500
-Wire Wire Line
-	5150 4000 5150 4100
-Wire Wire Line
-	4900 4400 5550 4400
-Wire Wire Line
-	5550 4300 5550 6000
-Wire Wire Line
-	5550 4000 5550 4100
-Wire Wire Line
-	3850 4850 3850 4800
-Wire Wire Line
-	4050 4850 4050 4800
-Wire Wire Line
-	2000 2350 4450 2350
-Wire Wire Line
-	2000 3150 4450 3150
-Wire Notes Line
-	1550 2000 9150 2000
-Wire Notes Line
-	9150 2000 9150 5100
-Wire Notes Line
-	9150 5100 1550 5100
-Wire Notes Line
-	1550 5100 1550 2000
-Connection ~ 5150 4500
-Connection ~ 5550 4400
-Wire Wire Line
-	5450 6100 5300 6100
-Wire Wire Line
-	5300 6100 5300 5850
-Wire Wire Line
-	5300 5850 5150 5850
-Connection ~ 5150 5850
 $Comp
 L -5 #PWR183
 U 1 1 54F35B7E
@@ -303,8 +212,6 @@ F 4 "#PWR0182" H 5150 6250 50  0001 C CNN "OldReference"
 	1    5150 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 6250 5150 6200
 $Comp
 L -5 #PWR185
 U 1 1 54F35BE5
@@ -317,12 +224,6 @@ F 4 "#PWR0183" H 5550 6250 50  0001 C CNN "OldReference"
 	1    5550 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 6250 5550 6200
-Wire Wire Line
-	4500 6000 4500 6200
-Wire Wire Line
-	4500 6100 5050 6100
 $Comp
 L -5 #PWR181
 U 1 1 54F35DDE
@@ -335,8 +236,6 @@ F 4 "#PWR0184" H 4500 6450 50  0001 C CNN "OldReference"
 	1    4500 6450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 6450 4500 6400
 $Comp
 L MMBT3906 Q5
 U 1 1 54F35F38
@@ -362,15 +261,6 @@ F 4 "#PWR0185" H 4250 5900 50  0001 C CNN "OldReference"
 	1    4250 5900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4250 5900 4350 5900
-Connection ~ 4500 6100
-Wire Wire Line
-	4500 5800 4500 5700
-Wire Wire Line
-	4500 5500 4500 5400
-Wire Wire Line
-	4500 5400 1350 5400
 Text HLabel 1350 5400 0    60   Input ~ 0
 CTRL
 $Comp
@@ -507,4 +397,302 @@ Text Notes 1600 5100 0    50   ~ 0
 Inside shield
 Text Notes 1600 5200 0    50   ~ 0
 Outside shield
+Wire Wire Line
+	5650 2300 6250 2300
+Wire Wire Line
+	6250 2300 6250 3100
+Wire Wire Line
+	6250 3100 5650 3100
+Wire Wire Line
+	6250 2700 8600 2700
+Connection ~ 6250 2700
+Wire Wire Line
+	5650 2400 5750 2400
+Wire Wire Line
+	5750 2400 5750 3600
+Wire Wire Line
+	5650 3500 5750 3500
+Connection ~ 5750 3500
+Wire Wire Line
+	5650 3400 5750 3400
+Connection ~ 5750 3400
+Wire Wire Line
+	5650 3300 5750 3300
+Connection ~ 5750 3300
+Wire Wire Line
+	5650 3200 5750 3200
+Connection ~ 5750 3200
+Wire Wire Line
+	5650 2700 5750 2700
+Connection ~ 5750 2700
+Wire Wire Line
+	5650 2600 5750 2600
+Connection ~ 5750 2600
+Wire Wire Line
+	5650 2500 5750 2500
+Connection ~ 5750 2500
+Wire Wire Line
+	4450 2600 3850 2600
+Wire Wire Line
+	3850 2600 3850 4600
+Wire Wire Line
+	4450 3500 3850 3500
+Connection ~ 3850 3500
+Wire Wire Line
+	4450 2700 4050 2700
+Wire Wire Line
+	4050 2700 4050 4600
+Wire Wire Line
+	4450 3400 4050 3400
+Connection ~ 4050 3400
+Wire Wire Line
+	4450 4500 3850 4500
+Connection ~ 3850 4500
+Wire Wire Line
+	4700 4400 4050 4400
+Connection ~ 4050 4400
+Wire Wire Line
+	5150 4300 5150 6000
+Wire Wire Line
+	5150 4500 4650 4500
+Wire Wire Line
+	5150 4000 5150 4100
+Wire Wire Line
+	4900 4400 5550 4400
+Wire Wire Line
+	5550 4300 5550 6000
+Wire Wire Line
+	5550 4000 5550 4100
+Wire Wire Line
+	3850 4850 3850 4800
+Wire Wire Line
+	4050 4850 4050 4800
+Wire Wire Line
+	2000 2350 4450 2350
+Wire Wire Line
+	2000 3150 4450 3150
+Wire Notes Line
+	1550 2000 9150 2000
+Wire Notes Line
+	9150 2000 9150 5100
+Wire Notes Line
+	9150 5100 1550 5100
+Wire Notes Line
+	1550 5100 1550 2000
+Connection ~ 5150 4500
+Connection ~ 5550 4400
+Wire Wire Line
+	5450 6100 5300 6100
+Wire Wire Line
+	5300 6100 5300 5850
+Wire Wire Line
+	5300 5850 5150 5850
+Connection ~ 5150 5850
+Wire Wire Line
+	5150 6250 5150 6200
+Wire Wire Line
+	5550 6250 5550 6200
+Wire Wire Line
+	4500 6000 4500 6200
+Wire Wire Line
+	4500 6100 5050 6100
+Wire Wire Line
+	4500 6450 4500 6400
+Wire Wire Line
+	4250 5900 4350 5900
+Connection ~ 4500 6100
+Wire Wire Line
+	4500 5800 4500 5700
+Wire Wire Line
+	4500 5500 4500 5400
+Wire Wire Line
+	4500 5400 1350 5400
+Wire Wire Line
+	2000 2350 2025 2375
+Wire Wire Line
+	2025 2375 4425 2375
+Wire Wire Line
+	4425 2375 4450 2350
+Wire Wire Line
+	2000 3150 2025 3175
+Wire Wire Line
+	2025 3175 4425 3175
+Wire Wire Line
+	4425 3175 4450 3150
+Wire Wire Line
+	5650 3100 5675 3125
+Wire Wire Line
+	5675 3125 6275 3125
+Wire Wire Line
+	6275 3125 6275 2725
+Wire Wire Line
+	6275 2725 6225 2675
+Wire Wire Line
+	6225 2675 6225 2325
+Wire Wire Line
+	6225 2325 5675 2325
+Wire Wire Line
+	5675 2325 5650 2300
+Wire Wire Line
+	6275 2725 8575 2725
+Wire Wire Line
+	8575 2725 8600 2700
+$Comp
+L STEP #SYM74
+U 1 1 550F97C2
+P 2950 5300
+F 0 "#SYM74" H 2950 5300 60  0001 C CNN
+F 1 "STEP" H 2940 5300 60  0001 C CNN
+F 2 "" H 2940 5300 60  0000 C CNN
+F 3 "" H 2940 5300 60  0000 C CNN
+	1    2950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L STEP #SYM76
+U 1 1 550F97FB
+P 4125 6125
+F 0 "#SYM76" H 4125 6125 60  0001 C CNN
+F 1 "STEP" H 4115 6125 60  0001 C CNN
+F 2 "" H 4115 6125 60  0000 C CNN
+F 3 "" H 4115 6125 60  0000 C CNN
+	1    4125 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L STEP #SYM78
+U 1 1 550F9820
+P 5250 5650
+F 0 "#SYM78" H 5250 5650 60  0001 C CNN
+F 1 "STEP" H 5240 5650 60  0001 C CNN
+F 2 "" H 5240 5650 60  0000 C CNN
+F 3 "" H 5240 5650 60  0000 C CNN
+	1    5250 5650
+	1    0    0    1   
+$EndComp
+$Comp
+L STEP #SYM79
+U 1 1 550F9845
+P 5650 5650
+F 0 "#SYM79" H 5650 5650 60  0001 C CNN
+F 1 "STEP" H 5640 5650 60  0001 C CNN
+F 2 "" H 5640 5650 60  0000 C CNN
+F 3 "" H 5640 5650 60  0000 C CNN
+	1    5650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L STEP #SYM75
+U 1 1 550F986A
+P 3750 2950
+F 0 "#SYM75" H 3750 2950 60  0001 C CNN
+F 1 "STEP" H 3740 2950 60  0001 C CNN
+F 2 "" H 3740 2950 60  0000 C CNN
+F 3 "" H 3740 2950 60  0000 C CNN
+	1    3750 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L STEP #SYM77
+U 1 1 550F988F
+P 4150 2950
+F 0 "#SYM77" H 4150 2950 60  0001 C CNN
+F 1 "STEP" H 4140 2950 60  0001 C CNN
+F 2 "" H 4140 2950 60  0000 C CNN
+F 3 "" H 4140 2950 60  0000 C CNN
+	1    4150 2950
+	1    0    0    -1  
+$EndComp
+Text Notes 6800 3300 0    60   ~ 0
+GaAs switch bias and truth table:
+Wire Notes Line
+	4250 2875 3400 2875
+Text Notes 3400 2875 0    50   ~ 0
+0V
+Wire Notes Line
+	4250 3025 3400 3025
+Text Notes 3400 3025 0    50   ~ 0
+-5V
+Wire Notes Line
+	2875 5375 3250 5375
+Wire Notes Line
+	2875 5225 3250 5225
+Text Notes 3250 5375 2    50   ~ 0
+0V
+Text Notes 3250 5225 2    50   ~ 0
+3V3
+Wire Notes Line
+	4200 6200 3750 6200
+Wire Notes Line
+	4200 6050 3750 6050
+Text Notes 3750 6025 0    50   ~ 0
+0V7
+Text Notes 3750 6175 0    50   ~ 0
+-5V
+Wire Notes Line
+	5200 5575 6050 5575
+Text Notes 6050 5575 2    50   ~ 0
+0V
+Wire Notes Line
+	5200 5725 6050 5725
+Text Notes 6050 5725 2    50   ~ 0
+-5V
+Text Notes 6800 3400 0    50   ~ 0
+Low = -5V	High = 0V
+Text Notes 6800 3500 0    50   ~ 10
+BIAS_A
+Text Notes 7200 3500 0    50   ~ 10
+BIAS_B
+Text Notes 7600 3500 0    50   ~ 10
+SWITCH
+Text Notes 6800 3600 0    50   ~ 0
+L
+Text Notes 7200 3600 0    50   ~ 0
+H
+Text Notes 7600 3600 0    50   ~ 0
+Closed
+Text Notes 6800 3700 0    50   ~ 0
+H
+Text Notes 7200 3700 0    50   ~ 0
+L
+Text Notes 7600 3700 0    50   ~ 0
+Open, terminated
+Wire Notes Line
+	6800 3700 8300 3700
+Text Notes 6800 3800 0    50   ~ 0
+L
+Text Notes 7200 3800 0    50   ~ 0
+L
+Text Notes 7600 3800 0    50   ~ 0
+Open, unterminated
+Text Notes 6800 3900 0    50   ~ 0
+H
+Text Notes 7200 3900 0    50   ~ 0
+H
+Text Notes 7600 3900 0    50   ~ 0
+Closed, terminated
+Text Notes 6800 4200 0    50   ~ 10
+CTRL
+Text Notes 7100 4200 0    50   ~ 10
+@U8:BIAS_A\n@U9:BIAS_B
+Text Notes 7600 4200 0    50   ~ 10
+@U8:BIAS_B\n@U9:BIAS_A
+Text Notes 8200 4200 0    50   ~ 10
+SELECTED
+Text Notes 6800 4300 0    50   ~ 0
+L
+Text Notes 7100 4300 0    50   ~ 0
+H
+Text Notes 7600 4300 0    50   ~ 0
+L
+Text Notes 8200 4300 0    50   ~ 0
+IN2
+Text Notes 6800 4400 0    50   ~ 0
+H
+Text Notes 7100 4400 0    50   ~ 0
+L
+Text Notes 7600 4400 0    50   ~ 0
+H
+Text Notes 8200 4400 0    50   ~ 0
+IN1
 $EndSCHEMATC

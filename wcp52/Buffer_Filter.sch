@@ -605,4 +605,32 @@ Text Notes 2250 4500 0    50   ~ 0
 Inside shield
 Text Notes 2250 4600 0    50   ~ 0
 Outside shield
+Wire Wire Line
+	3000 2600 3025 2625
+Wire Wire Line
+	3025 2625 4925 2625
+Wire Wire Line
+	4925 2625 4950 2600
+Wire Wire Line
+	5100 2700 5075 2725
+Wire Wire Line
+	5075 2725 5075 3175
+Wire Wire Line
+	5075 3175 5125 3225
+Wire Wire Line
+	5125 3225 5475 3225
+Wire Wire Line
+	5475 3225 5500 3200
+Wire Wire Line
+	5700 3200 5725 3225
+Wire Wire Line
+	5725 3225 6875 3225
+Wire Wire Line
+	6875 3225 6900 3200
+Wire Wire Line
+	8100 3200 8125 3225
+Wire Wire Line
+	8800 3200 8775 3225
+Wire Wire Line
+	8775 3225 8125 3225
 $EndSCHEMATC

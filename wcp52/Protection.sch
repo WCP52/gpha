@@ -469,4 +469,28 @@ F 6 "R58" H 6500 5200 50  0001 C CNN "OldReference"
 	1    6500 5200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2350 2600 2375 2625
+Wire Wire Line
+	2375 2625 3325 2625
+Wire Wire Line
+	3325 2625 3350 2600
+Wire Wire Line
+	3550 2600 3575 2625
+Wire Wire Line
+	3575 2625 4625 2625
+Wire Wire Line
+	4625 2625 4650 2600
+Wire Wire Line
+	6350 2600 6375 2625
+Wire Wire Line
+	6375 2625 7325 2625
+Wire Wire Line
+	7325 2625 7350 2600
+Wire Wire Line
+	7550 2600 7575 2625
+Wire Wire Line
+	7575 2625 8625 2625
+Wire Wire Line
+	8625 2625 8650 2600
 $EndSCHEMATC
