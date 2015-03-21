@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 10 13
 Title "Logarithmic Detector"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 $Comp
 L C-0805 C64
@@ -215,7 +215,7 @@ Wire Wire Line
 	8400 3800 8300 3800
 Wire Wire Line
 	7700 4050 8900 4050
-Text HLabel 8900 4050 2    50   Output ~ 0
+Text HLabel 8900 4050 2    60   Output ~ 0
 OUT
 $Comp
 L C-0603 C71
@@ -355,9 +355,9 @@ F 4 "#PWR0204" H 5400 2050 50  0001 C CNN "OldReference"
 $EndComp
 Wire Wire Line
 	5400 2050 5400 2100
-Text Label 7150 2500 0    50   ~ 0
+Text Label 7150 2500 0    60   ~ 0
 4V6_FILTERED
-Text HLabel 2300 3600 0    50   Input ~ 0
+Text HLabel 2300 3600 0    60   Input ~ 0
 IN
 Connection ~ 2600 3600
 $Comp

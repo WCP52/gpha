@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 5 13
 Title "LPF for Output Amplifier"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 Text HLabel 3100 3300 0    60   BiDi ~ 0
 A
@@ -779,6 +779,6 @@ C6 5F 05 4E E2 BB B2 02 2C AC E2 1F E1 4E C2 E1 06 D8 47 59 46 F6 AB CF 56 EE 9C
 60 0E DB 19 00 00 00 00 49 45 4E 44 AE 42 60 82 58 
 EndData
 $EndBitmap
-Text Notes 1000 5350 0    50   ~ 0
+Text Notes 1000 5350 0    60   ~ 0
 Intended frequency response of filter:
 $EndSCHEMATC

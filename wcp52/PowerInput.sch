@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 11 13
 Title "Power Input Circuit"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 $Comp
 L THERM R81
@@ -172,8 +172,8 @@ $Comp
 L MMBT3906 Q12
 U 1 1 54F4B9D8
 P 4900 2900
-F 0 "Q12" H 5200 2950 50  0000 C CNN
-F 1 "MMBT3906" H 5200 2850 50  0000 C CNN
+F 0 "Q12" H 5100 3050 50  0000 C CNN
+F 1 "MMBT3906" H 5200 2850 50  0001 C CNN
 F 2 "smd-semi:SOT-23" H 4900 2900 50  0001 C CNN
 F 3 "" H 4900 2900 60  0000 C CNN
 F 4 "" H 4900 2900 60  0001 C CNN "Manuf"
@@ -189,8 +189,8 @@ $Comp
 L LM393M U12
 U 1 1 54F4BA7F
 P 4200 4600
-F 0 "U12" H 4200 4950 50  0000 C CNN
-F 1 "LM393M" H 4200 4850 50  0000 C CNN
+F 0 "U12" H 4200 4850 50  0000 C CNN
+F 1 "LM393M" H 4200 4850 50  0001 C CNN
 F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 4200 4600 50  0001 C CNN
 F 3 "" V 4200 4750 60  0000 C CNN
 F 4 "IC GENERIC LM393M" H 4200 4600 60  0001 C CNN "BOM"
@@ -438,9 +438,9 @@ F 7 "Q3" H 8100 1750 50  0001 C CNN "OldReference"
 	1    8100 1750
 	0    -1   -1   0   
 $EndComp
-Text HLabel 9400 1700 2    50   Output ~ 0
+Text HLabel 9400 1700 2    60   Output ~ 0
 OUT
-Text HLabel 1350 1700 0    50   Input ~ 0
+Text HLabel 1350 1700 0    60   Input ~ 0
 IN
 Wire Wire Line
 	1350 1700 1700 1700

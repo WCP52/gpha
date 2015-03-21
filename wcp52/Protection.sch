@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 7 13
 Title "Input Protection"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 Text HLabel 2350 2600 0    60   Input ~ 0
 IN1

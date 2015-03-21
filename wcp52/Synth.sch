@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 3 13
 Title "Synthesizer"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 $Comp
 L AD9958BCPZ U3
@@ -140,7 +140,7 @@ F 4 "#PWR056" H 5150 1950 50  0001 C CNN "OldReference"
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3050 2600
-Text Notes 2850 1550 0    60   ~ 0
+Text Notes 1700 2350 0    60   ~ 0
 Floating SYNC_IN is intentional.\nSee AD9958 datasheet page 29.
 Text HLabel 1600 2800 0    60   Input ~ 0
 IO_UPDATE
@@ -571,9 +571,37 @@ F 4 "#PWR080" H 6900 4600 50  0001 C CNN "OldReference"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3350 1950 3350 2100
+	3350 1950 3350 2000
 Wire Wire Line
-	3350 2000 4750 2000
+	3350 2000 3350 2100
+Wire Wire Line
+	3350 2000 3450 2000
+Wire Wire Line
+	3450 2000 3550 2000
+Wire Wire Line
+	3550 2000 3650 2000
+Wire Wire Line
+	3650 2000 3750 2000
+Wire Wire Line
+	3750 2000 3850 2000
+Wire Wire Line
+	3850 2000 3950 2000
+Wire Wire Line
+	3950 2000 4050 2000
+Wire Wire Line
+	4050 2000 4150 2000
+Wire Wire Line
+	4150 2000 4250 2000
+Wire Wire Line
+	4250 2000 4350 2000
+Wire Wire Line
+	4350 2000 4450 2000
+Wire Wire Line
+	4450 2000 4550 2000
+Wire Wire Line
+	4550 2000 4650 2000
+Wire Wire Line
+	4650 2000 4750 2000
 Wire Wire Line
 	4750 2000 4750 2100
 Connection ~ 3350 2000
@@ -617,7 +645,9 @@ Wire Wire Line
 	3450 2100 3450 2000
 Connection ~ 3450 2000
 Wire Wire Line
-	4950 1950 4950 2100
+	4950 1950 4950 2000
+Wire Wire Line
+	4950 2000 4950 2100
 Wire Wire Line
 	4950 2000 5050 2000
 Wire Wire Line
@@ -628,9 +658,13 @@ Wire Wire Line
 Wire Wire Line
 	3050 2800 1600 2800
 Wire Wire Line
-	1950 3000 3050 3000
+	1950 3000 2300 3000
 Wire Wire Line
-	1950 3300 2550 3300
+	2300 3000 3050 3000
+Wire Wire Line
+	1950 3300 2300 3300
+Wire Wire Line
+	2300 3300 2550 3300
 Wire Wire Line
 	2550 3300 2550 3100
 Wire Wire Line
@@ -644,7 +678,9 @@ Connection ~ 2300 3000
 Wire Wire Line
 	1750 3000 1650 3000
 Wire Wire Line
-	1650 3000 1650 3300
+	1650 3000 1650 3150
+Wire Wire Line
+	1650 3150 1650 3300
 Wire Wire Line
 	1650 3300 1750 3300
 Wire Wire Line
@@ -659,7 +695,13 @@ Wire Wire Line
 Wire Wire Line
 	3050 3800 2950 3800
 Wire Wire Line
-	2950 3800 2950 4150
+	2950 3800 2950 3900
+Wire Wire Line
+	2950 3900 2950 4000
+Wire Wire Line
+	2950 4000 2950 4100
+Wire Wire Line
+	2950 4100 2950 4150
 Wire Wire Line
 	2950 4100 3050 4100
 Connection ~ 2950 4100
@@ -718,29 +760,41 @@ Wire Wire Line
 Wire Wire Line
 	5550 2550 5550 2700
 Wire Wire Line
-	7250 2700 5450 2700
+	7250 2700 5550 2700
+Wire Wire Line
+	5550 2700 5450 2700
 Wire Wire Line
 	5750 2550 5750 2800
 Wire Wire Line
-	7350 2800 5450 2800
+	7350 2800 5750 2800
+Wire Wire Line
+	5750 2800 5450 2800
 Wire Wire Line
 	6050 2550 6050 3000
 Wire Wire Line
-	5450 3000 6450 3000
+	5450 3000 6050 3000
+Wire Wire Line
+	6050 3000 6500 3000
 Wire Wire Line
 	6250 2550 6250 3100
 Wire Wire Line
-	5450 3100 6350 3100
+	5450 3100 6250 3100
+Wire Wire Line
+	6250 3100 6400 3100
 Wire Wire Line
 	5550 2350 5550 2250
 Wire Wire Line
-	5550 2250 5750 2250
+	5550 2250 5650 2250
+Wire Wire Line
+	5650 2250 5750 2250
 Wire Wire Line
 	5750 2250 5750 2350
 Wire Wire Line
 	6050 2350 6050 2250
 Wire Wire Line
-	6050 2250 6250 2250
+	6050 2250 6150 2250
+Wire Wire Line
+	6150 2250 6250 2250
 Wire Wire Line
 	6250 2250 6250 2350
 Wire Wire Line
@@ -753,27 +807,37 @@ Connection ~ 5550 2700
 Wire Wire Line
 	7250 1200 7250 1100
 Wire Wire Line
-	7250 1100 7350 1100
+	7250 1100 7300 1100
+Wire Wire Line
+	7300 1100 7350 1100
 Wire Wire Line
 	7350 1100 7350 1200
 Wire Wire Line
 	7300 1100 7300 1050
 Connection ~ 7300 1100
 Wire Wire Line
-	7250 1400 7250 2700
+	7250 1400 7250 1500
 Wire Wire Line
-	7350 1400 7350 2800
+	7250 1500 7250 2700
+Wire Wire Line
+	7350 1400 7350 2200
+Wire Wire Line
+	7350 2200 7350 2800
 Connection ~ 5750 2800
 Wire Wire Line
 	7650 1500 7250 1500
 Connection ~ 7250 1500
 Wire Wire Line
-	7850 1500 8550 1500
+	7850 1500 8050 1500
+Wire Wire Line
+	8050 1500 8550 1500
 Wire Wire Line
 	7650 2200 7350 2200
 Connection ~ 7350 2200
 Wire Wire Line
-	7850 2200 8550 2200
+	7850 2200 8050 2200
+Wire Wire Line
+	8050 2200 8550 2200
 Wire Wire Line
 	8250 1750 8050 1750
 Wire Wire Line
@@ -785,9 +849,13 @@ Wire Wire Line
 	8050 1950 8050 2200
 Connection ~ 8050 2200
 Wire Wire Line
-	8750 1500 9050 1500
+	8750 1500 8850 1500
 Wire Wire Line
-	8850 1500 8850 2250
+	8850 1500 9050 1500
+Wire Wire Line
+	8850 1500 8850 1850
+Wire Wire Line
+	8850 1850 8850 2250
 Wire Wire Line
 	8850 1850 8750 1850
 Connection ~ 8850 1500
@@ -797,14 +865,18 @@ Wire Wire Line
 Wire Wire Line
 	9800 1500 9250 1500
 Wire Wire Line
-	9700 1550 9700 2250
+	9700 1550 9700 2200
+Wire Wire Line
+	9700 2200 9700 2250
 Wire Wire Line
 	9700 2200 8750 2200
 Connection ~ 9700 2200
 Wire Wire Line
 	7250 3200 7250 3100
 Wire Wire Line
-	7250 3100 7350 3100
+	7250 3100 7300 3100
+Wire Wire Line
+	7300 3100 7350 3100
 Wire Wire Line
 	7350 3100 7350 3200
 Wire Wire Line
@@ -813,11 +885,15 @@ Connection ~ 7300 3100
 Wire Wire Line
 	7650 3500 7250 3500
 Wire Wire Line
-	7850 3500 8550 3500
+	7850 3500 8050 3500
+Wire Wire Line
+	8050 3500 8550 3500
 Wire Wire Line
 	7650 4200 7350 4200
 Wire Wire Line
-	7850 4200 8550 4200
+	7850 4200 8050 4200
+Wire Wire Line
+	8050 4200 8550 4200
 Wire Wire Line
 	8250 3750 8050 3750
 Wire Wire Line
@@ -829,9 +905,13 @@ Wire Wire Line
 	8050 3950 8050 4200
 Connection ~ 8050 4200
 Wire Wire Line
-	8750 3500 9050 3500
+	8750 3500 8850 3500
 Wire Wire Line
-	8850 3500 8850 4250
+	8850 3500 9050 3500
+Wire Wire Line
+	8850 3500 8850 3850
+Wire Wire Line
+	8850 3850 8850 4250
 Wire Wire Line
 	8850 3850 8750 3850
 Connection ~ 8850 3500
@@ -841,23 +921,29 @@ Wire Wire Line
 Wire Wire Line
 	9800 3500 9250 3500
 Wire Wire Line
-	9700 3550 9700 4250
+	9700 3550 9700 4200
+Wire Wire Line
+	9700 4200 9700 4250
 Wire Wire Line
 	9700 4200 8750 4200
 Connection ~ 9700 4200
 Wire Wire Line
-	7250 3400 7250 4400
+	7250 3400 7250 3500
 Wire Wire Line
-	7250 4400 6450 4400
+	7250 3500 7250 4400
 Wire Wire Line
-	6450 4400 6450 3000
+	7250 4400 6500 4400
+Wire Wire Line
+	6500 4400 6500 3000
 Connection ~ 6050 3000
 Wire Wire Line
-	6350 3100 6350 4500
+	6400 3100 6400 4500
 Wire Wire Line
-	7350 4500 6350 4500
+	6400 4500 7350 4500
 Wire Wire Line
-	7350 3400 7350 4500
+	7350 4500 7350 4200
+Wire Wire Line
+	7350 4200 7350 3400
 Connection ~ 6250 3100
 Connection ~ 7250 3500
 Connection ~ 7350 4200
@@ -1116,7 +1202,9 @@ $EndComp
 Wire Wire Line
 	7900 6300 7900 6250
 Wire Wire Line
-	8300 6050 8300 6250
+	8300 6050 8300 6150
+Wire Wire Line
+	8300 6150 8300 6250
 $Comp
 L GND #PWR097
 U 1 1 54F2C372
@@ -1243,7 +1331,9 @@ $EndComp
 Wire Wire Line
 	9100 6300 9100 6250
 Wire Wire Line
-	9500 6050 9500 6250
+	9500 6050 9500 6150
+Wire Wire Line
+	9500 6150 9500 6250
 $Comp
 L GND #PWR0104
 U 1 1 54F2C869
@@ -1316,7 +1406,9 @@ F 6 "C27" H 10000 6350 50  0001 C CNN "OldReference"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 6050 10000 6250
+	10000 6050 10000 6150
+Wire Wire Line
+	10000 6150 10000 6250
 $Comp
 L GND #PWR0107
 U 1 1 54F2D298
@@ -1371,51 +1463,51 @@ CH1_N
 $Comp
 L BEAD-0805 E2
 U 1 1 54F8FF17
-P 1400 6250
-F 0 "E2" H 1400 6450 50  0000 C CNN
-F 1 "2k2@100" H 1400 6350 50  0000 C CNN
-F 2 "IPC7351-Nominal:INDC2012X130" H 1400 6250 50  0001 C CNN
-F 3 "" H 1400 6300 60  0000 C CNN
-F 4 "HZ0805B222R-10" H 1400 6250 60  0001 C CNN "PN"
-F 5 "Laird" H 1400 6250 60  0001 C CNN "Manuf"
-F 6 "DIST DIGIKEY 240-2562-1-ND" H 1400 6250 60  0001 C CNN "BOM"
-F 7 "FERRITE CHIP 2.2k @ 100MHz [0805]" H 1400 6250 60  0001 C CNN "Description"
-F 8 "E2" H 1400 6250 50  0001 C CNN "OldReference"
-	1    1400 6250
+P 5100 7650
+F 0 "E2" H 5100 7850 50  0000 C CNN
+F 1 "2k2@100" H 5100 7750 50  0000 C CNN
+F 2 "IPC7351-Nominal:INDC2012X130" H 5100 7650 50  0001 C CNN
+F 3 "" H 5100 7700 60  0000 C CNN
+F 4 "HZ0805B222R-10" H 5100 7650 60  0001 C CNN "PN"
+F 5 "Laird" H 5100 7650 60  0001 C CNN "Manuf"
+F 6 "DIST DIGIKEY 240-2562-1-ND" H 5100 7650 60  0001 C CNN "BOM"
+F 7 "FERRITE CHIP 2.2k @ 100MHz [0805]" H 5100 7650 60  0001 C CNN "Description"
+F 8 "E2" H 5100 7650 50  0001 C CNN "OldReference"
+	1    5100 7650
 	1    0    0    -1  
 $EndComp
 $Comp
 L +1.8 #PWR0110
 U 1 1 54F9001E
-P 1100 6100
-F 0 "#PWR0110" H 1100 6150 30  0001 C CNN
-F 1 "+1.8" H 1100 6200 50  0000 C CNN
-F 2 "" H 1100 6100 60  0000 C CNN
-F 3 "" H 1100 6100 60  0000 C CNN
-F 4 "#PWR0110" H 1100 6100 50  0001 C CNN "OldReference"
-	1    1100 6100
+P 4800 7500
+F 0 "#PWR0110" H 4800 7550 30  0001 C CNN
+F 1 "+1.8" H 4800 7600 50  0000 C CNN
+F 2 "" H 4800 7500 60  0000 C CNN
+F 3 "" H 4800 7500 60  0000 C CNN
+F 4 "#PWR0110" H 4800 7500 50  0001 C CNN "OldReference"
+	1    4800 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 6100 1100 6250
+	4800 7500 4800 7650
 Wire Wire Line
-	1100 6250 1300 6250
+	4800 7650 5000 7650
 $Comp
 L +1.8A #PWR0111
 U 1 1 54F9021A
-P 1700 6100
-F 0 "#PWR0111" H 1700 6150 30  0001 C CNN
-F 1 "+1.8A" H 1700 6200 50  0000 C CNN
-F 2 "" H 1700 6100 60  0000 C CNN
-F 3 "" H 1700 6100 60  0000 C CNN
-F 4 "#PWR0111" H 1700 6100 50  0001 C CNN "OldReference"
-	1    1700 6100
+P 5400 7500
+F 0 "#PWR0111" H 5400 7550 30  0001 C CNN
+F 1 "+1.8A" H 5400 7600 50  0000 C CNN
+F 2 "" H 5400 7500 60  0000 C CNN
+F 3 "" H 5400 7500 60  0000 C CNN
+F 4 "#PWR0111" H 5400 7500 50  0001 C CNN "OldReference"
+	1    5400 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 6100 1700 6250
+	5400 7500 5400 7650
 Wire Wire Line
-	1700 6250 1500 6250
+	5400 7650 5200 7650
 $Comp
 L GND #PWR0112
 U 1 1 54F99C5D
@@ -1502,8 +1594,8 @@ F 6 "R12" H 5550 4450 50  0001 C CNN "OldReference"
 	1    5550 4450
 	1    0    0    -1  
 $EndComp
-Text Notes 2550 5600 0    50   ~ 0
-@R20 is copper-bridged on the PCB, it is not necessary to populate a jumper.\nIf this part must be changed after testing, cut the bridge.
+Text Notes 3350 5800 0    60   ~ 0
+@R20 is copper-bridged on the PCB; it is not\nnecessary to populate a jumper. If this part\nmust be changed after testing, cut the bridge.
 $Comp
 L C-0603 C8
 U 1 1 54FD7521
@@ -1835,8 +1927,8 @@ Wire Notes Line
 	6900 5600 6900 4900
 Wire Notes Line
 	6900 4900 5800 4900
-Text Notes 5800 5750 0    50   ~ 0
-These decouple the amplifier ends\nof the differential T-lines
+Text Notes 5800 5800 0    60   ~ 0
+These decouple the amplifier\nends of the differential T-lines
 $Comp
 L C-0603 C22
 U 1 1 54FE6A9A
@@ -2217,4 +2309,14 @@ F 6 "R22" H 7350 3300 50  0001 C CNN "OldReference"
 $EndComp
 Text Notes 5700 2000 0    50   ~ 0
 4x 49R9
+Wire Notes Line
+	900  6200 4500 6200
+Wire Notes Line
+	4500 6200 4500 7800
+Wire Notes Line
+	4500 7800 900  7800
+Wire Notes Line
+	900  7800 900  6200
+Text Notes 950  6400 0    60   ~ 0
+Power supply decoupling\nThese are distributed among @U3's power pins.
 $EndSCHEMATC

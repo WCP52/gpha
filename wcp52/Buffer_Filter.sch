@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 9 13
 Title "Input Buffer and Filter"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 $Comp
 L GND #PWR0187
@@ -195,8 +195,8 @@ $Comp
 L MMBT3904 Q8
 U 1 1 54F37ABD
 P 4900 5300
-F 0 "Q8" H 4400 5350 50  0000 C CNN
-F 1 "MMBT3904" H 4400 5250 50  0000 C CNN
+F 0 "Q8" H 4850 5450 50  0000 C CNN
+F 1 "MMBT3904" H 4400 5250 50  0001 C CNN
 F 2 "smd-semi:SOT-23" H 4900 5300 50  0001 C CNN
 F 3 "" H 4900 5300 60  0000 C CNN
 F 4 "" H 4900 5300 60  0001 C CNN "Manuf"
@@ -253,11 +253,11 @@ Wire Wire Line
 Wire Wire Line
 	5500 3200 5100 3200
 Connection ~ 5100 3200
-Text HLabel 2100 1900 0    50   Input ~ 0
+Text HLabel 2100 1900 0    60   Input ~ 0
 PHASEREF
 Wire Wire Line
 	2100 1900 5500 1900
-Text HLabel 3000 2600 0    50   Input ~ 0
+Text HLabel 3000 2600 0    60   Input ~ 0
 IN
 Connection ~ 3700 2600
 Wire Wire Line
@@ -418,7 +418,7 @@ F 4 "#PWR0196" H 8100 3550 50  0001 C CNN "OldReference"
 $EndComp
 Wire Wire Line
 	8100 3550 8100 3500
-Text HLabel 8800 3200 2    50   Output ~ 0
+Text HLabel 8800 3200 2    60   Output ~ 0
 OUT
 Connection ~ 8100 3200
 $Comp

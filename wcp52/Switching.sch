@@ -82,13 +82,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 8 13
 Title "Input Switching"
-Date "2015-03-13"
+Date "2015-03-21"
 Rev ""
 Comp "WCP52"
 Comment1 "Gain/Phase Analyzer"
 Comment2 ""
 Comment3 ""
-Comment4 "Eng: Chris Pavlina"
+Comment4 ""
 $EndDescr
 $Comp
 L MASWSS0162 U8
@@ -120,10 +120,8 @@ F 7 "U10" H 5050 3300 50  0001 C CNN "OldReference"
 	1    5050 3300
 	1    0    0    -1  
 $EndComp
-Text HLabel 6850 2700 2    60   Output ~ 0
+Text HLabel 8600 2700 2    60   Output ~ 0
 OUT
-Text Notes 6400 2850 0    50   ~ 0
-Layout: These stubs must be /very/ short!
 $Comp
 L GND #PWR0178
 U 1 1 54F35197
@@ -172,15 +170,15 @@ F 4 "#PWR0181" H 4050 4850 50  0001 C CNN "OldReference"
 	1    4050 4850
 	1    0    0    -1  
 $EndComp
-Text HLabel 2550 2350 0    60   Input ~ 0
+Text HLabel 2000 2350 0    60   Input ~ 0
 IN1
-Text HLabel 2550 3150 0    60   Input ~ 0
+Text HLabel 2000 3150 0    60   Input ~ 0
 IN2
 $Comp
 L 2N7002 Q6
 U 1 1 54F3585D
 P 5100 6100
-F 0 "Q6" H 5250 6200 50  0000 C CNN
+F 0 "Q6" H 5000 6200 50  0000 C CNN
 F 1 "2N7002" H 5350 6050 50  0001 C CNN
 F 2 "smd-semi:SOT-23" H 5100 6100 50  0001 C CNN
 F 3 "" H 5100 6100 60  0000 C CNN
@@ -193,8 +191,8 @@ $Comp
 L 2N7002 Q7
 U 1 1 54F359AE
 P 5500 6100
-F 0 "Q7" H 5750 6150 50  0000 C CNN
-F 1 "2N7002" H 5750 6050 50  0000 C CNN
+F 0 "Q7" H 5400 6200 50  0000 C CNN
+F 1 "2N7002" H 5750 6050 50  0001 C CNN
 F 2 "smd-semi:SOT-23" H 5500 6100 50  0001 C CNN
 F 3 "" H 5500 6100 60  0000 C CNN
 F 4 "SEMI GENERIC 2N7002" H 6250 6650 60  0001 C CNN "BOM"
@@ -205,16 +203,32 @@ $EndComp
 Wire Wire Line
 	5650 2300 6250 2300
 Wire Wire Line
-	6250 2300 6250 3100
+	6250 2300 6250 2700
+Wire Wire Line
+	6250 2700 6250 3100
 Wire Wire Line
 	6250 3100 5650 3100
 Wire Wire Line
-	6250 2700 6850 2700
+	6250 2700 8600 2700
 Connection ~ 6250 2700
 Wire Wire Line
 	5650 2400 5750 2400
 Wire Wire Line
-	5750 2400 5750 3600
+	5750 2400 5750 2500
+Wire Wire Line
+	5750 2500 5750 2600
+Wire Wire Line
+	5750 2600 5750 2700
+Wire Wire Line
+	5750 2700 5750 3200
+Wire Wire Line
+	5750 3200 5750 3300
+Wire Wire Line
+	5750 3300 5750 3400
+Wire Wire Line
+	5750 3400 5750 3500
+Wire Wire Line
+	5750 3500 5750 3600
 Wire Wire Line
 	5650 3500 5750 3500
 Connection ~ 5750 3500
@@ -239,14 +253,22 @@ Connection ~ 5750 2500
 Wire Wire Line
 	4450 2600 3850 2600
 Wire Wire Line
-	3850 2600 3850 4600
+	3850 2600 3850 3500
+Wire Wire Line
+	3850 3500 3850 4500
+Wire Wire Line
+	3850 4500 3850 4600
 Wire Wire Line
 	4450 3500 3850 3500
 Connection ~ 3850 3500
 Wire Wire Line
 	4450 2700 4050 2700
 Wire Wire Line
-	4050 2700 4050 4600
+	4050 2700 4050 3400
+Wire Wire Line
+	4050 3400 4050 4400
+Wire Wire Line
+	4050 4400 4050 4600
 Wire Wire Line
 	4450 3400 4050 3400
 Connection ~ 4050 3400
@@ -257,7 +279,11 @@ Wire Wire Line
 	4700 4400 4050 4400
 Connection ~ 4050 4400
 Wire Wire Line
-	5150 4300 5150 6000
+	5150 4300 5150 4500
+Wire Wire Line
+	5150 4500 5150 5850
+Wire Wire Line
+	5150 5850 5150 6000
 Wire Wire Line
 	5150 4500 4650 4500
 Wire Wire Line
@@ -265,7 +291,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 4400 5550 4400
 Wire Wire Line
-	5550 4300 5550 6000
+	5550 4300 5550 4400
+Wire Wire Line
+	5550 4400 5550 6000
 Wire Wire Line
 	5550 4000 5550 4100
 Wire Wire Line
@@ -273,9 +301,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 4850 4050 4800
 Wire Wire Line
-	2550 2350 4450 2350
+	2000 2350 4450 2350
 Wire Wire Line
-	2550 3150 4450 3150
+	2000 3150 4450 3150
 Wire Notes Line
 	1550 2000 9150 2000
 Wire Notes Line
@@ -287,11 +315,11 @@ Wire Notes Line
 Connection ~ 5150 4500
 Connection ~ 5550 4400
 Wire Wire Line
-	5450 6100 5400 6100
+	5450 6100 5300 6100
 Wire Wire Line
-	5400 6100 5400 5850
+	5300 6100 5300 5850
 Wire Wire Line
-	5400 5850 5150 5850
+	5300 5850 5150 5850
 Connection ~ 5150 5850
 $Comp
 L -5 #PWR0182
@@ -322,7 +350,9 @@ $EndComp
 Wire Wire Line
 	5550 6250 5550 6200
 Wire Wire Line
-	4500 6000 4500 6200
+	4500 6000 4500 6100
+Wire Wire Line
+	4500 6100 4500 6200
 Wire Wire Line
 	4500 6100 5050 6100
 $Comp
@@ -343,8 +373,8 @@ $Comp
 L MMBT3906 Q5
 U 1 1 54F35F38
 P 4450 5900
-F 0 "Q5" H 4750 5950 50  0000 C CNN
-F 1 "MMBT3906" H 4750 5850 50  0000 C CNN
+F 0 "Q5" H 4350 6000 50  0000 C CNN
+F 1 "MMBT3906" H 4750 5850 50  0001 C CNN
 F 2 "smd-semi:SOT-23" H 4450 5900 50  0001 C CNN
 F 3 "" H 4450 5900 60  0000 C CNN
 F 4 "SEMI GENERIC MMBT3906" H 5250 6450 60  0001 C CNN "BOM"
