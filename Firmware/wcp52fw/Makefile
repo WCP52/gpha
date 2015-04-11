@@ -59,7 +59,7 @@ CFLAGS = \
 	-Wall						\
 
 # Per-target compiler flags
-${OBJECTS}: EXTRA_CFLAGS := -Wextra -Werror
+${OBJECTS}: EXTRA_CFLAGS := -Wextra -Werror -pedantic
 ${ASF_OBJECTS}: EXTRA_CFLAGS := -Wno-unused-but-set-variable
 
 # Linker flags listed before objects
@@ -83,30 +83,30 @@ LDPOSTFLAGS = \
 INCLUDES = \
 	-I../scpi-parser/libscpi/inc \
 	-Isrc \
-	-Isrc/ASF/common/services/clock \
-	-Isrc/ASF/common/services/delay \
-	-Isrc/ASF/common/services/gpio \
-	-Isrc/ASF/common/services/ioport \
-	-Isrc/ASF/common/services/sleepmgr \
-	-Isrc/ASF/common/services/spi \
-	-Isrc/ASF/common/services/usb \
-	-Isrc/ASF/common/services/usb/class/cdc \
-	-Isrc/ASF/common/services/usb/class/cdc/device \
-	-Isrc/ASF/common/services/usb/udc \
-	-Isrc/ASF/common/utils \
-	-Isrc/ASF/common/utils/stdio/stdio_usb \
-	-Isrc/ASF/sam/drivers/adc \
-	-Isrc/ASF/sam/drivers/pio \
-	-Isrc/ASF/sam/drivers/pmc \
-	-Isrc/ASF/sam/drivers/spi \
-	-Isrc/ASF/sam/drivers/uart \
-	-Isrc/ASF/sam/drivers/udp \
-	-Isrc/ASF/sam/utils \
-	-Isrc/ASF/sam/utils/cmsis/sam4s/include \
-	-Isrc/ASF/sam/utils/header_files \
-	-Isrc/ASF/sam/utils/preprocessor \
-	-Isrc/ASF/thirdparty/CMSIS/Include \
-	-Isrc/ASF/thirdparty/CMSIS/Lib/GCC \
+	-isystemsrc/ASF/common/services/clock \
+	-isystemsrc/ASF/common/services/delay \
+	-isystemsrc/ASF/common/services/gpio \
+	-isystemsrc/ASF/common/services/ioport \
+	-isystemsrc/ASF/common/services/sleepmgr \
+	-isystemsrc/ASF/common/services/spi \
+	-isystemsrc/ASF/common/services/usb \
+	-isystemsrc/ASF/common/services/usb/class/cdc \
+	-isystemsrc/ASF/common/services/usb/class/cdc/device \
+	-isystemsrc/ASF/common/services/usb/udc \
+	-isystemsrc/ASF/common/utils \
+	-isystemsrc/ASF/common/utils/stdio/stdio_usb \
+	-isystemsrc/ASF/sam/drivers/adc \
+	-isystemsrc/ASF/sam/drivers/pio \
+	-isystemsrc/ASF/sam/drivers/pmc \
+	-isystemsrc/ASF/sam/drivers/spi \
+	-isystemsrc/ASF/sam/drivers/uart \
+	-isystemsrc/ASF/sam/drivers/udp \
+	-isystemsrc/ASF/sam/utils \
+	-isystemsrc/ASF/sam/utils/cmsis/sam4s/include \
+	-isystemsrc/ASF/sam/utils/header_files \
+	-isystemsrc/ASF/sam/utils/preprocessor \
+	-isystemsrc/ASF/thirdparty/CMSIS/Include \
+	-isystemsrc/ASF/thirdparty/CMSIS/Lib/GCC \
 	-Isrc/config \
 
 ALL_CFLAGS = ${INCLUDES} ${CFLAGS} ${EXTRA_CFLAGS}

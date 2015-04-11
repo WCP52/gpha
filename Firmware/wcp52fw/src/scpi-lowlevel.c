@@ -89,18 +89,15 @@ scpi_result_t LOWLEVEL_PIN_ACTION (scpi_t *context)
     buffer[len] = 0;
 
     bool found_pin = false;
-
-    bool each_pin_action (const struct pin_info *pin) {
-        if (!strcmp (pin->pin_name_str, buffer)) {
-            pin_action(pin->index, pin->flags, buffer);
+    size_t i;
+    for (i = 0; PIN_TABLE[i].description; ++i) {
+        if (!PIN_TABLE[i].index_str) continue; // Pin group, not pin
+        if (!strcmp (PIN_TABLE[i].pin_name_str, buffer)) {
+            pin_action(PIN_TABLE[i].index, PIN_TABLE[i].flags, buffer);
             found_pin = true;
-            return false; // break
-        } else {
-            return true; // continue
+            break;
         }
     }
-
-    for_each_pin (&each_pin_action, NULL);
 
     if (!found_pin) {
         printf ("Pin '%s' not found!\r\n", buffer);
@@ -114,17 +111,19 @@ scpi_result_t LOWLEVEL_LIST_PINS (scpi_t *context)
 {
     (void) context;
 
-    bool print_pin_group (const char *text) {
-        printf ("==== %s ====\r\n", text);
-        return true;
+    size_t i;
+    for (i = 0; PIN_TABLE[i].description; ++i) {
+        if (PIN_TABLE[i].index_str) {
+            // Pin
+            printf ("%-20s %-30s %s\r\n",
+                    PIN_TABLE[i].pin_name_str,
+                    PIN_TABLE[i].flags_str,
+                    PIN_TABLE[i].description);
+        } else {
+            // Pin group
+            printf ("==== %s ====\r\n", PIN_TABLE[i].description);
+        }
     }
-
-    bool print_pin (const struct pin_info *pin) {
-        printf ("%-20s %-30s %s\r\n", pin->pin_name_str, pin->flags_str, pin->description);
-        return true;
-    }
-
-    for_each_pin (&print_pin, &print_pin_group);
 
     return SCPI_RES_OK;
 }

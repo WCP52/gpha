@@ -25,7 +25,10 @@ static inline void util_set_pin(uint32_t pin, int_fast8_t value)
 }
 
 /**
- * Pin info struct that is passed to a function by for_each_pin
+ * Pin info struct used to store the pin table from conf_board.h.
+ * XPINGROUP is represented in here with a NULL everthing but
+ * description. The end of the list is represented by a sentinel with NULL
+ * everything (including description).
  */
 struct pin_info {
     const char *pin_name_str;
@@ -37,22 +40,6 @@ struct pin_info {
     uint32_t flags;
 };
 
-/**
- * Call a function for each GPIO pin and pin group header.
- *
- * Function prototype for pins:
- * bool fxn(const struct pin_info *pin);
- *
- * Function prototype for groups:
- * bool fxn(const char *text);
- *
- * Return 'true' to continue to next pins, or 'false' to break.
- *
- * @param pinfxn - function pointer to call for pins. can be NULL
- * @param grpfxn - function pointer to call for groups. can be NULL
- */
-void for_each_pin (
-        bool (*pinfxn) (const struct pin_info *pin),
-        bool (*grpfxn) (const char *text));
+extern const struct pin_info PIN_TABLE[];
 
 #endif /* _WCP52_UTIL_H */

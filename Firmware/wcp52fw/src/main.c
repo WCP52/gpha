@@ -76,12 +76,11 @@ static void spi_init(void)
  */
 static void pins_init(void)
 {
-    bool configure_pin (const struct pin_info *pin) {
-        pio_configure_pin(pin->index, pin->flags);
-        return true;
+    size_t i;
+    for (i = 0; PIN_TABLE[i].description; ++i) {
+        if (!PIN_TABLE[i].index_str) continue; // Pin group, not pin
+        pio_configure_pin(PIN_TABLE[i].index, PIN_TABLE[i].flags);
     }
-
-    for_each_pin (&configure_pin, NULL);
 }
 
 /**
