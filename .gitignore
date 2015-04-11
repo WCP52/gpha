@@ -36,3 +36,11 @@
 *.hex
 
 tags
+
+*-bak
+*.bak
+*.raw
+*.net
+*.log
+*.ps
+*.old
