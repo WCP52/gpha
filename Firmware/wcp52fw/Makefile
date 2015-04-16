@@ -136,18 +136,18 @@ clean:
 		fi; \
 	done
 	@# Check if there's anything left
-	@if test '!' -z "$$(find -name '*.o' -or -name '*.d')"; then	\
+	@if test '!' -z "$$(find -name '*.o' -or -name '*.d' -or -name '*.elf')"; then	\
 		echo ''; \
 		echo 'Warning: the following files look like compile litter, but'; \
 		echo 'are not known by make. Not removed:'; \
 		echo ''; \
-		find -name '*.o' -or -name '*.d'; \
+		find -name '*.o' -or -name '*.d' -or -name '*.elf'; \
 	fi
 
 program: firmware.hex jlink-script.jlink
 	@#JLinkExe -device ATSAM4S4C -CommanderScript jlink-script.jlink
 	@# -c 'at91sam4 gpnvm set 1'
-	-openocd -f flash.cfg -c init -c halt -c "program ${PROG_FILE} verify" -c reset -c exit
+	-openocd -f jlink.cfg -c init -c halt -c "program ${PROG_FILE} verify" -c reset -c exit
 
 size_prof: firmware.elf
 	nm -CSr --size-sort $< | less
