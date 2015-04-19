@@ -31,3 +31,5 @@ tags
 *.log
 *.ps
 *.old
+
+Thumbs.db
