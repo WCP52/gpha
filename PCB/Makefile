@@ -1,7 +1,8 @@
 PROJECT ?= wcp52
 
-export SCRIPTROOT=$(shell git rev-parse --show-toplevel)/Common-lib/scripts
-export GVPROOT=$(shell git rev-parse --show-toplevel)/Common-lib
+export SCRIPTROOT=$(shell git rev-parse --show-toplevel)/PCB/Common-lib/scripts
+export GVPROOT=$(shell git rev-parse --show-toplevel)/PCB/Common-lib
+export MANUALROOT=$(shell git rev-parse --show-toplevel)/OwnersManual
 
 .PHONY: all pcb schem movegerb clean latex
 
@@ -18,10 +19,9 @@ schem:
 	if [[ -f ${PROJECT}/${PROJECT}.pdf ]]; then mv ${PROJECT}/${PROJECT}.pdf RENDERS/schematic.pdf; fi
 
 # Generate/move a couple files for the LaTeX manual
-MANUAL_ROOT=${HOME}/git/d/manual
 latex:
-	cp RENDERS/schematic.pdf ${MANUAL_ROOT}/
-	bomtool latex ${PROJECT} > ${MANUAL_ROOT}/autogen-bom.tex
+	cp RENDERS/schematic.pdf ${MANUALROOT}/
+	bomtool latex ${PROJECT} > ${MANUALROOT}/autogen-bom.tex
 
 clean:
 	rm -f ${PROJECT}/*.ps
