@@ -1,6 +1,9 @@
 \section{Software Description}
+In order to interface with the ATSAM4S microcontroller understanding of the C programming language is required, more specifically knowledge of ATMEL sam.h library. example code for the microcontroller as well as the User Inerface is provided in Appendix C Software as a frame of reference for users unfamiliar with the language.  
 \subsection{Signal Processing}
 \subsubsection{Sampling}
 \subsubsection{Null Search}
 \subsubsection{Calibration}
 \subsection{User Interface}
+
+The basic framework of the interface is created using the python Tkinter library. The user interface is created using the grid format with two simple buttons: CALIBRATE which receives the two bounds specified by the user  Min and Max values entered through the entry boxes and DISPLAY PLOT which either displays a linear or phase plot as specified by the user. In order to build the User Interface the pygubu library is required for installation which can be found at the following link:https://github.com/alejandroautalan/pygubu (note to motherfuckin author we need to Cite this).
