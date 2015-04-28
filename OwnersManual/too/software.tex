@@ -1,9 +1,24 @@
 \section{Software Description}
-In order to interface with the ATSAM4S microcontroller understanding of the C programming language is required, more specifically knowledge of ATMEL sam.h library. example code for the microcontroller as well as the User Inerface is provided in Appendix C Software as a frame of reference for users unfamiliar with the language.  
+In order to interface with the ATSAM4S microcontroller understanding of the C programming language is required along with knowledge of ATMEL sam.h library. Example code for the microcontroller as well as the User Inerface is provided in Appendix C Software as a frame of reference for users unfamiliar with the language.  Full function of the device requires interfacing with the all of the code located in the github repository for WCP52.
 \subsection{Signal Processing}
+To ensure proper signal processing you would need to interface with the AD9958 Dual Synthesizer of the ATSAM4S Microcontroller along with the input front end section of the device. The  the theory of operation for the syntesizer is covered on page 9 subsection 4.6 while the theory of operation for the Input front end  is covered in page 11 subsection 4.6. Refer back to that for reference. The AD9958 communication protocol need to interfaced, of which the instructions will be described below. This guide assumes you are familiar with the basic frame work of the  sam.h library.
+
+1) First send an 8 bit instruction
+	Bit 7 determines read/write
+		1 for read
+		0 for write
+	Bits [4:0] determine which address to write to
+2) sclk is driven low after the last instruction byte is sent until data is ready to be sent. On the rising edge after the last instruction byte, AD9958 begins reading data.
+3) The next transfer is the information we are sending to the register
+	In AD9958's protocol, we must send a number of bits equal to the size of the register. So, if the datasheet specifies that the register is 32 bytes, we should send all 32 bytes in this communication.
+	If we fail to send all the bytes that AD9958 is expecting, it will wait for them. On our next transmission, we may believe that we are sending an instruction byte, but in fact, AD9958 is reading data to the same register as before.
+4) Once AD9958 receives all of the necessary bytes, it expects the next transfer to be an instruction byte.
+5) In order to move data from the i/o buffer to the synthesizer's internal registers, we must send an IO update. This is done by setting the IO Update pin on the synthesizer high for 4 period of the chip's sysclk.
+
+
 \subsubsection{Sampling}
 \subsubsection{Null Search}
 \subsubsection{Calibration}
 \subsection{User Interface}
 
-The basic framework of the interface is created using the python Tkinter library. The user interface is created using the grid format with two simple buttons: CALIBRATE which receives the two bounds specified by the user  Min and Max values entered through the entry boxes and DISPLAY PLOT which either displays a linear or phase plot as specified by the user. In order to build the User Interface the pygubu library is required for installation which can be found at the following link:https://github.com/alejandroautalan/pygubu (note to motherfuckin author we need to Cite this).
+The basic framework of the interface is created using the python Tkinter library. The user interface is created using the grid format with two simple buttons: CALIBRATE which receives the two bounds specified by the user  Min and Max frequency values entered through the entry boxes and PLOT which either displays a linear or phase plot as specified by the user. In order to build the User Interface the pygubu library is required for installation which can be found at the following link:https://github.com/alejandroautalan/pygubu (note to motherfuckin author we need to Cite this). This is a python GUI builder that was implemented in order to obtain the current layout. As well as the other libraries in the gui repository
