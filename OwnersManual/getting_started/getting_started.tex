@@ -22,31 +22,20 @@ Output port sends signals to the filter.
 
 
 \section{Setting up your device}
-\begin{center}
-\missingfigure[figwidth=4in]{Photo}
-\end{center}
 
-First begin by connecting a filter to the board.  Connections for the filter must be made between the Output Port and Input Port.  The above figure shows us connecting a wire to the board.  You can do this as well just for learning purposes, but keep in mind that you will normally want to place a between these two ports.
-
-\begin{center}
-\missingfigure[figwidth=4in]{Photo}
-\end{center}
+First begin by connecting a filter to the board.  Connections for the filter must be made between the Output Port and Input Port.
 
 Now, we will connect the device to a PC using a micro USB cable.  Place one side of the cable into the USB port and the other side into any USB port on your PC.
 
-\begin{center}
-\missingfigure[figwidth=4in]{Photo}
-\end{center}
-
-Now, we will provide power to the device.  Plug the power supply into the Power port as shown in the diagram.
+Now, we will provide power to the device.  Plug the power supply into the Power port.
 
 \section{Collecting some data}
 
 Excellent job.  Now we move to the computer where we can take a measurement and get some results!  
-Go ahead and run the gain/phase analyser application (RenAndStim.py)
+Go ahead and run the gain/phase analyser application.   
 
 \begin{center}
-\missingfigure[figwidth=4in]{Photo}
+\includegraphics[width=4in]{getting_started/gui}
 \end{center}
 
 Before actually executing analysis, it is important to set the minimum and maximum frequencies to test.  These numbers are always
@@ -61,7 +50,7 @@ Now we have a choice, we may calibrate the data or make our plot.  Since we are 
 
 With the basics out of the way, we can talk about calibration.  We highly recommend doing this as it will provide significantly more accurate data.  It will reduce some of the noise that you will get from your set up and surrounding environment.  Note that this must be done before taking a reading with a filter connected.
 
-In order to calibrate, you will first need to connect a wire between the output and input.  There will not be a filter in between the ports when you do the calibration.  Enter the min and max frequencies that you want to test your filter for (if you enter different frequencies than you do when you connect your filter then your analysis will not work!)  Now, simply press the calibrate button and wait for calibration to finish.
+In order to calibrate, you will first need to connect a wire between the output and input.  There will not be a filter in between the ports when you do the calibration.  Enter the min and max frequencies that you want to test your filter for.  If you enter different frequencies than you do when you connect your filter then your analysis will not work!  Now, simply press the calibrate button and wait for calibration to finish.
 
 Good work on calibrating your set up.  Now connect a filter and perform the analysis as you did before.  
 

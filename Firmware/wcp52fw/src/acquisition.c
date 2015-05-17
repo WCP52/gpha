@@ -5,6 +5,7 @@
 
 // ASF includes
 #include <adc.h>
+#include <pio.h>
 #include <pmc.h>
 #include <sysclk.h>
 
@@ -41,6 +42,7 @@ void adc_setup(void)
 
 double acq_get_values (unsigned count)
 {
+    pio_set_pin_high(GPIO_LED3);
     double total = 0.0;
     size_t n;
     for (n = 0; n < count; ++n) {
@@ -50,6 +52,7 @@ double acq_get_values (unsigned count)
         total += ADCVAL;
     }
     total /= count;
+    pio_set_pin_low(GPIO_LED3);
     return total;
 }
 
