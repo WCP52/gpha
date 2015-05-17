@@ -119,8 +119,8 @@ class Analyzer(object):
 
 
     def get_gain(self, frequency):
-        """Measure and return the non-normalized gain at the given frequency. Returned in
-        decibels.
+        """Measure and return the gain at the given frequency, normalized if a
+        normalization has been set. Returned in decibels.
         
         Normalizes if a normalization is set."""
 
@@ -137,8 +137,8 @@ class Analyzer(object):
             return raw_gain
 
     def get_phase(self, frequency):
-        """Measure and return the non-normalized phase at the given frequency. Returned
-        in degrees."""
+        """Measure and return the phase at the given frequency, normalized if a
+        normalization has been set. Returned in degrees."""
 
         self.hw.set_frequency(frequency, "main")
         self.hw.set_frequency(frequency, "phase")
